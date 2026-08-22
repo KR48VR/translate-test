@@ -27,7 +27,8 @@
   "publishedLabel": "发布日期",
   "skillsHint": "选择一个行业，查看其招聘广告中最常提到的AI技能。",
   "tableView": "以表格查看数据",
-  "skillsFor": "{industry}招聘广告中最常提到的AI技能"
+  "skillsFor": "{industry}招聘广告中最常提到的AI技能",
+  "quickRead": "速读模式"
  },
  "nav": {
   "trends": "当前趋势",

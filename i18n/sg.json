@@ -1,272 +1,273 @@
 {
-  "_meta": {
-    "code": "sg",
-    "htmlLang": "en-SG",
-    "name": "Singlish",
-    "englishName": "Singlish",
-    "fontClass": "latin"
+ "_meta": {
+  "code": "sg",
+  "htmlLang": "en-SG",
+  "name": "Singlish",
+  "englishName": "Singlish",
+  "fontClass": "latin"
+ },
+ "ui": {
+  "brand": "AI Come Already",
+  "brandPlace": "Singapore",
+  "languageLabel": "Language",
+  "compareLabel": "Compare with",
+  "compareOff": "Off",
+  "compareHint": "Compare mode on already — tap any paragraph to read it in a second language.",
+  "readOriginal": "Read the original feature on zaobao.com.sg",
+  "inChinese": "in Chinese",
+  "beforeAI": "No AI yet",
+  "afterAI": "Got AI",
+  "backToTop": "Back to top",
+  "sectionsLabel": "Sections",
+  "yearNote": "Each labelled year runs from May of the previous year to April of that year, hor.",
+  "rankLabel": "Rank",
+  "sourceLabel": "Source",
+  "videoTag": "Video",
+  "articleTag": "Article",
+  "publishedLabel": "Published",
+  "skillsHint": "Pick an industry to see which AI skills its job ads mention the most.",
+  "tableView": "See the data as a table",
+  "skillsFor": "Most-mentioned AI skills in {industry} job ads",
+  "quickRead": "Short version"
+ },
+ "nav": {
+  "trends": "What's hot now",
+  "future": "What's coming next",
+  "prepare": "How to get ready",
+  "reading": "Read more",
+  "videos": "Watch"
+ },
+ "hero": {
+  "kicker": "Your classroom kaki, in 13 languages",
+  "title": "AI Come Already",
+  "subtitle": "How artificial intelligence is rewriting work in Singapore — what's changing, what's coming next, and how you can get ready. No need to panic, but cannot ignore also.",
+  "basedOn": "This one is an original retelling of the facts and findings first reported in Lianhe Zaobao's interactive feature on AI and Singapore's job market, published 16 August 2026.",
+  "scrollCue": "Scroll lah, don't shy"
+ },
+ "caseStudy": {
+  "kicker": "One school, one January",
+  "title": "When AI join the band",
+  "p1": "Mr Zhu Ruixiong (朱锐雄) has run a percussion music school in Singapore for more than ten years already. In January this year, the school brought in AI tools — and wah, the everyday work changed until almost cannot recognise.",
+  "cards": {
+   "lesson": {
+    "label": "Lesson planning",
+    "beforeStat": "1 month",
+    "beforeText": "A three-hour teaching plan took two or three teachers about a month to polish. Jialat, right?",
+    "afterStat": "3 minutes",
+    "afterText": "Now one click and a full draft appears, ready for teachers to touch up."
+   },
+   "score": {
+    "label": "Music scores",
+    "beforeStat": "Do by hand",
+    "beforeText": "Last time they downloaded audio from the internet and reworked it in complicated arranging software.",
+    "afterStat": "Auto generate",
+    "afterText": "AI churns out scores and practice materials straight away, and even helps with new arrangements. Shiok."
+   },
+   "invoice": {
+    "label": "Invoicing",
+    "beforeStat": "Half a day",
+    "beforeText": "Last time, teachers go back and forth with the admin office just to issue one invoice.",
+    "afterStat": "Seconds",
+    "afterText": "Staff just say the details out loud, check the document, and send it off. Done."
+   },
+   "progress": {
+    "label": "Student progress",
+    "beforeStat": "One by one",
+    "beforeText": "Teachers had to chase every single student individually.",
+    "afterStat": "Automatic",
+    "afterText": "Students practise on an online AI platform that gives feedback and logs their progress by itself."
+   }
   },
-  "ui": {
-    "brand": "AI Come Already",
-    "brandPlace": "Singapore",
-    "languageLabel": "Language",
-    "compareLabel": "Compare with",
-    "compareOff": "Off",
-    "compareHint": "Compare mode on already — tap any paragraph to read it in a second language.",
-    "readOriginal": "Read the original feature on zaobao.com.sg",
-    "inChinese": "in Chinese",
-    "beforeAI": "No AI yet",
-    "afterAI": "Got AI",
-    "backToTop": "Back to top",
-    "sectionsLabel": "Sections",
-    "yearNote": "Each labelled year runs from May of the previous year to April of that year, hor.",
-    "rankLabel": "Rank",
-    "sourceLabel": "Source",
-    "videoTag": "Video",
-    "articleTag": "Article",
-    "publishedLabel": "Published",
-    "skillsHint": "Pick an industry to see which AI skills its job ads mention the most.",
-    "tableView": "See the data as a table",
-    "skillsFor": "Most-mentioned AI skills in {industry} job ads"
+  "outro1": "AI is reshaping how most of us work and where our careers can go — and it's changing what skills employers will pay for. The wave started in tech, but it spread to every field long ago liao.",
+  "outro2": "Education — Mr Zhu's industry — is already feeling the force, and confirm it's not the only one kena disrupted.",
+  "outro3": "So what is AI actually doing to Singapore's job market? What does that mean for ordinary working people like you and me? And how do we get ready for what's coming next?"
+ },
+ "s1": {
+  "title": "Which industries in Singapore want AI skills the most, ah?",
+  "lead": "Lianhe Zaobao worked with the employment platform Jobstreet by SEEK to measure how often AI-related keywords appeared in Singapore job advertisements over the past three years. Simple logic: the more often AI pops up in an industry's job ads, the harder that industry is hunting for AI skills.",
+  "method": "Jobstreet didn't reveal exact advertisement counts, but its website's search function shows close to 60,000 full-time and part-time positions currently listed.",
+  "chart1Title": "The top five industries chasing AI",
+  "chart1Sub": "Industry rank by how often AI keywords appear in job ads",
+  "industries": {
+   "tech": "Computing & IT (software)",
+   "edu": "Education",
+   "hr": "HR & consulting",
+   "fin": "Finance & banking",
+   "gov": "Government & defence"
   },
-  "nav": {
-    "trends": "What's hot now",
-    "future": "What's coming next",
-    "prepare": "How to get ready",
-    "reading": "Read more",
-    "videos": "Watch"
+  "sixthPlace": "Construction & engineering (6th)",
+  "topFiveText": "Since AI went mainstream in 2023, these five industries have topped the table every single year. AI keywords appear way more often in their ads than anywhere else — on average about <span class='hl'>60% more often</span> than in sixth-placed construction & engineering.",
+  "insightTech": "<span class='hl'>Computing & IT (software)</span> sits right at the front of the AI era and has ranked first for three straight years. The jobs themselves are changing: beyond traditional coding, employers now ask for AI orchestration, security and governance, and systems integration.",
+  "insightEdu": "<span class='hl'>Education</span> depends a lot on human contact, so people usually see it as one of the safer industries in the AI era. But over the past three years its demand for AI skills climbed steeply — from fourth place in 2023 to second place last year. One likely reason: the sector is forever short of manpower, and new AI-enabled roles can streamline lesson planning, teaching materials and back-office admin. Mr Zhu's music school is exactly this story lor.",
+  "insightHr": "<span class='hl'>HR & consulting</span> is a special case. Because this industry prizes people skills, employers hiring for AI roles there are less fussy about deep technical expertise. It reflects a wider trend: the rise of the 'new-collar' worker — someone who combines technology with real-world experience, adapts fast and solves problems.",
+  "skillsTitle": "So which AI skills are employers asking for?",
+  "skillsLead": "The most common AI keyword in Jobstreet's ads is broad <span class='hl'>analytical ability</span> — analysis that goes beyond data alone. Other frequent requirements: data analysis, Python programming, computer science and automation.",
+  "skills": {
+   "analysis": "Analysis",
+   "dataAnalysis": "Data analysis",
+   "python": "Python programming",
+   "compSci": "Computer science",
+   "automation": "Automation",
+   "none": "No specific AI keywords"
   },
-  "hero": {
-    "kicker": "Your classroom kaki, in 13 languages",
-    "title": "AI Come Already",
-    "subtitle": "How artificial intelligence is rewriting work in Singapore — what's changing, what's coming next, and how you can get ready. No need to panic, but cannot ignore also.",
-    "basedOn": "This one is an original retelling of the facts and findings first reported in Lianhe Zaobao's interactive feature on AI and Singapore's job market, published 16 August 2026.",
-    "scrollCue": "Scroll lah, don't shy"
+  "entryLabel": "{pct} of AI job ads in this industry are entry-level",
+  "quotes": {
+   "esther1": {
+    "name": "Esther Lee (李美欣)",
+    "role": "Managing Director, Jobstreet Singapore",
+    "text": "Lee says the industries that jumped on AI fastest are seeing employees become more efficient and more productive, with more time freed up to handle the problems that genuinely need a human."
+   },
+   "zhang1": {
+    "name": "Zhang Xiaoyun (张晓云)",
+    "role": "Senior Vice-President for Asia Pacific, ADP",
+    "text": "Zhang points out that Singapore leans heavily on knowledge workers and international talent while facing a limited labour supply and a changing population structure. That, she says, is why companies here focus on using AI to lift productivity, unlock their employees' potential and grow the business."
+   },
+   "zhang2": {
+    "name": "Zhang Xiaoyun (张晓云)",
+    "role": "Senior Vice-President for Asia Pacific, ADP",
+    "text": "Zhang's bigger point: AI is pushing Singapore's workplace from a competition of knowledge towards a competition of judgment. In future, the most competitive people won't be the ones holding the most information, but the ones who best combine AI's capabilities with human wisdom to create value together."
+   }
   },
-  "caseStudy": {
-    "kicker": "One school, one January",
-    "title": "When AI join the band",
-    "p1": "Mr Zhu Ruixiong (朱锐雄) has run a percussion music school in Singapore for more than ten years already. In January this year, the school brought in AI tools — and wah, the everyday work changed until almost cannot recognise.",
-    "cards": {
-      "lesson": {
-        "label": "Lesson planning",
-        "beforeStat": "1 month",
-        "beforeText": "A three-hour teaching plan took two or three teachers about a month to polish. Jialat, right?",
-        "afterStat": "3 minutes",
-        "afterText": "Now one click and a full draft appears, ready for teachers to touch up."
-      },
-      "score": {
-        "label": "Music scores",
-        "beforeStat": "Do by hand",
-        "beforeText": "Last time they downloaded audio from the internet and reworked it in complicated arranging software.",
-        "afterStat": "Auto generate",
-        "afterText": "AI churns out scores and practice materials straight away, and even helps with new arrangements. Shiok."
-      },
-      "invoice": {
-        "label": "Invoicing",
-        "beforeStat": "Half a day",
-        "beforeText": "Last time, teachers go back and forth with the admin office just to issue one invoice.",
-        "afterStat": "Seconds",
-        "afterText": "Staff just say the details out loud, check the document, and send it off. Done."
-      },
-      "progress": {
-        "label": "Student progress",
-        "beforeStat": "One by one",
-        "beforeText": "Teachers had to chase every single student individually.",
-        "afterStat": "Automatic",
-        "afterText": "Students practise on an online AI platform that gives feedback and logs their progress by itself."
-      }
-    },
-    "outro1": "AI is reshaping how most of us work and where our careers can go — and it's changing what skills employers will pay for. The wave started in tech, but it spread to every field long ago liao.",
-    "outro2": "Education — Mr Zhu's industry — is already feeling the force, and confirm it's not the only one kena disrupted.",
-    "outro3": "So what is AI actually doing to Singapore's job market? What does that mean for ordinary working people like you and me? And how do we get ready for what's coming next?"
+  "trends": {
+   "title": "AI job ads: chiong, freeze, chiong again",
+   "adsLabel": "Job ads for AI roles",
+   "appsLabel": "Applications for AI roles",
+   "indexNote": "Indexed: 2024 = 100",
+   "step1": "The large language model ChatGPT exploded onto the scene at the end of 2022 and set off an AI hiring boom. Then Singapore employers slammed the brakes: between 2024 and 2025, AI job ads plunged <span class='hl'>74%</span>. The technology's chaotic early growth created real uncertainty, so companies went into a 'cooling-off period' — re-looking at their AI investments and hiring much more carefully.",
+   "step2": "Over the past year, the whole picture flipped. Once practical uses of AI became clearer, employers restarted their AI talent strategies, and the number of AI job ads roughly <span class='hl'>tripled year on year</span>. Lee's explanation: two years of maturing technology taught companies how to fold AI into their workflows, so hiring demand followed lor.",
+   "step3": "But job seekers haven't caught up leh. In the year to April 2026, applications for AI roles fell another <span class='hl'>17%</span>. The drop is smaller than the previous year's 39%, but it shows local AI talent is still in short supply — many candidates simply don't yet have the skills employers die die must have."
   },
-  "s1": {
-    "title": "Which industries in Singapore want AI skills the most, ah?",
-    "lead": "Lianhe Zaobao worked with the employment platform Jobstreet by SEEK to measure how often AI-related keywords appeared in Singapore job advertisements over the past three years. Simple logic: the more often AI pops up in an industry's job ads, the harder that industry is hunting for AI skills.",
-    "method": "Jobstreet didn't reveal exact advertisement counts, but its website's search function shows close to 60,000 full-time and part-time positions currently listed.",
-    "chart1Title": "The top five industries chasing AI",
-    "chart1Sub": "Industry rank by how often AI keywords appear in job ads",
-    "industries": {
-      "tech": "Computing & IT (software)",
-      "edu": "Education",
-      "hr": "HR & consulting",
-      "fin": "Finance & banking",
-      "gov": "Government & defence"
-    },
-    "sixthPlace": "Construction & engineering (6th)",
-    "topFiveText": "Since AI went mainstream in 2023, these five industries have topped the table every single year. AI keywords appear way more often in their ads than anywhere else — on average about <span class='hl'>60% more often</span> than in sixth-placed construction & engineering.",
-    "insightTech": "<span class='hl'>Computing & IT (software)</span> sits right at the front of the AI era and has ranked first for three straight years. The jobs themselves are changing: beyond traditional coding, employers now ask for AI orchestration, security and governance, and systems integration.",
-    "insightEdu": "<span class='hl'>Education</span> depends a lot on human contact, so people usually see it as one of the safer industries in the AI era. But over the past three years its demand for AI skills climbed steeply — from fourth place in 2023 to second place last year. One likely reason: the sector is forever short of manpower, and new AI-enabled roles can streamline lesson planning, teaching materials and back-office admin. Mr Zhu's music school is exactly this story lor.",
-    "insightHr": "<span class='hl'>HR & consulting</span> is a special case. Because this industry prizes people skills, employers hiring for AI roles there are less fussy about deep technical expertise. It reflects a wider trend: the rise of the 'new-collar' worker — someone who combines technology with real-world experience, adapts fast and solves problems.",
-    "skillsTitle": "So which AI skills are employers asking for?",
-    "skillsLead": "The most common AI keyword in Jobstreet's ads is broad <span class='hl'>analytical ability</span> — analysis that goes beyond data alone. Other frequent requirements: data analysis, Python programming, computer science and automation.",
-    "skills": {
-      "analysis": "Analysis",
-      "dataAnalysis": "Data analysis",
-      "python": "Python programming",
-      "compSci": "Computer science",
-      "automation": "Automation",
-      "none": "No specific AI keywords"
-    },
-    "entryLabel": "{pct} of AI job ads in this industry are entry-level",
-    "quotes": {
-      "esther1": {
-        "name": "Esther Lee (李美欣)",
-        "role": "Managing Director, Jobstreet Singapore",
-        "text": "Lee says the industries that jumped on AI fastest are seeing employees become more efficient and more productive, with more time freed up to handle the problems that genuinely need a human."
-      },
-      "zhang1": {
-        "name": "Zhang Xiaoyun (张晓云)",
-        "role": "Senior Vice-President for Asia Pacific, ADP",
-        "text": "Zhang points out that Singapore leans heavily on knowledge workers and international talent while facing a limited labour supply and a changing population structure. That, she says, is why companies here focus on using AI to lift productivity, unlock their employees' potential and grow the business."
-      },
-      "zhang2": {
-        "name": "Zhang Xiaoyun (张晓云)",
-        "role": "Senior Vice-President for Asia Pacific, ADP",
-        "text": "Zhang's bigger point: AI is pushing Singapore's workplace from a competition of knowledge towards a competition of judgment. In future, the most competitive people won't be the ones holding the most information, but the ones who best combine AI's capabilities with human wisdom to create value together."
-      }
-    },
-    "trends": {
-      "title": "AI job ads: chiong, freeze, chiong again",
-      "adsLabel": "Job ads for AI roles",
-      "appsLabel": "Applications for AI roles",
-      "indexNote": "Indexed: 2024 = 100",
-      "step1": "The large language model ChatGPT exploded onto the scene at the end of 2022 and set off an AI hiring boom. Then Singapore employers slammed the brakes: between 2024 and 2025, AI job ads plunged <span class='hl'>74%</span>. The technology's chaotic early growth created real uncertainty, so companies went into a 'cooling-off period' — re-looking at their AI investments and hiring much more carefully.",
-      "step2": "Over the past year, the whole picture flipped. Once practical uses of AI became clearer, employers restarted their AI talent strategies, and the number of AI job ads roughly <span class='hl'>tripled year on year</span>. Lee's explanation: two years of maturing technology taught companies how to fold AI into their workflows, so hiring demand followed lor.",
-      "step3": "But job seekers haven't caught up leh. In the year to April 2026, applications for AI roles fell another <span class='hl'>17%</span>. The drop is smaller than the previous year's 39%, but it shows local AI talent is still in short supply — many candidates simply don't yet have the skills employers die die must have."
-    },
-    "linker": {
-      "title": "Cooling-off over already: every industry back on the AI trail",
-      "text": "The top five stand right at the front line of the AI shift, and their demand for AI talent is growing strongly. The rest, after hesitating a bit during AI's messy early phase, are now drawing up AI talent strategies of their own."
-    }
-  },
-  "s2": {
-    "title": "Next time, the job market will look like what?",
-    "lead1": "Across most industries, AI's full impact hasn't arrived yet. But hor, that's not the same as saying your job will be spared.",
-    "lead2": "AI is widely seen as the engine of the fourth industrial revolution, and the big international studies have already sketched how far the wave could reach.",
-    "decadeTitle": "The full impact may take 10 years to show",
-    "goldman1": "Research by the investment bank Goldman Sachs on the US job market finds that, for now, AI weighs heavily on only a handful of industries.",
-    "goldman2": "It estimates that most fields will need about ten years to reach large-scale AI adoption. During that long transition, <span class='hl'>6% to 7%</span> of US workers could lose their jobs.",
-    "goldman3": "Worldwide, an estimated <span class='hl'>300 million</span> positions are exposed to AI automation. Not a small number, sia.",
-    "chart2Title": "Share of US jobs exposed to AI automation",
-    "chart2Sub": "By occupation group, %",
-    "chart2Source": "Source: Haver Analytics, Goldman Sachs Research",
-    "occupations": {
-      "office": "Office & administrative support",
-      "legal": "Legal",
-      "architecture": "Architecture & engineering",
-      "science": "Life, physical & social science",
-      "business": "Business & financial operations",
-      "community": "Community & social service",
-      "management": "Management",
-      "sales": "Sales & related",
-      "computer": "Computer & mathematical",
-      "farming": "Farming, fishing & forestry",
-      "protective": "Protective service",
-      "education": "Education & library",
-      "healthcare": "Healthcare support",
-      "arts": "Arts, design, entertainment & sports",
-      "all": "All occupations"
-    },
-    "wefTitle": "By 2030, the global job mix will be different one",
-    "wef1": "The World Economic Forum's Future of Jobs Report 2025 projects that by 2030, driven by AI, the green transition and economic turbulence, <span class='hl'>22%</span> of jobs worldwide will go through structural change.",
-    "wef2": "By then, some <span class='hl'>92 million</span> roles are expected to be displaced — but around <span class='hlNew'>170 million</span> new ones created. Net-net, that's a gain of 78 million jobs. Not bad what.",
-    "wefDisplaced": "Jobs displaced",
-    "wefCreated": "New jobs created",
-    "wefNet": "Net gain",
-    "wefUnit": "million",
-    "wefSource": "Source: World Economic Forum, Future of Jobs Report 2025; ILOSTAT"
-  },
-  "s3": {
-    "title": "So how to prepare for the post-AI era?",
-    "lead": "AI brings way more opportunity than threat one. The real challenge, for individuals and companies alike, is managing the transition — steering yourself towards the new jobs the post-AI era creates.",
-    "oxfordLead": "Research from the University of Oxford suggests AI skills already pay off — in wages, benefits and interview chances. See for yourself:",
-    "oxford": {
-      "pay": {
-        "value": "+23%",
-        "label": "Pay",
-        "text": "Roles that ask for AI skills advertise salaries about 23% higher on average. Shiok or not?"
-      },
-      "benefits": {
-        "value": "More perks",
-        "label": "Benefits",
-        "text": "AI-related roles are more likely to offer remote work and parental leave."
-      },
-      "interviews": {
-        "value": "+8–15%",
-        "label": "Interviews",
-        "text": "Candidates with AI skills are 8% to 15% more likely to get called up for interview."
-      }
-    },
-    "evergreenTitle": "In this fast-moving AI era, which skills actually last?",
-    "evergreen1": "What really matters is not just learning to operate AI, but knowing how to use it to raise the value of your work — while building the judgment, communication and problem-solving skills that AI cannot easily replace.",
-    "wong1": "Prof Steven Wong (黄开庄), Director of the Centre for Digital Enablement at the Singapore Institute of Technology, cautions that AI is moving so fast that some of today's AI skills will become obsolete — especially operating tricks tied to specific tools.",
-    "wong2": "Even so, his advice is to build AI literacy early, whichever direction the technology takes: learn to use AI, learn to supervise it, and learn to combine it with human judgment.",
-    "everyone": "As AI spreads, anyone can use it to work faster. So just 'knowing how to use AI' won't stay an advantage for long one.",
-    "poon1": "Poon King Wang (潘竞宏), Chief Strategy and Design-AI Officer at the Singapore University of Technology and Design and Director of the Lee Kuan Yew Centre for Innovative Cities, urges workers to shift their mindset from 'AI user' to 'AI creator' — using AI to keep creating value that is distinctly their own. That, he argues, is how you stand out in the future workplace.",
-    "tipTitle": "Keep stacking transferable skills",
-    "tipText": "<span class='hl'>Analytical thinking, communication, creativity and deep domain knowledge</span> follow you from job to job. Use AI deliberately to streamline your workflow: hand the repetitive stuff to the machine, and spend your own time on judgment, decisions and problem-solving. Own time own target — but make sure you keep levelling up.",
-    "li1": "Over at Singapore Management University, Prof Li Jia (李嘉), Dean of the School of Economics, and his team are tracking AI's long-term effect on the local job market.",
-    "li2": "He says nobody can predict precisely how many Singapore jobs will disappear to AI in the next three to five years. What researchers can do is watch hiring ads, spot industries where recruitment is shrinking, and sound the alarm early — so policymakers and job seekers got time to respond.",
-    "li3": "A lot is still uncertain, including how much further large language models can advance — and that uncertainty will shape the job market's future. For individuals, Li's advice is to 'train your body' before the storm comes.",
-    "li4": "He compares learning AI skills to taking medicine after a health check finds a problem, or exercising to build strength: the results are not guaranteed and seldom instant, but they never make you worse off. When the AI shock reaches your industry, those skills could be what keeps you employed — and what makes you tougher to knock down."
-  },
-  "reading": {
-    "title": "Want more? Read on lah",
-    "note": "The full series is on zaobao.com.sg — all the articles are in Chinese, hor. The descriptions below are our own summaries.",
-    "groups": {
-      "g1": {
-        "title": "New hiring trends",
-        "a1": "Demand for AI talent has tripled — and now even non-tech employers have joined the hunt.",
-        "a2": "Why 'new-collar' workers who combine hard and soft skills are now the hottest catch.",
-        "a3": "AI is squeezing the 'first job': entry-level openings set to shrink, and internships already harder to find. Jialat for fresh grads."
-      },
-      "g2": {
-        "title": "How AI is reshaping daily work",
-        "a1": "AI is rewriting teachers' job descriptions — turning them into 'editors-in-chief' of AI-drafted lessons.",
-        "a2": "One minute of AI magic on stage, two years of platform-building backstage: successful transformation cannot rush one."
-      },
-      "g3": {
-        "title": "When you kena displaced",
-        "a1": "Outpaced by an AI that was faster and 'smarter', a 43-year-old content developer works to reinvent themselves after retrenchment.",
-        "a2": "'Will AI replace me?' More and more job seekers are bringing that fear to career coaches."
-      },
-      "g4": {
-        "title": "Craft and creativity under pressure",
-        "a1": "Artists and writers argue AI can generate the 'plausible' — but not the soul of a work.",
-        "a2": "With about 90% of advertising output now made with AI, creatives are moving from making the work to curating it."
-      },
-      "g5": {
-        "title": "Skills that last",
-        "a1": "How to choose an AI course: learning to use AI is not enough — must learn to create with it.",
-        "a2": "No need to memorise anymore: a 65-year-old retail worker scans wine labels with AI and answers like an expert. Steady lah."
-      }
-    },
-    "videosTitle": "Watch",
-    "videos": {
-      "v1": {
-        "title": "Boost efficiency — or replace humans?",
-        "text": "Scared of being replaced by AI? When even tech professionals and lawyers are highly exposed, how should they respond?"
-      },
-      "v2": {
-        "title": "Build a company on AI and multiply productivity 16 times?",
-        "text": "Companies are pouring money into AI productivity. What does it really take — and how should we rethink the way we work?"
-      }
-    }
-  },
-  "about": {
-    "title": "About this page",
-    "p1": "This one is an original educational companion built for multilingual classrooms. It retells, in 13 languages, the facts and findings of an interactive feature by Lianhe Zaobao (联合早报), Singapore's Chinese-language daily — so that students who don't read Chinese can follow the same story, the same charts and the same structure as the original, and discuss them side by side.",
-    "p2": "The text on this page is an original summary written for teaching, not a translation of the article. Quotes from the people featured are paraphrased. All the data belongs to the sources cited. Please support the original journalism, okay:",
-    "originalTitle": "Original feature",
-    "originalCredit": "'AI与职场变局' (AI and the Changing Workplace), Lianhe Zaobao interactive, published 16 August 2026. Text: Lin Pingying. Interviews: Lin Pingying, Lu Huijing, Li Gengwei. Planning: Huang Xiaofang. Illustration: Lu Fangkai. Design & development: Wang Yuchen, Huang Junnan. © SPH Media Limited.",
-    "romanization": "Chinese names are romanised in hanyu pinyin where no official English spelling was published.",
-    "dataTitle": "Data sources",
-    "data1": "Lianhe Zaobao × Jobstreet by SEEK analysis of AI keywords in Singapore job ads, 2023–2026",
-    "data2": "Goldman Sachs Research / Haver Analytics — AI and the US labour market",
-    "data3": "World Economic Forum, Future of Jobs Report 2025; ILOSTAT",
-    "data4": "University of Oxford research on AI skills, wages and hiring",
-    "disclaimer": "Built for classroom use. Not affiliated with, or endorsed by, SPH Media or Lianhe Zaobao."
+  "linker": {
+   "title": "Cooling-off over already: every industry back on the AI trail",
+   "text": "The top five stand right at the front line of the AI shift, and their demand for AI talent is growing strongly. The rest, after hesitating a bit during AI's messy early phase, are now drawing up AI talent strategies of their own."
   }
+ },
+ "s2": {
+  "title": "Next time, the job market will look like what?",
+  "lead1": "Across most industries, AI's full impact hasn't arrived yet. But hor, that's not the same as saying your job will be spared.",
+  "lead2": "AI is widely seen as the engine of the fourth industrial revolution, and the big international studies have already sketched how far the wave could reach.",
+  "decadeTitle": "The full impact may take 10 years to show",
+  "goldman1": "Research by the investment bank Goldman Sachs on the US job market finds that, for now, AI weighs heavily on only a handful of industries.",
+  "goldman2": "It estimates that most fields will need about ten years to reach large-scale AI adoption. During that long transition, <span class='hl'>6% to 7%</span> of US workers could lose their jobs.",
+  "goldman3": "Worldwide, an estimated <span class='hl'>300 million</span> positions are exposed to AI automation. Not a small number, sia.",
+  "chart2Title": "Share of US jobs exposed to AI automation",
+  "chart2Sub": "By occupation group, %",
+  "chart2Source": "Source: Haver Analytics, Goldman Sachs Research",
+  "occupations": {
+   "office": "Office & administrative support",
+   "legal": "Legal",
+   "architecture": "Architecture & engineering",
+   "science": "Life, physical & social science",
+   "business": "Business & financial operations",
+   "community": "Community & social service",
+   "management": "Management",
+   "sales": "Sales & related",
+   "computer": "Computer & mathematical",
+   "farming": "Farming, fishing & forestry",
+   "protective": "Protective service",
+   "education": "Education & library",
+   "healthcare": "Healthcare support",
+   "arts": "Arts, design, entertainment & sports",
+   "all": "All occupations"
+  },
+  "wefTitle": "By 2030, the global job mix will be different one",
+  "wef1": "The World Economic Forum's Future of Jobs Report 2025 projects that by 2030, driven by AI, the green transition and economic turbulence, <span class='hl'>22%</span> of jobs worldwide will go through structural change.",
+  "wef2": "By then, some <span class='hl'>92 million</span> roles are expected to be displaced — but around <span class='hlNew'>170 million</span> new ones created. Net-net, that's a gain of 78 million jobs. Not bad what.",
+  "wefDisplaced": "Jobs displaced",
+  "wefCreated": "New jobs created",
+  "wefNet": "Net gain",
+  "wefUnit": "million",
+  "wefSource": "Source: World Economic Forum, Future of Jobs Report 2025; ILOSTAT"
+ },
+ "s3": {
+  "title": "So how to prepare for the post-AI era?",
+  "lead": "AI brings way more opportunity than threat one. The real challenge, for individuals and companies alike, is managing the transition — steering yourself towards the new jobs the post-AI era creates.",
+  "oxfordLead": "Research from the University of Oxford suggests AI skills already pay off — in wages, benefits and interview chances. See for yourself:",
+  "oxford": {
+   "pay": {
+    "value": "+23%",
+    "label": "Pay",
+    "text": "Roles that ask for AI skills advertise salaries about 23% higher on average. Shiok or not?"
+   },
+   "benefits": {
+    "value": "More perks",
+    "label": "Benefits",
+    "text": "AI-related roles are more likely to offer remote work and parental leave."
+   },
+   "interviews": {
+    "value": "+8–15%",
+    "label": "Interviews",
+    "text": "Candidates with AI skills are 8% to 15% more likely to get called up for interview."
+   }
+  },
+  "evergreenTitle": "In this fast-moving AI era, which skills actually last?",
+  "evergreen1": "What really matters is not just learning to operate AI, but knowing how to use it to raise the value of your work — while building the judgment, communication and problem-solving skills that AI cannot easily replace.",
+  "wong1": "Prof Steven Wong (黄开庄), Director of the Centre for Digital Enablement at the Singapore Institute of Technology, cautions that AI is moving so fast that some of today's AI skills will become obsolete — especially operating tricks tied to specific tools.",
+  "wong2": "Even so, his advice is to build AI literacy early, whichever direction the technology takes: learn to use AI, learn to supervise it, and learn to combine it with human judgment.",
+  "everyone": "As AI spreads, anyone can use it to work faster. So just 'knowing how to use AI' won't stay an advantage for long one.",
+  "poon1": "Poon King Wang (潘竞宏), Chief Strategy and Design-AI Officer at the Singapore University of Technology and Design and Director of the Lee Kuan Yew Centre for Innovative Cities, urges workers to shift their mindset from 'AI user' to 'AI creator' — using AI to keep creating value that is distinctly their own. That, he argues, is how you stand out in the future workplace.",
+  "tipTitle": "Keep stacking transferable skills",
+  "tipText": "<span class='hl'>Analytical thinking, communication, creativity and deep domain knowledge</span> follow you from job to job. Use AI deliberately to streamline your workflow: hand the repetitive stuff to the machine, and spend your own time on judgment, decisions and problem-solving. Own time own target — but make sure you keep levelling up.",
+  "li1": "Over at Singapore Management University, Prof Li Jia (李嘉), Dean of the School of Economics, and his team are tracking AI's long-term effect on the local job market.",
+  "li2": "He says nobody can predict precisely how many Singapore jobs will disappear to AI in the next three to five years. What researchers can do is watch hiring ads, spot industries where recruitment is shrinking, and sound the alarm early — so policymakers and job seekers got time to respond.",
+  "li3": "A lot is still uncertain, including how much further large language models can advance — and that uncertainty will shape the job market's future. For individuals, Li's advice is to 'train your body' before the storm comes.",
+  "li4": "He compares learning AI skills to taking medicine after a health check finds a problem, or exercising to build strength: the results are not guaranteed and seldom instant, but they never make you worse off. When the AI shock reaches your industry, those skills could be what keeps you employed — and what makes you tougher to knock down."
+ },
+ "reading": {
+  "title": "Want more? Read on lah",
+  "note": "The full series is on zaobao.com.sg — all the articles are in Chinese, hor. The descriptions below are our own summaries.",
+  "groups": {
+   "g1": {
+    "title": "New hiring trends",
+    "a1": "Demand for AI talent has tripled — and now even non-tech employers have joined the hunt.",
+    "a2": "Why 'new-collar' workers who combine hard and soft skills are now the hottest catch.",
+    "a3": "AI is squeezing the 'first job': entry-level openings set to shrink, and internships already harder to find. Jialat for fresh grads."
+   },
+   "g2": {
+    "title": "How AI is reshaping daily work",
+    "a1": "AI is rewriting teachers' job descriptions — turning them into 'editors-in-chief' of AI-drafted lessons.",
+    "a2": "One minute of AI magic on stage, two years of platform-building backstage: successful transformation cannot rush one."
+   },
+   "g3": {
+    "title": "When you kena displaced",
+    "a1": "Outpaced by an AI that was faster and 'smarter', a 43-year-old content developer works to reinvent themselves after retrenchment.",
+    "a2": "'Will AI replace me?' More and more job seekers are bringing that fear to career coaches."
+   },
+   "g4": {
+    "title": "Craft and creativity under pressure",
+    "a1": "Artists and writers argue AI can generate the 'plausible' — but not the soul of a work.",
+    "a2": "With about 90% of advertising output now made with AI, creatives are moving from making the work to curating it."
+   },
+   "g5": {
+    "title": "Skills that last",
+    "a1": "How to choose an AI course: learning to use AI is not enough — must learn to create with it.",
+    "a2": "No need to memorise anymore: a 65-year-old retail worker scans wine labels with AI and answers like an expert. Steady lah."
+   }
+  },
+  "videosTitle": "Watch",
+  "videos": {
+   "v1": {
+    "title": "Boost efficiency — or replace humans?",
+    "text": "Scared of being replaced by AI? When even tech professionals and lawyers are highly exposed, how should they respond?"
+   },
+   "v2": {
+    "title": "Build a company on AI and multiply productivity 16 times?",
+    "text": "Companies are pouring money into AI productivity. What does it really take — and how should we rethink the way we work?"
+   }
+  }
+ },
+ "about": {
+  "title": "About this page",
+  "p1": "This one is an original educational companion built for multilingual classrooms. It retells, in 13 languages, the facts and findings of an interactive feature by Lianhe Zaobao (联合早报), Singapore's Chinese-language daily — so that students who don't read Chinese can follow the same story, the same charts and the same structure as the original, and discuss them side by side.",
+  "p2": "The text on this page is an original summary written for teaching, not a translation of the article. Quotes from the people featured are paraphrased. All the data belongs to the sources cited. Please support the original journalism, okay:",
+  "originalTitle": "Original feature",
+  "originalCredit": "'AI与职场变局' (AI and the Changing Workplace), Lianhe Zaobao interactive, published 16 August 2026. Text: Lin Pingying. Interviews: Lin Pingying, Lu Huijing, Li Gengwei. Planning: Huang Xiaofang. Illustration: Lu Fangkai. Design & development: Wang Yuchen, Huang Junnan. © SPH Media Limited.",
+  "romanization": "Chinese names are romanised in hanyu pinyin where no official English spelling was published.",
+  "dataTitle": "Data sources",
+  "data1": "Lianhe Zaobao × Jobstreet by SEEK analysis of AI keywords in Singapore job ads, 2023–2026",
+  "data2": "Goldman Sachs Research / Haver Analytics — AI and the US labour market",
+  "data3": "World Economic Forum, Future of Jobs Report 2025; ILOSTAT",
+  "data4": "University of Oxford research on AI skills, wages and hiring",
+  "disclaimer": "Built for classroom use. Not affiliated with, or endorsed by, SPH Media or Lianhe Zaobao."
+ }
 }

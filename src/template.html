@@ -275,6 +275,53 @@ body.compare-on .cmp:hover{background:color-mix(in srgb,var(--accent) 6%,transpa
 }
 body.compare-on .cmp-hint{display:block}
 
+/* ---------- pixel art ---------- */
+:root{
+  --px-k:#26303F; --px-w:#FDFDFB; --px-m:#9AA5B2; --px-d:#5A6473;
+  --px-s:#E9B586; --px-h:#6B4A2F; --px-t:#2E7D4F; --px-sky:transparent;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --px-k:#D3DCE7; --px-w:#31405A; --px-m:#7C8899; --px-d:#A5AFBD; }
+}
+:root[data-theme="dark"]{ --px-k:#D3DCE7; --px-w:#31405A; --px-m:#7C8899; --px-d:#A5AFBD; }
+.px{display:block}
+.px svg{display:block; width:100%; height:auto; shape-rendering:crispEdges}
+#skyline{margin:34px 0 6px; max-width:760px; opacity:.95}
+.sec-head.with-art{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:18px 28px; align-items:center}
+.sec-head.with-art .art{width:clamp(74px,9vw,110px); justify-self:end; align-self:end}
+@media(max-width:560px){ .sec-head.with-art .art{width:64px} }
+.art-row{display:grid; grid-template-columns:auto minmax(0,1fr); gap:26px; align-items:start; max-width:680px; margin:0 auto}
+.art-row .art{width:clamp(64px,8vw,96px); margin-top:6px}
+@media(max-width:560px){ .art-row{grid-template-columns:1fr} .art-row .art{width:64px} }
+
+/* ---------- fact & expert cards ---------- */
+.fact-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:16px; max-width:860px; margin:26px auto}
+.fact-card{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:20px; box-shadow:var(--shadow); display:grid; grid-template-columns:52px minmax(0,1fr); gap:16px; align-items:start; font-size:15px}
+.fact-card .art{width:52px; margin-top:4px}
+.fact-card p{margin:0}
+.expert-card{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:20px 22px; margin:18px auto; max-width:680px; box-shadow:var(--shadow); font-size:15.5px}
+.expert-card .eh{display:flex; align-items:center; gap:12px; margin-bottom:12px}
+.expert-card .eh .art{width:38px}
+.echip{font-family:var(--f-display); font-weight:800; font-size:12px; letter-spacing:.1em; color:var(--accent-ink); background:color-mix(in srgb,var(--accent) 10%,transparent); border-radius:7px; padding:3px 10px}
+.expert-card p{margin:0 0 .9em} .expert-card p:last-child{margin-bottom:0}
+.bridge{display:grid; grid-template-columns:auto minmax(0,1fr); gap:14px; align-items:center; max-width:600px; margin:26px auto; color:var(--muted); font-size:15px}
+.bridge .art{width:34px}
+.qcard .qwho{flex-direction:row; align-items:center; gap:11px}
+.qcard .qwho .art{width:36px; flex:0 0 auto}
+.qcard .qwho .qmeta{display:flex; flex-direction:column; gap:1px}
+.stat-tile .art{width:40px; margin-bottom:10px}
+.tipcard .tiphead{display:flex; align-items:center; gap:14px}
+.tipcard .tiphead .art{width:44px; flex:0 0 auto}
+.case-card .label .art{width:22px}
+.case-card .label::before{display:none}
+
+/* ---------- quick read ---------- */
+.qr-btn{display:inline-flex; align-items:center; gap:7px; border:1px solid var(--line); background:var(--surface); color:var(--muted); border-radius:99px; padding:4.5px 13px; font-size:13px; font-family:var(--f-body); cursor:pointer; white-space:nowrap}
+.qr-btn .art{width:15px}
+.qr-btn[aria-pressed="true"]{background:color-mix(in srgb,var(--c-edu) 14%,var(--surface)); border-color:var(--c-edu); color:var(--ink); font-weight:700}
+body.quick [data-detail]{display:none}
+body.quick [data-detail] + .cmp-block{display:none}
+
 /* ---------- misc ---------- */
 #toTop{
   position:fixed; bottom:22px; inset-inline-end:18px; z-index:60; width:44px; height:44px; border-radius:50%;
@@ -301,6 +348,7 @@ body.compare-on .cmp-hint{display:block}
       <span data-i18n="ui.brand"></span>
     </a>
     <nav class="langbar" id="langbar" aria-label="Language"></nav>
+    <button class="qr-btn" id="qrBtn" aria-pressed="false"><span class="art" data-art="bolt" aria-hidden="true"></span><span data-i18n="ui.quickRead"></span></button>
     <div class="cmpbox">
       <label for="cmpSel" data-i18n="ui.compareLabel"></label>
       <select id="cmpSel"></select>
@@ -315,6 +363,7 @@ body.compare-on .cmp-hint{display:block}
     <div class="spectrum" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
     <p class="sub" data-i18n="hero.subtitle"></p>
     <p class="basedOn"><span data-i18n="hero.basedOn" class="cmp"></span> <a href="https://interactive.zaobao.com.sg/2026/artificial-intelligence-impact-on-singapore-jobs/" target="_blank" rel="noopener" data-i18n="ui.readOriginal"></a></p>
+    <div class="px" id="skyline" aria-hidden="true"></div>
     <div class="cmp-hint" data-i18n="ui.compareHint"></div>
     <nav class="pill-nav" aria-label="Sections">
       <a href="#case"><i style="background:var(--c-edu)"></i><span data-i18n="caseStudy.kicker"></span></a>
@@ -329,16 +378,22 @@ body.compare-on .cmp-hint{display:block}
   <!-- case study -->
   <section id="case">
     <div class="wrap">
-      <div class="sec-head">
-        <p class="kicker" data-i18n="caseStudy.kicker"></p>
-        <h2 data-i18n="caseStudy.title"></h2>
-        <p class="lead cmp" data-i18n="caseStudy.p1"></p>
+      <div class="sec-head with-art">
+        <div>
+          <p class="kicker" data-i18n="caseStudy.kicker"></p>
+          <h2 data-i18n="caseStudy.title"></h2>
+          <p class="lead cmp" data-i18n="caseStudy.p1"></p>
+        </div>
+        <span class="art px" data-art="robot" aria-hidden="true"></span>
       </div>
       <div class="case-cards" id="caseCards"></div>
-      <div class="prose">
-        <p class="cmp" data-i18n="caseStudy.outro1"></p>
-        <p class="cmp" data-i18n="caseStudy.outro2"></p>
-        <p class="cmp" data-i18n="caseStudy.outro3"></p>
+      <div class="art-row">
+        <span class="art px" data-art="drum" aria-hidden="true"></span>
+        <div>
+          <p class="cmp" data-detail data-i18n="caseStudy.outro1"></p>
+          <p class="cmp" data-i18n="caseStudy.outro2"></p>
+          <p class="cmp" data-i18n="caseStudy.outro3"></p>
+        </div>
       </div>
     </div>
   </section>
@@ -381,16 +436,16 @@ body.compare-on .cmp-hint{display:block}
 
       <div class="qcard reveal">
         <p class="qtext cmp" data-i18n="s1.quotes.esther1.text"></p>
-        <div class="qwho"><span class="qname" data-i18n="s1.quotes.esther1.name"></span><span class="qrole" data-i18n="s1.quotes.esther1.role"></span></div>
+        <div class="qwho"><span class="art px" data-art="avEsther" aria-hidden="true"></span><span class="qmeta"><span class="qname" data-i18n="s1.quotes.esther1.name"></span><span class="qrole" data-i18n="s1.quotes.esther1.role"></span></span></div>
       </div>
       <div class="qcard reveal">
         <p class="qtext cmp" data-i18n="s1.quotes.zhang1.text"></p>
-        <div class="qwho"><span class="qname" data-i18n="s1.quotes.zhang1.name"></span><span class="qrole" data-i18n="s1.quotes.zhang1.role"></span></div>
+        <div class="qwho"><span class="art px" data-art="avZhang" aria-hidden="true"></span><span class="qmeta"><span class="qname" data-i18n="s1.quotes.zhang1.name"></span><span class="qrole" data-i18n="s1.quotes.zhang1.role"></span></span></div>
       </div>
 
       <div class="prose">
         <h3 data-i18n="s1.linker.title"></h3>
-        <p class="cmp" data-i18n="s1.linker.text"></p>
+        <p class="cmp" data-detail data-i18n="s1.linker.text"></p>
       </div>
 
       <div class="chart-card reveal" style="max-width:860px;margin:30px auto 0">
@@ -412,7 +467,7 @@ body.compare-on .cmp-hint{display:block}
 
       <div class="qcard reveal">
         <p class="qtext cmp" data-i18n="s1.quotes.zhang2.text"></p>
-        <div class="qwho"><span class="qname" data-i18n="s1.quotes.zhang2.name"></span><span class="qrole" data-i18n="s1.quotes.zhang2.role"></span></div>
+        <div class="qwho"><span class="art px" data-art="avZhang" aria-hidden="true"></span><span class="qmeta"><span class="qname" data-i18n="s1.quotes.zhang2.name"></span><span class="qrole" data-i18n="s1.quotes.zhang2.role"></span></span></div>
       </div>
     </div>
   </section>
@@ -420,17 +475,22 @@ body.compare-on .cmp-hint{display:block}
   <!-- s2 future -->
   <section id="future">
     <div class="wrap">
-      <div class="sec-head">
-        <p class="kicker" data-i18n="nav.future"></p>
-        <h2 data-i18n="s2.title"></h2>
-        <p class="lead cmp" data-i18n="s2.lead1"></p>
-        <p class="cmp" data-i18n="s2.lead2"></p>
+      <div class="sec-head with-art">
+        <div>
+          <p class="kicker" data-i18n="nav.future"></p>
+          <h2 data-i18n="s2.title"></h2>
+          <p class="lead cmp" data-i18n="s2.lead1"></p>
+          <p class="cmp" data-detail data-i18n="s2.lead2"></p>
+        </div>
+        <span class="art px" data-art="crystal" aria-hidden="true"></span>
       </div>
       <div class="prose">
         <h3 data-i18n="s2.decadeTitle"></h3>
         <p class="cmp" data-i18n="s2.goldman1"></p>
-        <p class="cmp" data-i18n="s2.goldman2"></p>
-        <p class="cmp" data-i18n="s2.goldman3"></p>
+      </div>
+      <div class="fact-grid">
+        <div class="fact-card reveal"><span class="art px" data-art="hourglass" aria-hidden="true"></span><p class="cmp" data-i18n="s2.goldman2"></p></div>
+        <div class="fact-card reveal"><span class="art px" data-art="globe" aria-hidden="true"></span><p class="cmp" data-i18n="s2.goldman3"></p></div>
       </div>
       <div class="chart-card reveal" style="max-width:860px;margin:30px auto">
         <p class="chart-title" data-i18n="s2.chart2Title"></p>
@@ -454,32 +514,42 @@ body.compare-on .cmp-hint{display:block}
   <!-- s3 prepare -->
   <section id="prepare">
     <div class="wrap">
-      <div class="sec-head">
-        <p class="kicker" data-i18n="nav.prepare"></p>
-        <h2 data-i18n="s3.title"></h2>
-        <p class="lead cmp" data-i18n="s3.lead"></p>
-        <p class="cmp" data-i18n="s3.oxfordLead"></p>
+      <div class="sec-head with-art">
+        <div>
+          <p class="kicker" data-i18n="nav.prepare"></p>
+          <h2 data-i18n="s3.title"></h2>
+          <p class="lead cmp" data-i18n="s3.lead"></p>
+          <p class="cmp" data-i18n="s3.oxfordLead"></p>
+        </div>
+        <span class="art px" data-art="dumbbell" aria-hidden="true"></span>
       </div>
       <div class="stat-tiles" style="max-width:860px;margin-left:auto;margin-right:auto">
-        <div class="stat-tile reveal"><div class="v" data-i18n="s3.oxford.pay.value"></div><div class="l" data-i18n="s3.oxford.pay.label"></div><div class="t cmp" data-i18n="s3.oxford.pay.text"></div></div>
-        <div class="stat-tile reveal"><div class="v" data-i18n="s3.oxford.benefits.value"></div><div class="l" data-i18n="s3.oxford.benefits.label"></div><div class="t cmp" data-i18n="s3.oxford.benefits.text"></div></div>
-        <div class="stat-tile reveal"><div class="v" data-i18n="s3.oxford.interviews.value"></div><div class="l" data-i18n="s3.oxford.interviews.label"></div><div class="t cmp" data-i18n="s3.oxford.interviews.text"></div></div>
+        <div class="stat-tile reveal"><span class="art px" data-art="coins" aria-hidden="true"></span><div class="v" data-i18n="s3.oxford.pay.value"></div><div class="l" data-i18n="s3.oxford.pay.label"></div><div class="t cmp" data-i18n="s3.oxford.pay.text"></div></div>
+        <div class="stat-tile reveal"><span class="art px" data-art="gift" aria-hidden="true"></span><div class="v" data-i18n="s3.oxford.benefits.value"></div><div class="l" data-i18n="s3.oxford.benefits.label"></div><div class="t cmp" data-i18n="s3.oxford.benefits.text"></div></div>
+        <div class="stat-tile reveal"><span class="art px" data-art="bubble" aria-hidden="true"></span><div class="v" data-i18n="s3.oxford.interviews.value"></div><div class="l" data-i18n="s3.oxford.interviews.label"></div><div class="t cmp" data-i18n="s3.oxford.interviews.text"></div></div>
       </div>
       <div class="prose">
         <h3 data-i18n="s3.evergreenTitle"></h3>
         <p class="cmp" data-i18n="s3.evergreen1"></p>
+      </div>
+      <div class="expert-card reveal">
+        <div class="eh"><span class="art px" data-art="avWong" aria-hidden="true"></span><span class="echip">SIT</span></div>
         <p class="cmp" data-i18n="s3.wong1"></p>
-        <p class="cmp" data-i18n="s3.wong2"></p>
-        <p class="cmp" data-i18n="s3.everyone"></p>
+        <p class="cmp" data-detail data-i18n="s3.wong2"></p>
+      </div>
+      <div class="bridge"><span class="art px" data-art="bolt" aria-hidden="true"></span><span class="cmp" data-i18n="s3.everyone"></span></div>
+      <div class="expert-card reveal">
+        <div class="eh"><span class="art px" data-art="avPoon" aria-hidden="true"></span><span class="echip">SUTD</span></div>
         <p class="cmp" data-i18n="s3.poon1"></p>
       </div>
       <div class="tipcard reveal">
-        <h3 data-i18n="s3.tipTitle"></h3>
-        <p class="cmp" style="margin:0" data-i18n="s3.tipText"></p>
+        <div class="tiphead"><span class="art px" data-art="checklist" aria-hidden="true"></span><h3 style="margin:0" data-i18n="s3.tipTitle"></h3></div>
+        <p class="cmp" style="margin:12px 0 0" data-i18n="s3.tipText"></p>
       </div>
-      <div class="prose">
+      <div class="expert-card reveal">
+        <div class="eh"><span class="art px" data-art="avLi" aria-hidden="true"></span><span class="echip">SMU</span></div>
         <p class="cmp" data-i18n="s3.li1"></p>
-        <p class="cmp" data-i18n="s3.li2"></p>
+        <p class="cmp" data-detail data-i18n="s3.li2"></p>
         <p class="cmp" data-i18n="s3.li3"></p>
         <p class="cmp" data-i18n="s3.li4"></p>
       </div>
@@ -489,10 +559,13 @@ body.compare-on .cmp-hint{display:block}
   <!-- reading -->
   <section id="reading">
     <div class="wrap">
-      <div class="sec-head">
-        <p class="kicker" data-i18n="nav.reading"></p>
-        <h2 data-i18n="reading.title"></h2>
-        <p class="note" data-i18n="reading.note"></p>
+      <div class="sec-head with-art">
+        <div>
+          <p class="kicker" data-i18n="nav.reading"></p>
+          <h2 data-i18n="reading.title"></h2>
+          <p class="note" data-i18n="reading.note"></p>
+        </div>
+        <span class="art px" data-art="books" aria-hidden="true"></span>
       </div>
       <div class="read-grid" id="readGrid"></div>
     </div>
@@ -501,9 +574,12 @@ body.compare-on .cmp-hint{display:block}
   <!-- videos -->
   <section id="videos">
     <div class="wrap">
-      <div class="sec-head">
-        <p class="kicker" data-i18n="nav.videos"></p>
-        <h2 data-i18n="reading.videosTitle"></h2>
+      <div class="sec-head with-art">
+        <div>
+          <p class="kicker" data-i18n="nav.videos"></p>
+          <h2 data-i18n="reading.videosTitle"></h2>
+        </div>
+        <span class="art px" data-art="tv" aria-hidden="true"></span>
       </div>
       <div class="video-grid" id="videoGrid"></div>
     </div>
@@ -662,13 +738,108 @@ function cmpToggle(e){
   el.after(d); el.setAttribute("aria-expanded","true");
 }
 
+/* ---------------- pixel art ---------------- */
+const PXC = { k:"var(--px-k)", w:"var(--px-w)", m:"var(--px-m)", d:"var(--px-d)", s:"var(--px-s)", h:"var(--px-h)", t:"var(--px-t)",
+              b:"var(--c-tech)", g:"var(--c-edu)", o:"var(--c-hr)", p:"var(--c-fin)", y:"var(--c-gov)" };
+function px(rows){
+  const h = rows.length, w = rows[0].length;
+  let out = `<svg viewBox="0 0 ${w} ${h}" aria-hidden="true" focusable="false">`;
+  rows.forEach((row,y)=>{
+    let x=0;
+    while(x<w){
+      const c=row[x];
+      if(c==="." ){x++;continue;}
+      let run=1; while(x+run<w && row[x+run]===c) run++;
+      if(PXC[c]) out+=`<rect x="${x}" y="${y}" width="${run}" height="1" fill="${PXC[c]}"/>`;
+      x+=run;
+    }
+  });
+  return out+"</svg>";
+}
+function avatar(hair, shirt){
+  return [
+    "..HHHHHH..",
+    ".HHHHHHHH.",
+    ".HHssssHH.",
+    "..skssks..",
+    "..ssssss..",
+    "...ssss...",
+    "..SSSSSS..",
+    ".SSSSSSSS.",
+    "SSSSSSSSSS",
+    "SSSSSSSSSS",
+  ].map(r=>r.replace(/H/g,hair).replace(/S/g,shirt));
+}
+function buildSkyline(){
+  const W=96,H=14;
+  const g=Array.from({length:H},()=>Array(W).fill("."));
+  const set=(x,y,c)=>{ if(x>=0&&x<W&&y>=0&&y<H) g[y][x]=c; };
+  const rect=(x0,y0,w,h,c)=>{ for(let y=y0;y<y0+h;y++) for(let x=x0;x<x0+w;x++) set(x,y,c); };
+  const bldg=(x0,w,h)=>{ rect(x0,13-h,w,h,"k"); for(let y=14-h;y<12;y+=2) for(let x=x0+1;x<x0+w-1;x+=2) set(x,y,"y"); };
+  rect(0,13,W,1,"k");                        // ground
+  bldg(1,7,7); bldg(9,6,9);                  // flats
+  const cx=22,cy=6;                          // Singapore Flyer
+  [[0,-5],[2,-5],[-2,-5],[3,-4],[-3,-4],[4,-2],[-4,-2],[5,0],[-5,0],[4,2],[-4,2],[3,4],[-3,4],[2,5],[-2,5],[0,5],[4,-3],[-4,-3],[4,3],[-4,3]]
+    .forEach(([dx,dy])=>set(cx+dx,cy+dy,"m"));
+  set(cx,cy,"k"); set(cx-1,cy,"m"); set(cx+1,cy,"m"); set(cx,cy-1,"m"); set(cx,cy+1,"m");
+  set(cx-1,12,"k"); set(cx+1,12,"k"); set(cx-1,11,"k"); set(cx+1,11,"k"); set(cx,11,"k");
+  bldg(29,7,4);                              // shophouse row
+  rect(38,3,20,1,"k"); set(57,2,"k"); set(58,2,"k");   // MBS deck + prow
+  [40,46,52].forEach(x0=>{ rect(x0,4,4,9,"k"); for(let y=5;y<12;y+=2){ set(x0+1,y,"y"); set(x0+2,y,"y"); } });
+  rect(62,6,6,7,"k"); set(64,4,"k"); set(64,5,"k"); set(65,5,"y");   // spire tower
+  [[72,5],[78,7],[84,5]].forEach(([x,h])=>{                            // supertrees
+    rect(x,13-h+2,2,h-2,"d");
+    rect(x-1,13-h+1,4,1,"t"); rect(x-2,13-h,6,1,"t"); set(x,13-h-1,"t"); set(x+1,13-h-1,"t");
+  });
+  bldg(90,5,4);
+  return g.map(r=>r.join(""));
+}
+const SPRITES = {
+  robot: [".....kk.....","......k.....","..kkkkkkkk..","..kwwwwwwk..","..kwbwwbwk..","..kwwwwwwk..","..kkkkkkkk..",".kk.kkkk.kk.",".k.kmyymk.k.",".k.kmyymk.k.","...kmmmmk...","...kkkkkk...","..kk....kk.."],
+  drum: ["kk..........kk","..kk......kk..","....kk..kk....",".....k..k.....","..kkkkkkkkkk..",".kwwwwwwwwwwk.",".kooooooooook.",".koyooyooyook.",".kooooooooook.","..kkkkkkkkkk.."],
+  crystal: ["....kkkk....","..kkbbbbkk..",".kbwwbbbbbk.",".kbwbbbbbbk.",".kbbbbbbbbk.",".kbbbbbbbbk.","..kbbbbbbk..","...kkkkkk...","..kyyyyyyk..",".kkkkkkkkkk."],
+  dumbbell: ["..kk........kk..",".kkkk......kkkk.",".kkkkmmmmmmkkkk.",".kkkk......kkkk.","..kk........kk.."],
+  books: ["..bbbbbbbb..","..bwbbbbbb..",".gggggggggg.",".gwgggggggg.","..oooooooo..","..owoooooo..","kkkkkkkkkkkk",".k........k."],
+  tv: ["...k....k.....","....k..k......",".....kk.......",".kkkkkkkkkkkk.",".kwwwwwwwwmmk.",".kwwkwwwwwmmk.",".kwwkkwwwwmmk.",".kwwkwwwwwmmk.",".kwwwwwwwwmmk.",".kkkkkkkkkkkk.","...kk....kk..."],
+  hourglass: [".kkkkkkkk.","..kyyyyk..","...kyyk...","....kk....","...kwwk...","..kwwwwk..",".kwyyyywk.",".kkkkkkkk."],
+  globe: ["...kkkk...","..kbgbbk..",".kbggbbbk.",".kgbbbggk.",".kbbgbbbk.","..kbbgbk..","...kkkk..."],
+  coins: ["...kkkkkk...","..kyyyyyyk..","..kkkkkkkk..","..kyyyyyyk..","..kkkkkkkk..","..kyyyyyyk..","...kkkkkk..."],
+  gift: ["...kk..kk...","..k..kk..k..",".kkkkkkkkkk.",".kooowwoook.",".kkkkkkkkkk.",".kooowwoook.",".kooowwoook.",".kkkkkkkkkk."],
+  bubble: [".kkkkkkkkkk.","kwwwwwwwwwwk","kwwwkwkwkwwk","kwwwwwwwwwwk",".kkkkkkkkkk.","...kk.......","..kk........"],
+  checklist: [".kkkkkkkkkk.",".kwwwwwwwwk.",".kgwkkkkkwk.",".kwwwwwwwwk.",".kgwkkkkkwk.",".kwwwwwwwwk.",".kgwkkkkkwk.",".kkkkkkkkkk."],
+  clock: ["...kkkk...","..k....k..",".k...k..k.",".k...k..k.",".k...kk.k.",".k......k.","..k....k..","...kkkk..."],
+  note: ["....kkkk..","....k..k..","....k..k..","....k..k..","....k.....","..kkk.....",".kkkk.....","..kk......"],
+  receipt: [".kkkkkkkk.",".kwwwwwwk.",".kwkkkwwk.",".kwwwwwwk.",".kwkkkkwk.",".kwwwwwwk.",".kwkkwwwk.",".kwkwkwkk."],
+  meter: ["..........",".kkkkkkkk.",".kgggwwwk.",".kkkkkkkk.","..........",".kkkkkkkk.",".kgggggwk.",".kkkkkkkk."],
+  bolt: ["...yy...","..yy....",".yyyyy..","...yy...","..yy....",".yy....."],
+  avEsther: avatar("h","p"), avZhang: avatar("k","y"), avWong: avatar("k","b"), avPoon: avatar("k","g"), avLi: avatar("d","o"),
+};
+function renderArt(){
+  document.querySelectorAll("[data-art]").forEach(el=>{
+    const s = SPRITES[el.getAttribute("data-art")];
+    if(s) el.innerHTML = px(s);
+  });
+  const sky = document.getElementById("skyline");
+  if(sky) sky.innerHTML = px(buildSkyline());
+}
+
+/* ---------------- quick read ---------------- */
+const qrBtn = document.getElementById("qrBtn");
+function setQuick(on){
+  document.body.classList.toggle("quick", on);
+  qrBtn.setAttribute("aria-pressed", on?"true":"false");
+  try{ localStorage.setItem("aishift-quick", on?"1":""); }catch(e){}
+}
+qrBtn.addEventListener("click", ()=>setQuick(!document.body.classList.contains("quick")));
+
 /* ---------------- case cards ---------------- */
 function renderCases(){
   const host = document.getElementById("caseCards");
+  const MINI = { lesson:"clock", score:"note", invoice:"receipt", progress:"meter" };
   host.innerHTML = CASES.map(k=>{
     const c = p=>L("caseStudy.cards."+k+"."+p);
     return `<div class="case-card reveal">
-      <div class="label">${esc(c("label"))}</div>
+      <div class="label"><span class="art px" data-art="${MINI[k]}" aria-hidden="true"></span>${esc(c("label"))}</div>
       <div class="ba">
         <div class="col before"><span class="tag">${esc(L("ui.beforeAI"))}</span><span class="stat">${esc(c("beforeStat"))}</span><span class="desc">${esc(c("beforeText"))}</span></div>
         <div class="arrow" aria-hidden="true">→</div>
@@ -860,11 +1031,12 @@ toTop.onclick=()=>scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: 
 
 /* ---------------- boot ---------------- */
 function renderAll(){
-  renderText(); buildLangUI(); renderCases(); renderBump(); renderTrends(); renderOcc(); renderWef(); renderReading(); setupCompare(); watchReveals();
+  renderText(); buildLangUI(); renderCases(); renderBump(); renderTrends(); renderOcc(); renderWef(); renderReading(); renderArt(); setupCompare(); watchReveals();
 }
 (function init(){
   let saved="", savedCmp="";
-  try{ saved=localStorage.getItem("aishift-lang")||""; savedCmp=localStorage.getItem("aishift-cmp")||""; }catch(e){}
+  try{ saved=localStorage.getItem("aishift-lang")||""; savedCmp=localStorage.getItem("aishift-cmp")||"";
+       if(localStorage.getItem("aishift-quick")==="1") setQuick(true); }catch(e){}
   const m=(location.hash||"").match(/lang=([a-z]+)/);
   lang = (m && I18N[m[1]]) ? m[1] : (I18N[saved]?saved:"en");
   cmpLang = (I18N[savedCmp] && savedCmp!==lang) ? savedCmp : "";
