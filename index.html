@@ -1,0 +1,873 @@
+<title>The AI Shift</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A multilingual classroom companion on how AI is reshaping Singapore's job market — read the same story in 13 languages.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Noto+Sans:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+Thai:wght@400;600;700;800&family=Noto+Sans+Tamil:wght@400;600;700;800&display=swap">
+<style>
+:root{
+  --bg:#F7F8F6; --surface:#FFFFFF; --surface2:#EFF1EC;
+  --ink:#1A2330; --muted:#5A6473; --faint:#8A93A0; --line:#E0E4DC;
+  --accent:#B3541E; --accent-ink:#8F3F12;
+  --hl:rgba(230,159,0,.26); --hl-new:rgba(0,158,115,.18);
+  --c-tech:#0072B2; --c-edu:#009E73; --c-hr:#D55E00; --c-fin:#CC79A7; --c-gov:#E69F00;
+  --pos:#009E73; --neg:#3E4753;
+  --shadow:0 1px 2px rgba(16,24,40,.05),0 8px 24px -12px rgba(16,24,40,.12);
+  --f-display:'Archivo','Noto Sans',sans-serif;
+  --f-body:'Noto Sans',system-ui,sans-serif;
+  --lh-body:1.62;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#131A24; --surface:#1B2432; --surface2:#212B3B;
+    --ink:#E8EDF2; --muted:#9AA5B4; --faint:#6E7989; --line:#2A3546;
+    --accent:#E08A4C; --accent-ink:#EDA36F;
+    --hl:rgba(174,140,9,.32); --hl-new:rgba(4,138,96,.28);
+    --c-tech:#2C89BF; --c-edu:#048A60; --c-hr:#C8551A; --c-fin:#C55CB0; --c-gov:#AE8C09;
+    --pos:#0FA372; --neg:#98A2B0;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.5);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131A24; --surface:#1B2432; --surface2:#212B3B;
+  --ink:#E8EDF2; --muted:#9AA5B4; --faint:#6E7989; --line:#2A3546;
+  --accent:#E08A4C; --accent-ink:#EDA36F;
+  --hl:rgba(174,140,9,.32); --hl-new:rgba(4,138,96,.28);
+  --c-tech:#2C89BF; --c-edu:#048A60; --c-hr:#C8551A; --c-fin:#C55CB0; --c-gov:#AE8C09;
+  --pos:#0FA372; --neg:#98A2B0;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.5);
+}
+html[data-font="sc"]{ --f-body:'Noto Sans SC','Noto Sans',sans-serif; --f-display:'Archivo','Noto Sans SC',sans-serif; --lh-body:1.85; }
+html[data-font="tc"]{ --f-body:'Noto Sans TC','Noto Sans',sans-serif; --f-display:'Archivo','Noto Sans TC',sans-serif; --lh-body:1.85; }
+html[data-font="jp"]{ --f-body:'Noto Sans JP','Noto Sans',sans-serif; --f-display:'Archivo','Noto Sans JP',sans-serif; --lh-body:1.85; }
+html[data-font="kr"]{ --f-body:'Noto Sans KR','Noto Sans',sans-serif; --f-display:'Archivo','Noto Sans KR',sans-serif; --lh-body:1.8; }
+html[data-font="thai"]{ --f-body:'Noto Sans Thai','Noto Sans',sans-serif; --f-display:'Archivo','Noto Sans Thai',sans-serif; --lh-body:1.9; }
+html[data-font="tamil"]{ --f-body:'Noto Sans Tamil','Noto Sans',sans-serif; --f-display:'Archivo','Noto Sans Tamil',sans-serif; --lh-body:1.85; }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--f-body); line-height:var(--lh-body); font-size:16.5px;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+a{color:var(--accent-ink); text-decoration-color:color-mix(in srgb,var(--accent) 45%,transparent); text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2.5px solid var(--accent); outline-offset:2px; border-radius:3px}
+.skip{position:absolute; left:-9999px; top:0; background:var(--surface); color:var(--ink); padding:.6em 1em; z-index:100; border-radius:0 0 8px 0}
+.skip:focus{left:0}
+.wrap{max-width:1120px; margin:0 auto; padding:0 clamp(16px,4vw,40px)}
+.prose{max-width:680px; margin-left:auto; margin-right:auto}
+.prose p{margin:0 0 1.1em}
+.spectrum{display:flex; height:5px; border-radius:99px; overflow:hidden; gap:2px}
+.spectrum i{flex:1}
+.spectrum i:nth-child(1){background:var(--c-tech)}
+.spectrum i:nth-child(2){background:var(--c-edu)}
+.spectrum i:nth-child(3){background:var(--c-hr)}
+.spectrum i:nth-child(4){background:var(--c-fin)}
+.spectrum i:nth-child(5){background:var(--c-gov)}
+
+/* ---------- header ---------- */
+header.top{
+  position:sticky; top:0; z-index:50; background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.top-inner{display:flex; align-items:center; gap:14px; padding:10px clamp(16px,4vw,40px); max-width:1240px; margin:0 auto; flex-wrap:wrap}
+.brand{font-family:var(--f-display); font-weight:800; font-size:17px; letter-spacing:.2px; white-space:nowrap; color:var(--ink); text-decoration:none; display:flex; align-items:center; gap:9px}
+.brand .dotrow{display:flex; gap:3px}
+.brand .dotrow i{width:7px; height:7px; border-radius:50%}
+.langbar{display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; flex:1; min-width:200px; padding:2px}
+.langbar::-webkit-scrollbar{display:none}
+.langchip{
+  flex:0 0 auto; border:1px solid var(--line); background:var(--surface); color:var(--muted);
+  border-radius:99px; padding:4.5px 13px; font-size:13.5px; font-family:var(--f-body);
+  cursor:pointer; transition:all .15s; line-height:1.5;
+}
+.langchip:hover{border-color:var(--accent); color:var(--ink)}
+.langchip[aria-pressed="true"]{background:var(--ink); color:var(--bg); border-color:var(--ink); font-weight:700}
+.cmpbox{display:flex; align-items:center; gap:7px; font-size:12.5px; color:var(--muted); white-space:nowrap}
+.cmpbox select{
+  font:inherit; font-size:13px; color:var(--ink); background:var(--surface);
+  border:1px solid var(--line); border-radius:8px; padding:4px 8px; max-width:130px;
+}
+@media (max-width:760px){
+  header.top{position:static}
+  .top-inner{padding-top:8px; padding-bottom:8px}
+}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(48px,9vh,96px) 0 clamp(36px,6vh,64px); position:relative}
+.kicker{font-family:var(--f-display); font-weight:700; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent-ink); margin:0 0 18px}
+html[data-font="sc"] .kicker,html[data-font="tc"] .kicker,html[data-font="jp"] .kicker,html[data-font="kr"] .kicker{letter-spacing:.35em}
+.hero h1{
+  font-family:var(--f-display); font-weight:880; font-variation-settings:'wght' 880;
+  font-size:clamp(44px,9vw,96px); line-height:1.02; margin:0 0 10px; letter-spacing:-.015em; text-wrap:balance;
+}
+.hero .spectrum{max-width:420px; margin:26px 0}
+.hero .sub{font-size:clamp(18px,2.4vw,23px); line-height:1.45; color:var(--muted); max-width:640px; margin:0 0 26px; text-wrap:balance; font-weight:400}
+.hero .basedOn{font-size:14px; color:var(--faint); max-width:560px; border-inline-start:3px solid var(--line); padding-inline-start:14px}
+.hero .basedOn a{color:var(--accent-ink)}
+.pill-nav{display:flex; flex-wrap:wrap; gap:8px; margin-top:34px}
+.pill-nav a{
+  text-decoration:none; font-size:13.5px; font-weight:600; color:var(--ink);
+  border:1px solid var(--line); background:var(--surface); padding:7px 15px; border-radius:99px; transition:all .15s;
+}
+.pill-nav a:hover{border-color:var(--accent); transform:translateY(-1px)}
+.pill-nav a i{display:inline-block; width:8px; height:8px; border-radius:50%; margin-inline-end:7px}
+
+/* ---------- sections ---------- */
+section{padding:clamp(44px,8vh,86px) 0; position:relative}
+section + section{border-top:1px solid var(--line)}
+.sec-head{max-width:680px; margin:0 auto clamp(26px,4vh,44px)}
+.sec-head .kicker{margin-bottom:12px}
+h2{font-family:var(--f-display); font-weight:800; font-size:clamp(28px,4.6vw,44px); line-height:1.12; margin:0 0 16px; letter-spacing:-.01em; text-wrap:balance}
+h3{font-family:var(--f-display); font-weight:750; font-size:clamp(21px,3vw,27px); line-height:1.2; margin:2.2em 0 .7em; text-wrap:balance}
+.lead{font-size:clamp(17px,2vw,19.5px); color:var(--ink)}
+.note{font-size:13.5px; color:var(--faint)}
+.hl{background:var(--hl); padding:.06em .22em; border-radius:4px; box-decoration-break:clone; -webkit-box-decoration-break:clone; font-weight:600}
+.hlNew{background:var(--hl-new); padding:.06em .22em; border-radius:4px; box-decoration-break:clone; -webkit-box-decoration-break:clone; font-weight:600}
+
+/* ---------- case study ---------- */
+.case-cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:16px; margin:34px 0}
+.case-card{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:20px 20px 16px; box-shadow:var(--shadow)}
+.case-card .label{font-family:var(--f-display); font-weight:750; font-size:15px; margin-bottom:14px; display:flex; align-items:center; gap:8px}
+.case-card .label::before{content:""; width:9px; height:9px; border-radius:50%; background:var(--c-edu)}
+.ba{display:grid; grid-template-columns:1fr auto 1fr; gap:10px; align-items:stretch}
+.ba .col{display:flex; flex-direction:column; gap:4px}
+.ba .tag{font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--faint)}
+.ba .stat{font-family:var(--f-display); font-weight:830; font-size:clamp(19px,2.2vw,24px); line-height:1.1; font-variant-numeric:tabular-nums}
+.ba .after .stat{color:var(--c-edu)}
+.ba .after .tag{color:var(--c-edu)}
+.ba .desc{font-size:13px; color:var(--muted); line-height:1.5}
+.ba .arrow{align-self:center; color:var(--faint); font-size:18px}
+
+/* ---------- charts common ---------- */
+.chart-card{background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:clamp(16px,3vw,28px); box-shadow:var(--shadow)}
+.chart-title{font-family:var(--f-display); font-weight:800; font-size:clamp(18px,2.4vw,22px); margin:0 0 4px; line-height:1.25}
+.chart-sub{font-size:13.5px; color:var(--muted); margin:0 0 18px}
+.chart-src{font-size:12px; color:var(--faint); margin-top:14px}
+.chart-note{font-size:12px; color:var(--faint); margin-top:4px}
+.tableview{margin-top:12px; font-size:13px}
+.tableview summary{cursor:pointer; color:var(--accent-ink); font-weight:600}
+.tableview table{border-collapse:collapse; margin-top:10px; width:100%; max-width:520px}
+.tableview th,.tableview td{border-bottom:1px solid var(--line); text-align:start; padding:5px 10px 5px 0; font-variant-numeric:tabular-nums}
+.tableview th{color:var(--muted); font-weight:600; font-size:12px}
+.tooltip{
+  position:fixed; z-index:99; pointer-events:none; background:var(--ink); color:var(--bg);
+  font-size:12.5px; line-height:1.4; padding:7px 11px; border-radius:8px; max-width:240px;
+  opacity:0; transition:opacity .12s; box-shadow:var(--shadow);
+}
+.tooltip.show{opacity:1}
+
+/* ---------- s1 scrolly ---------- */
+.scrolly{display:grid; grid-template-columns:minmax(0,1fr); gap:28px; margin-top:8px}
+@media(min-width:960px){
+  .scrolly{grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr); align-items:start; gap:40px}
+  .scrolly .sticky{position:sticky; top:86px}
+}
+.steps{display:flex; flex-direction:column; gap:18px}
+@media(min-width:960px){ .steps{padding:12vh 0 20vh; gap:38vh} }
+.step{background:var(--surface); border:1px solid var(--line); border-inline-start:4px solid var(--faint); border-radius:14px; padding:18px 20px; box-shadow:var(--shadow); font-size:15.5px}
+.step[data-ind="tech"]{border-inline-start-color:var(--c-tech)}
+.step[data-ind="edu"]{border-inline-start-color:var(--c-edu)}
+.step[data-ind="hr"]{border-inline-start-color:var(--c-hr)}
+.step p{margin:0}
+#bump{overflow-x:auto}
+#bump svg{width:100%; min-width:640px; height:auto; display:block}
+.bump-legend{display:flex; flex-wrap:wrap; gap:7px; margin-bottom:14px}
+.indchip{
+  display:inline-flex; align-items:center; gap:7px; border:1.5px solid var(--line); border-radius:99px;
+  background:transparent; color:var(--ink); font-size:12.5px; font-weight:600; font-family:var(--f-body);
+  padding:4px 12px; cursor:pointer; transition:all .15s;
+}
+.indchip i{width:9px; height:9px; border-radius:50%; background:var(--dot)}
+.indchip[aria-pressed="true"]{border-color:var(--dot); background:color-mix(in srgb,var(--dot) 12%,transparent)}
+.skills-panel{margin-top:16px; border-top:1px dashed var(--line); padding-top:14px; min-height:96px}
+.skills-panel .sp-title{font-size:13px; font-weight:700; color:var(--muted); margin:0 0 9px}
+.skills-panel .chips{display:flex; flex-wrap:wrap; gap:7px; margin-bottom:9px}
+.skills-panel .chips span{background:var(--surface2); border-radius:8px; padding:4px 11px; font-size:13px}
+.skills-panel .entry{font-size:13px; color:var(--muted)}
+.skills-panel .entry b{color:var(--ink); font-variant-numeric:tabular-nums}
+
+/* ---------- trends & bars ---------- */
+#trendsChart{overflow-x:auto}
+#trendsChart svg{width:100%; min-width:540px; height:auto; display:block}
+.legend{display:flex; gap:18px; flex-wrap:wrap; font-size:13px; margin-bottom:8px}
+.legend span{display:inline-flex; align-items:center; gap:7px; color:var(--muted); font-weight:600}
+.legend i{width:16px; height:3.5px; border-radius:2px}
+.trend-steps{display:grid; gap:14px; margin-top:26px}
+@media(min-width:860px){ .trend-steps{grid-template-columns:repeat(3,1fr)} }
+.trend-step{background:var(--surface2); border-radius:14px; padding:16px 18px; font-size:14.5px}
+.trend-step .num{font-family:var(--f-display); font-weight:830; font-size:26px; display:block; margin-bottom:6px; font-variant-numeric:tabular-nums}
+.hbars{display:flex; flex-direction:column; gap:7px; margin-top:6px}
+.hbar{display:grid; grid-template-columns:minmax(120px,38%) 1fr; gap:12px; align-items:center; font-size:13.5px}
+.hbar .lbl{text-align:end; color:var(--muted); line-height:1.3}
+.hbar .track{display:flex; align-items:center; gap:8px; min-width:0}
+.hbar .bar{height:17px; border-radius:0 4px 4px 0; background:var(--c-tech); min-width:2px; transition:width .5s ease}
+.hbar .val{font-variant-numeric:tabular-nums; font-weight:700; font-size:13px}
+.hbar.hi .lbl{color:var(--ink); font-weight:800}
+.hbar.hi .bar{background:var(--accent)}
+.hbar:hover .lbl{color:var(--ink)}
+.wef{display:flex; flex-direction:column; gap:14px; margin-top:22px}
+.wefrow{display:grid; grid-template-columns:minmax(110px,30%) 1fr; gap:14px; align-items:center}
+.wefrow .lbl{text-align:end; font-size:14px; color:var(--muted); font-weight:600; line-height:1.3}
+.wefrow .track{display:flex; align-items:center; gap:10px}
+.wefrow .bar{height:34px; border-radius:0 6px 6px 0}
+.wefrow.displaced .bar{background:var(--neg)}
+.wefrow.created .bar{background:var(--pos)}
+.wefrow .val{font-family:var(--f-display); font-weight:830; font-size:21px; font-variant-numeric:tabular-nums}
+.wefrow .unit{font-size:12px; color:var(--faint); font-weight:400}
+.wefnet{align-self:flex-end; background:var(--hl-new); border-radius:99px; padding:6px 16px; font-weight:700; font-size:14px}
+
+/* ---------- quotes & tips ---------- */
+.qcard{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:20px 22px; margin:26px auto; max-width:680px; box-shadow:var(--shadow); position:relative}
+.qcard::before{content:"“"; position:absolute; top:2px; inset-inline-start:16px; font-family:var(--f-display); font-size:52px; line-height:1; color:var(--line); font-weight:800}
+.qcard .qtext{margin:14px 0 12px; font-size:15.5px}
+.qcard .qwho{display:flex; flex-direction:column; gap:1px; border-top:1px solid var(--line); padding-top:10px}
+.qcard .qname{font-weight:800; font-size:14px}
+.qcard .qrole{font-size:12.5px; color:var(--muted)}
+.stat-tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:14px; margin:26px 0}
+.stat-tile{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:var(--shadow)}
+.stat-tile .v{font-family:var(--f-display); font-weight:870; font-size:clamp(26px,3.4vw,34px); line-height:1.05; color:var(--accent-ink); font-variant-numeric:tabular-nums}
+.stat-tile .l{font-size:12px; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--faint); margin:6px 0 8px}
+.stat-tile .t{font-size:13.5px; color:var(--muted); line-height:1.5}
+.tipcard{background:linear-gradient(135deg,color-mix(in srgb,var(--c-edu) 9%,var(--surface)),var(--surface)); border:1px solid color-mix(in srgb,var(--c-edu) 35%,var(--line)); border-radius:18px; padding:24px 26px; margin:30px auto; max-width:680px}
+.tipcard h3{margin-top:0}
+
+/* ---------- reading / videos ---------- */
+.read-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-top:8px}
+.read-group{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:20px; box-shadow:var(--shadow)}
+.read-group h3{margin:0 0 12px; font-size:17px}
+.read-group ul{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:12px}
+.read-group a{display:block; font-size:14px; line-height:1.5; color:var(--ink); text-decoration:none; padding-inline-start:18px; position:relative}
+.read-group a::before{content:"↗"; position:absolute; inset-inline-start:0; color:var(--accent-ink); font-weight:700}
+.read-group a:hover{color:var(--accent-ink)}
+.zh-chip{display:inline-block; font-size:10.5px; font-weight:700; letter-spacing:.05em; color:var(--faint); border:1px solid var(--line); border-radius:5px; padding:0 5px; margin-inline-start:6px; vertical-align:1px}
+.video-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; max-width:760px; margin:0 auto}
+.video-card{display:block; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:20px; text-decoration:none; color:var(--ink); box-shadow:var(--shadow); transition:transform .15s}
+.video-card:hover{transform:translateY(-2px)}
+.video-card .play{width:40px; height:40px; border-radius:50%; background:var(--ink); color:var(--bg); display:flex; align-items:center; justify-content:center; margin-bottom:14px}
+.video-card .play::before{content:""; border-style:solid; border-width:7px 0 7px 12px; border-color:transparent transparent transparent currentColor; margin-inline-start:3px}
+.video-card h3{margin:0 0 8px; font-size:16.5px}
+.video-card p{margin:0; font-size:13.5px; color:var(--muted)}
+
+/* ---------- about ---------- */
+.about{background:var(--surface2); border-top:1px solid var(--line); padding:clamp(44px,7vh,72px) 0}
+.about .prose{font-size:14.5px; color:var(--muted)}
+.about h2{font-size:24px}
+.about h3{font-size:15px; margin-top:1.8em}
+.about ul{padding-inline-start:20px; margin:.4em 0}
+.about li{margin-bottom:.3em}
+.footer-end{margin-top:34px; padding-top:18px; border-top:1px solid var(--line); font-size:12.5px; color:var(--faint)}
+
+/* ---------- compare mode ---------- */
+body.compare-on .cmp{cursor:pointer; border-bottom:1.5px dashed color-mix(in srgb,var(--accent) 40%,transparent)}
+body.compare-on .cmp:hover{background:color-mix(in srgb,var(--accent) 6%,transparent)}
+.cmp-block{
+  background:color-mix(in srgb,var(--accent) 7%,var(--surface)); border-inline-start:3px solid var(--accent);
+  border-radius:0 10px 10px 0; padding:12px 16px; margin:10px 0 16px; font-size:.95em;
+}
+.cmp-hint{
+  font-size:12.5px; color:var(--accent-ink); background:color-mix(in srgb,var(--accent) 9%,transparent);
+  border-radius:9px; padding:8px 14px; margin:14px 0; display:none;
+}
+body.compare-on .cmp-hint{display:block}
+
+/* ---------- misc ---------- */
+#toTop{
+  position:fixed; bottom:22px; inset-inline-end:18px; z-index:60; width:44px; height:44px; border-radius:50%;
+  background:var(--ink); color:var(--bg); border:none; cursor:pointer; font-size:19px;
+  opacity:0; pointer-events:none; transition:opacity .25s; box-shadow:var(--shadow);
+}
+#toTop.show{opacity:.92; pointer-events:auto}
+.reveal{opacity:0; transform:translateY(14px); transition:opacity .5s ease,transform .5s ease}
+.reveal.in{opacity:1; transform:none}
+@media (prefers-reduced-motion: reduce){
+  .reveal{opacity:1; transform:none; transition:none}
+  .hbar .bar{transition:none}
+  .video-card,.pill-nav a{transition:none}
+}
+.sr{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0}
+</style>
+
+<a class="skip" href="#main" data-i18n="ui.sectionsLabel">Sections</a>
+
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="#top" id="brandLink">
+      <span class="dotrow" aria-hidden="true"><i style="background:var(--c-tech)"></i><i style="background:var(--c-edu)"></i><i style="background:var(--c-hr)"></i><i style="background:var(--c-fin)"></i><i style="background:var(--c-gov)"></i></span>
+      <span data-i18n="ui.brand">The AI Shift</span>
+    </a>
+    <nav class="langbar" id="langbar" aria-label="Language"></nav>
+    <div class="cmpbox">
+      <label for="cmpSel" data-i18n="ui.compareLabel">Compare with</label>
+      <select id="cmpSel"></select>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero wrap" id="top">
+    <p class="kicker" data-i18n="hero.kicker">A classroom companion in 13 languages</p>
+    <h1 data-i18n="hero.title">The AI Shift</h1>
+    <div class="spectrum" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <p class="sub" data-i18n="hero.subtitle">How artificial intelligence is rewriting work in Singapore — what is changing, what comes next, and how to get ready.</p>
+    <p class="basedOn"><span data-i18n="hero.basedOn" class="cmp">An original retelling of the facts and findings first reported in Lianhe Zaobao's interactive feature on AI and Singapore's job market, published 16 August 2026.</span> <a href="https://interactive.zaobao.com.sg/2026/artificial-intelligence-impact-on-singapore-jobs/" target="_blank" rel="noopener" data-i18n="ui.readOriginal">Read the original feature on zaobao.com.sg</a></p>
+    <div class="cmp-hint" data-i18n="ui.compareHint">Compare mode is on — tap any paragraph to read it in a second language.</div>
+    <nav class="pill-nav" aria-label="Sections">
+      <a href="#case"><i style="background:var(--c-edu)"></i><span data-i18n="caseStudy.kicker">One school, one January</span></a>
+      <a href="#trends"><i style="background:var(--c-tech)"></i><span data-i18n="nav.trends">Today's trends</span></a>
+      <a href="#future"><i style="background:var(--c-hr)"></i><span data-i18n="nav.future">What's coming</span></a>
+      <a href="#prepare"><i style="background:var(--c-fin)"></i><span data-i18n="nav.prepare">How to prepare</span></a>
+      <a href="#reading"><i style="background:var(--c-gov)"></i><span data-i18n="nav.reading">Further reading</span></a>
+      <a href="#videos"><i style="background:var(--faint)"></i><span data-i18n="nav.videos">Watch</span></a>
+    </nav>
+  </div>
+
+  <!-- case study -->
+  <section id="case">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="caseStudy.kicker">One school, one January</p>
+        <h2 data-i18n="caseStudy.title">When AI joined the band</h2>
+        <p class="lead cmp" data-i18n="caseStudy.p1">Mr Zhu Ruixiong (朱锐雄) has run a percussion music school in Singapore for more than ten years. In January this year, the school brought in AI tools — and its everyday work changed almost beyond recognition.</p>
+      </div>
+      <div class="case-cards" id="caseCards"></div>
+      <div class="prose">
+        <p class="cmp" data-i18n="caseStudy.outro1">AI is reshaping how most of us work and where our careers can go — and it is changing what skills employers pay for. The wave started in tech, but it has long since spread to every field.</p>
+        <p class="cmp" data-i18n="caseStudy.outro2">Education, Mr Zhu's industry, is already feeling its force — and it is far from the only one being disrupted.</p>
+        <p class="cmp" data-i18n="caseStudy.outro3">So what is AI actually doing to Singapore's job market? What does that mean for ordinary working people? And how can we get ready for what comes next?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- s1 trends -->
+  <section id="trends">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="nav.trends">Today's trends</p>
+        <h2 data-i18n="s1.title">Which industries in Singapore want AI skills most?</h2>
+        <p class="lead cmp" data-i18n="s1.lead">Lianhe Zaobao worked with the employment platform Jobstreet by SEEK to measure how often AI-related keywords have appeared in Singapore job advertisements over the past three years. The more often AI turns up in an industry's job ads, the harder that industry is hunting for AI skills.</p>
+        <p class="note cmp" data-i18n="s1.method">Jobstreet did not disclose exact advertisement counts, but its website's search function shows close to 60,000 full-time and part-time positions currently listed.</p>
+      </div>
+
+      <div class="scrolly">
+        <div class="sticky">
+          <div class="chart-card">
+            <p class="chart-title" data-i18n="s1.chart1Title">The top five industries for AI demand</p>
+            <p class="chart-sub" data-i18n="s1.chart1Sub">Industry rank by frequency of AI keywords in job ads</p>
+            <div class="bump-legend" id="bumpLegend" role="group"></div>
+            <div id="bump"></div>
+            <p class="chart-note" data-i18n="ui.yearNote">Each labelled year runs from May of the previous year to April of that year.</p>
+            <div class="skills-panel" id="skillsPanel" aria-live="polite"></div>
+            <details class="tableview"><summary data-i18n="ui.tableView">View the data as a table</summary><div id="bumpTable"></div></details>
+          </div>
+        </div>
+        <div class="steps" id="bumpSteps">
+          <div class="step" data-ind=""><p class="cmp" data-i18n="s1.topFiveText">Since AI went mainstream in 2023, these five industries have topped the table every single year. AI keywords appear far more often in their ads than anywhere else — on average about <span class='hl'>60% more often</span> than in sixth-placed construction &amp; engineering.</p></div>
+          <div class="step" data-ind="tech"><p class="cmp" data-i18n="s1.insightTech"><span class='hl'>Computing &amp; IT (software)</span> sits at the very front of the AI era and has ranked first for three straight years. The jobs themselves are changing: beyond traditional coding, employers now ask for AI orchestration, security and governance, and systems integration.</p></div>
+          <div class="step" data-ind="edu"><p class="cmp" data-i18n="s1.insightEdu"><span class='hl'>Education</span> depends on human contact, so it is usually seen as one of the safer industries in the AI era. Yet over the past three years its demand for AI skills has climbed sharply — from fourth place in 2023 to second place last year. One likely reason is the sector's chronic manpower shortage: new AI-enabled roles can streamline lesson planning, teaching materials and back-office admin. Mr Zhu's music school is exactly this story.</p></div>
+          <div class="step" data-ind="hr"><p class="cmp" data-i18n="s1.insightHr"><span class='hl'>HR &amp; consulting</span> is a special case. Because the industry prizes interpersonal skills, employers hiring for AI roles there are less fixated on deep technical expertise. That reflects a wider trend: the rise of the 'new-collar' worker — someone who combines technology with real-world experience, adapts quickly and solves problems.</p></div>
+        </div>
+      </div>
+
+      <div class="prose">
+        <h3 data-i18n="s1.skillsTitle">Which AI skills are employers asking for?</h3>
+        <p class="cmp" data-i18n="s1.skillsLead">The most common AI keyword in Jobstreet's ads is broad <span class='hl'>analytical ability</span> — analysis that goes beyond data alone. Other frequent requirements include data analysis, Python programming, computer science and automation.</p>
+        <p class="note" data-i18n="ui.skillsHint">Select an industry to see the AI skills its job ads mention most.</p>
+      </div>
+
+      <div class="qcard reveal">
+        <p class="qtext cmp" data-i18n="s1.quotes.esther1.text">Lee says the industries that adopted AI fastest are seeing employees become more efficient and more productive, with more time freed up to tackle problems that genuinely need people.</p>
+        <div class="qwho"><span class="qname" data-i18n="s1.quotes.esther1.name">Esther Lee (李美欣)</span><span class="qrole" data-i18n="s1.quotes.esther1.role">Managing Director, Jobstreet Singapore</span></div>
+      </div>
+      <div class="qcard reveal">
+        <p class="qtext cmp" data-i18n="s1.quotes.zhang1.text">Zhang notes that Singapore leans heavily on knowledge workers and international talent while facing a limited labour supply and a changing population structure. That, she says, is why companies here focus on using AI to lift productivity, unlock their employees' potential and grow the business.</p>
+        <div class="qwho"><span class="qname" data-i18n="s1.quotes.zhang1.name">Zhang Xiaoyun (张晓云)</span><span class="qrole" data-i18n="s1.quotes.zhang1.role">Senior Vice-President for Asia Pacific, ADP</span></div>
+      </div>
+
+      <div class="prose">
+        <h3 data-i18n="s1.linker.title">The cooling-off is over: every industry is back on the AI trail</h3>
+        <p class="cmp" data-i18n="s1.linker.text">The top five stand at the front line of the AI shift, and their demand for AI talent is growing strongly. The remaining industries, after a brief hesitation during AI's messy early phase, are now drawing up AI talent strategies of their own.</p>
+      </div>
+
+      <div class="chart-card reveal" style="max-width:860px;margin:30px auto 0">
+        <p class="chart-title" data-i18n="s1.trends.title">AI job ads: boom, freeze, rebound</p>
+        <p class="chart-sub" data-i18n="s1.trends.indexNote">Indexed: 2024 = 100</p>
+        <div class="legend">
+          <span><i style="background:var(--c-tech)"></i><span data-i18n="s1.trends.adsLabel">Job ads for AI roles</span></span>
+          <span><i style="background:var(--c-fin)"></i><span data-i18n="s1.trends.appsLabel">Applications for AI roles</span></span>
+        </div>
+        <div id="trendsChart"></div>
+        <p class="chart-note" data-i18n="ui.yearNote">Each labelled year runs from May of the previous year to April of that year.</p>
+        <details class="tableview"><summary data-i18n="ui.tableView">View the data as a table</summary><div id="trendsTable"></div></details>
+      </div>
+      <div class="trend-steps" style="max-width:860px;margin-left:auto;margin-right:auto">
+        <div class="trend-step"><span class="num" style="color:var(--c-tech)">−74%</span><span class="cmp" data-i18n="s1.trends.step1">The large language model ChatGPT burst onto the scene at the end of 2022 and set off an AI hiring boom. Then Singapore employers hit pause: between 2024 and 2025, AI job ads plunged <span class='hl'>74%</span>. The technology's chaotic early growth had created real uncertainty, and companies entered a 'cooling-off period' — re-evaluating their AI investments and hiring far more cautiously.</span></div>
+        <div class="trend-step"><span class="num" style="color:var(--c-tech)">×3</span><span class="cmp" data-i18n="s1.trends.step2">Over the past year the picture flipped. As practical uses of AI became clearer, employers restarted their AI talent strategies, and the number of AI job ads roughly <span class='hl'>tripled year on year</span>. Lee's explanation: two years of maturing technology have taught companies how to fold AI into their workflows, and hiring demand has followed.</span></div>
+        <div class="trend-step"><span class="num" style="color:var(--c-fin)">−17%</span><span class="cmp" data-i18n="s1.trends.step3">Job seekers have not kept pace. In the year to April 2026, applications for AI roles fell another <span class='hl'>17%</span>. The drop is smaller than the previous year's 39%, but it signals that local AI talent remains in short supply — many candidates simply do not yet have the skills employers urgently want.</span></div>
+      </div>
+
+      <div class="qcard reveal">
+        <p class="qtext cmp" data-i18n="s1.quotes.zhang2.text">Zhang's bigger point: AI is pushing Singapore's workplace from a competition of knowledge towards a competition of judgment. The most competitive people in future will not be those who hold the most information, but those who best combine AI's capabilities with human wisdom to create value together.</p>
+        <div class="qwho"><span class="qname" data-i18n="s1.quotes.zhang2.name">Zhang Xiaoyun (张晓云)</span><span class="qrole" data-i18n="s1.quotes.zhang2.role">Senior Vice-President for Asia Pacific, ADP</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- s2 future -->
+  <section id="future">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="nav.future">What's coming</p>
+        <h2 data-i18n="s2.title">What could the job market look like next?</h2>
+        <p class="lead cmp" data-i18n="s2.lead1">Across most industries, AI's full impact has not yet arrived. That is not the same as saying your job will be spared.</p>
+        <p class="cmp" data-i18n="s2.lead2">AI is widely seen as the engine of the fourth industrial revolution, and major international studies have already sketched how far the wave could reach.</p>
+      </div>
+      <div class="prose">
+        <h3 data-i18n="s2.decadeTitle">The full impact may take 10 years to show</h3>
+        <p class="cmp" data-i18n="s2.goldman1">Research by the investment bank Goldman Sachs on the US job market finds that AI currently weighs heavily on only a handful of industries.</p>
+        <p class="cmp" data-i18n="s2.goldman2">It estimates that most fields will need about ten years to reach large-scale AI adoption. During that long transition, <span class='hl'>6% to 7%</span> of US workers could lose their jobs.</p>
+        <p class="cmp" data-i18n="s2.goldman3">Worldwide, an estimated <span class='hl'>300 million</span> positions are exposed to AI automation.</p>
+      </div>
+      <div class="chart-card reveal" style="max-width:860px;margin:30px auto">
+        <p class="chart-title" data-i18n="s2.chart2Title">Share of US jobs exposed to AI automation</p>
+        <p class="chart-sub" data-i18n="s2.chart2Sub">By occupation group, %</p>
+        <div class="hbars" id="occBars"></div>
+        <p class="chart-src" data-i18n="s2.chart2Source">Source: Haver Analytics, Goldman Sachs Research</p>
+        <details class="tableview"><summary data-i18n="ui.tableView">View the data as a table</summary><div id="occTable"></div></details>
+      </div>
+      <div class="prose">
+        <h3 data-i18n="s2.wefTitle">By 2030, the global job mix will be different</h3>
+        <p class="cmp" data-i18n="s2.wef1">The World Economic Forum's Future of Jobs Report 2025 projects that by 2030, driven by AI, the green transition and economic turbulence, <span class='hl'>22%</span> of jobs worldwide will go through structural change.</p>
+        <p class="cmp" data-i18n="s2.wef2">By then, some <span class='hl'>92 million</span> roles are expected to be displaced — but around <span class='hlNew'>170 million</span> new ones created. That is a net gain of 78 million jobs.</p>
+      </div>
+      <div class="chart-card reveal" style="max-width:720px;margin:26px auto 0">
+        <div class="wef" id="wefChart"></div>
+        <p class="chart-src" data-i18n="s2.wefSource">Source: World Economic Forum, Future of Jobs Report 2025; ILOSTAT</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- s3 prepare -->
+  <section id="prepare">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="nav.prepare">How to prepare</p>
+        <h2 data-i18n="s3.title">How do you prepare for the post-AI era?</h2>
+        <p class="lead cmp" data-i18n="s3.lead">AI brings far more opportunity than threat. The real challenge, for individuals and companies alike, is managing the transition — steering yourself towards the new jobs the post-AI era creates.</p>
+        <p class="cmp" data-i18n="s3.oxfordLead">Research from the University of Oxford suggests AI skills already pay off — in wages, benefits and interview chances:</p>
+      </div>
+      <div class="stat-tiles" style="max-width:860px;margin-left:auto;margin-right:auto">
+        <div class="stat-tile reveal"><div class="v" data-i18n="s3.oxford.pay.value">+23%</div><div class="l" data-i18n="s3.oxford.pay.label">Pay</div><div class="t cmp" data-i18n="s3.oxford.pay.text">Roles that ask for AI skills advertise salaries about 23% higher on average.</div></div>
+        <div class="stat-tile reveal"><div class="v" data-i18n="s3.oxford.benefits.value">More perks</div><div class="l" data-i18n="s3.oxford.benefits.label">Benefits</div><div class="t cmp" data-i18n="s3.oxford.benefits.text">AI-related roles are more likely to offer remote work and parental leave.</div></div>
+        <div class="stat-tile reveal"><div class="v" data-i18n="s3.oxford.interviews.value">+8–15%</div><div class="l" data-i18n="s3.oxford.interviews.label">Interviews</div><div class="t cmp" data-i18n="s3.oxford.interviews.text">Candidates with AI skills are 8% to 15% more likely to be invited to interview.</div></div>
+      </div>
+      <div class="prose">
+        <h3 data-i18n="s3.evergreenTitle">In a fast-moving AI era, which skills actually last?</h3>
+        <p class="cmp" data-i18n="s3.evergreen1">What really matters is not just learning to operate AI, but knowing how to use it to raise the value of your work — while building the judgment, communication and problem-solving skills that AI cannot easily replace.</p>
+        <p class="cmp" data-i18n="s3.wong1">Prof Steven Wong (黄开庄), Director of the Centre for Digital Enablement at the Singapore Institute of Technology, cautions that AI is moving so fast that some of today's AI skills will become obsolete — especially operating tricks tied to specific tools.</p>
+        <p class="cmp" data-i18n="s3.wong2">Even so, his advice is to build AI literacy early, whatever direction the technology takes: learn to use AI, to supervise it, and to combine it with human judgment.</p>
+        <p class="cmp" data-i18n="s3.everyone">As AI spreads, anyone can use it to work faster. Simply 'knowing how to use AI' will not stay an advantage for long.</p>
+        <p class="cmp" data-i18n="s3.poon1">Poon King Wang (潘竞宏), Chief Strategy and Design-AI Officer at the Singapore University of Technology and Design and Director of the Lee Kuan Yew Centre for Innovative Cities, urges workers to shift their mindset from 'AI user' to 'AI creator' — using AI to keep creating value that is distinctly their own. That, he argues, is how you stand out in the future workplace.</p>
+      </div>
+      <div class="tipcard reveal">
+        <h3 data-i18n="s3.tipTitle">Keep building transferable skills</h3>
+        <p class="cmp" style="margin:0" data-i18n="s3.tipText"><span class='hl'>Analytical thinking, communication, creativity and deep domain knowledge</span> travel with you from job to job. Use AI deliberately to streamline your workflow: hand the repetitive tasks to the machine, and spend your own time on judgment, decisions and problem-solving.</p>
+      </div>
+      <div class="prose">
+        <p class="cmp" data-i18n="s3.li1">At Singapore Management University, Prof Li Jia (李嘉), Dean of the School of Economics, and his team are tracking AI's long-term effect on the local job market.</p>
+        <p class="cmp" data-i18n="s3.li2">He says it is impossible to predict precisely how many Singapore jobs will disappear to AI in the next three to five years. What researchers can do is watch hiring ads, spot industries where recruitment is shrinking, and sound the alarm early — giving policymakers and job seekers time to respond.</p>
+        <p class="cmp" data-i18n="s3.li3">Much remains uncertain, including how far large language models can still advance — and that uncertainty will shape the job market's future. For individuals, Li's advice is to 'train your body' before the storm arrives.</p>
+        <p class="cmp" data-i18n="s3.li4">He compares learning AI skills to taking medicine after a health check finds a problem, or exercising to build strength: the results are not guaranteed and rarely instant, but they never make you worse off. When the AI shock reaches your industry, those skills could be what keeps you employed — and what makes you more resilient.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- reading -->
+  <section id="reading">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="nav.reading">Further reading</p>
+        <h2 data-i18n="reading.title">Further reading</h2>
+        <p class="note" data-i18n="reading.note">The full series on zaobao.com.sg — all articles are in Chinese. Descriptions below are our own summaries.</p>
+      </div>
+      <div class="read-grid" id="readGrid"></div>
+    </div>
+  </section>
+
+  <!-- videos -->
+  <section id="videos">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="nav.videos">Watch</p>
+        <h2 data-i18n="reading.videosTitle">Watch</h2>
+      </div>
+      <div class="video-grid" id="videoGrid"></div>
+    </div>
+  </section>
+</main>
+
+<!-- about -->
+<footer class="about" id="about">
+  <div class="wrap prose">
+    <h2 data-i18n="about.title">About this page</h2>
+    <p class="cmp" data-i18n="about.p1">This is an original educational companion built for multilingual classrooms. It retells, in 13 languages, the facts and findings of an interactive feature by Lianhe Zaobao (联合早报), Singapore's Chinese-language daily — so that students who do not read Chinese can follow the same story, the same charts and the same structure as the original, and discuss them side by side.</p>
+    <p class="cmp" data-i18n="about.p2">The text on this page is an original summary written for teaching, not a translation of the article. Quotes from the people featured are paraphrased. All data belongs to the sources cited. Please support the original journalism:</p>
+    <p><a href="https://interactive.zaobao.com.sg/2026/artificial-intelligence-impact-on-singapore-jobs/" target="_blank" rel="noopener" data-i18n="ui.readOriginal">Read the original feature on zaobao.com.sg</a></p>
+    <h3 data-i18n="about.originalTitle">Original feature</h3>
+    <p data-i18n="about.originalCredit">'AI与职场变局' (AI and the Changing Workplace), Lianhe Zaobao interactive, published 16 August 2026. Text: Lin Pingying. Interviews: Lin Pingying, Lu Huijing, Li Gengwei. Planning: Huang Xiaofang. Illustration: Lu Fangkai. Design &amp; development: Wang Yuchen, Huang Junnan. © SPH Media Limited.</p>
+    <p class="note" data-i18n="about.romanization">Chinese names are romanised in hanyu pinyin where no official English spelling was published.</p>
+    <h3 data-i18n="about.dataTitle">Data sources</h3>
+    <ul>
+      <li data-i18n="about.data1">Lianhe Zaobao × Jobstreet by SEEK analysis of AI keywords in Singapore job ads, 2023–2026</li>
+      <li data-i18n="about.data2">Goldman Sachs Research / Haver Analytics — AI and the US labour market</li>
+      <li data-i18n="about.data3">World Economic Forum, Future of Jobs Report 2025; ILOSTAT</li>
+      <li data-i18n="about.data4">University of Oxford research on AI skills, wages and hiring</li>
+    </ul>
+    <div class="footer-end" data-i18n="about.disclaimer">Built for classroom use. Not affiliated with, or endorsed by, SPH Media or Lianhe Zaobao.</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+<div class="tooltip" id="tooltip" role="status"></div>
+
+<script>
+const I18N = {"en":{"_meta":{"code":"en","htmlLang":"en","name":"English","englishName":"English","fontClass":"latin"},"ui":{"brand":"The AI Shift","brandPlace":"Singapore","languageLabel":"Language","compareLabel":"Compare with","compareOff":"Off","compareHint":"Compare mode is on — tap any paragraph to read it in a second language.","readOriginal":"Read the original feature on zaobao.com.sg","inChinese":"in Chinese","beforeAI":"Before AI","afterAI":"With AI","backToTop":"Back to top","sectionsLabel":"Sections","yearNote":"Each labelled year runs from May of the previous year to April of that year.","rankLabel":"Rank","sourceLabel":"Source","videoTag":"Video","articleTag":"Article","publishedLabel":"Published","skillsHint":"Select an industry to see the AI skills its job ads mention most.","tableView":"View the data as a table","skillsFor":"Most-mentioned AI skills in {industry} job ads"},"nav":{"trends":"Today's trends","future":"What's coming","prepare":"How to prepare","reading":"Further reading","videos":"Watch"},"hero":{"kicker":"A classroom companion in 13 languages","title":"The AI Shift","subtitle":"How artificial intelligence is rewriting work in Singapore — what is changing, what comes next, and how to get ready.","basedOn":"An original retelling of the facts and findings first reported in Lianhe Zaobao's interactive feature on AI and Singapore's job market, published 16 August 2026.","scrollCue":"Scroll to begin"},"caseStudy":{"kicker":"One school, one January","title":"When AI joined the band","p1":"Mr Zhu Ruixiong (朱锐雄) has run a percussion music school in Singapore for more than ten years. In January this year, the school brought in AI tools — and its everyday work changed almost beyond recognition.","cards":{"lesson":{"label":"Lesson planning","beforeStat":"1 month","beforeText":"A three-hour teaching plan took two or three teachers about a month to polish.","afterStat":"3 minutes","afterText":"A full draft now appears at the click of a button, ready for teachers to refine."},"score":{"label":"Music scores","beforeStat":"Manual work","beforeText":"Audio was downloaded from the internet and reworked in complicated arranging software.","afterStat":"Generated","afterText":"AI produces scores and practice materials directly, and even helps with new arrangements."},"invoice":{"label":"Invoicing","beforeStat":"Half a day","beforeText":"Teachers went back and forth with the admin office just to issue one invoice.","afterStat":"Seconds","afterText":"Staff dictate the details by voice, check the document, and send it out."},"progress":{"label":"Student progress","beforeStat":"One by one","beforeText":"Teachers followed up with every student individually.","afterStat":"Automatic","afterText":"Students practise on an online AI platform that gives feedback and logs their progress."}},"outro1":"AI is reshaping how most of us work and where our careers can go — and it is changing what skills employers pay for. The wave started in tech, but it has long since spread to every field.","outro2":"Education, Mr Zhu's industry, is already feeling its force — and it is far from the only one being disrupted.","outro3":"So what is AI actually doing to Singapore's job market? What does that mean for ordinary working people? And how can we get ready for what comes next?"},"s1":{"title":"Which industries in Singapore want AI skills most?","lead":"Lianhe Zaobao worked with the employment platform Jobstreet by SEEK to measure how often AI-related keywords have appeared in Singapore job advertisements over the past three years. The more often AI turns up in an industry's job ads, the harder that industry is hunting for AI skills.","method":"Jobstreet did not disclose exact advertisement counts, but its website's search function shows close to 60,000 full-time and part-time positions currently listed.","chart1Title":"The top five industries for AI demand","chart1Sub":"Industry rank by frequency of AI keywords in job ads","industries":{"tech":"Computing & IT (software)","edu":"Education","hr":"HR & consulting","fin":"Finance & banking","gov":"Government & defence"},"sixthPlace":"Construction & engineering (6th)","topFiveText":"Since AI went mainstream in 2023, these five industries have topped the table every single year. AI keywords appear far more often in their ads than anywhere else — on average about <span class='hl'>60% more often<\/span> than in sixth-placed construction & engineering.","insightTech":"<span class='hl'>Computing & IT (software)<\/span> sits at the very front of the AI era and has ranked first for three straight years. The jobs themselves are changing: beyond traditional coding, employers now ask for AI orchestration, security and governance, and systems integration.","insightEdu":"<span class='hl'>Education<\/span> depends on human contact, so it is usually seen as one of the safer industries in the AI era. Yet over the past three years its demand for AI skills has climbed sharply — from fourth place in 2023 to second place last year. One likely reason is the sector's chronic manpower shortage: new AI-enabled roles can streamline lesson planning, teaching materials and back-office admin. Mr Zhu's music school is exactly this story.","insightHr":"<span class='hl'>HR & consulting<\/span> is a special case. Because the industry prizes interpersonal skills, employers hiring for AI roles there are less fixated on deep technical expertise. That reflects a wider trend: the rise of the 'new-collar' worker — someone who combines technology with real-world experience, adapts quickly and solves problems.","skillsTitle":"Which AI skills are employers asking for?","skillsLead":"The most common AI keyword in Jobstreet's ads is broad <span class='hl'>analytical ability<\/span> — analysis that goes beyond data alone. Other frequent requirements include data analysis, Python programming, computer science and automation.","skills":{"analysis":"Analysis","dataAnalysis":"Data analysis","python":"Python programming","compSci":"Computer science","automation":"Automation","none":"No specific AI keywords"},"entryLabel":"{pct} of AI job ads in this industry are entry-level","quotes":{"esther1":{"name":"Esther Lee (李美欣)","role":"Managing Director, Jobstreet Singapore","text":"Lee says the industries that adopted AI fastest are seeing employees become more efficient and more productive, with more time freed up to tackle problems that genuinely need people."},"zhang1":{"name":"Zhang Xiaoyun (张晓云)","role":"Senior Vice-President for Asia Pacific, ADP","text":"Zhang notes that Singapore leans heavily on knowledge workers and international talent while facing a limited labour supply and a changing population structure. That, she says, is why companies here focus on using AI to lift productivity, unlock their employees' potential and grow the business."},"zhang2":{"name":"Zhang Xiaoyun (张晓云)","role":"Senior Vice-President for Asia Pacific, ADP","text":"Zhang's bigger point: AI is pushing Singapore's workplace from a competition of knowledge towards a competition of judgment. The most competitive people in future will not be those who hold the most information, but those who best combine AI's capabilities with human wisdom to create value together."}},"trends":{"title":"AI job ads: boom, freeze, rebound","adsLabel":"Job ads for AI roles","appsLabel":"Applications for AI roles","indexNote":"Indexed: 2024 = 100","step1":"The large language model ChatGPT burst onto the scene at the end of 2022 and set off an AI hiring boom. Then Singapore employers hit pause: between 2024 and 2025, AI job ads plunged <span class='hl'>74%<\/span>. The technology's chaotic early growth had created real uncertainty, and companies entered a 'cooling-off period' — re-evaluating their AI investments and hiring far more cautiously.","step2":"Over the past year the picture flipped. As practical uses of AI became clearer, employers restarted their AI talent strategies, and the number of AI job ads roughly <span class='hl'>tripled year on year<\/span>. Lee's explanation: two years of maturing technology have taught companies how to fold AI into their workflows, and hiring demand has followed.","step3":"Job seekers have not kept pace. In the year to April 2026, applications for AI roles fell another <span class='hl'>17%<\/span>. The drop is smaller than the previous year's 39%, but it signals that local AI talent remains in short supply — many candidates simply do not yet have the skills employers urgently want."},"linker":{"title":"The cooling-off is over: every industry is back on the AI trail","text":"The top five stand at the front line of the AI shift, and their demand for AI talent is growing strongly. The remaining industries, after a brief hesitation during AI's messy early phase, are now drawing up AI talent strategies of their own."}},"s2":{"title":"What could the job market look like next?","lead1":"Across most industries, AI's full impact has not yet arrived. That is not the same as saying your job will be spared.","lead2":"AI is widely seen as the engine of the fourth industrial revolution, and major international studies have already sketched how far the wave could reach.","decadeTitle":"The full impact may take 10 years to show","goldman1":"Research by the investment bank Goldman Sachs on the US job market finds that AI currently weighs heavily on only a handful of industries.","goldman2":"It estimates that most fields will need about ten years to reach large-scale AI adoption. During that long transition, <span class='hl'>6% to 7%<\/span> of US workers could lose their jobs.","goldman3":"Worldwide, an estimated <span class='hl'>300 million<\/span> positions are exposed to AI automation.","chart2Title":"Share of US jobs exposed to AI automation","chart2Sub":"By occupation group, %","chart2Source":"Source: Haver Analytics, Goldman Sachs Research","occupations":{"office":"Office & administrative support","legal":"Legal","architecture":"Architecture & engineering","science":"Life, physical & social science","business":"Business & financial operations","community":"Community & social service","management":"Management","sales":"Sales & related","computer":"Computer & mathematical","farming":"Farming, fishing & forestry","protective":"Protective service","education":"Education & library","healthcare":"Healthcare support","arts":"Arts, design, entertainment & sports","all":"All occupations"},"wefTitle":"By 2030, the global job mix will be different","wef1":"The World Economic Forum's Future of Jobs Report 2025 projects that by 2030, driven by AI, the green transition and economic turbulence, <span class='hl'>22%<\/span> of jobs worldwide will go through structural change.","wef2":"By then, some <span class='hl'>92 million<\/span> roles are expected to be displaced — but around <span class='hlNew'>170 million<\/span> new ones created. That is a net gain of 78 million jobs.","wefDisplaced":"Jobs displaced","wefCreated":"New jobs created","wefNet":"Net gain","wefUnit":"million","wefSource":"Source: World Economic Forum, Future of Jobs Report 2025; ILOSTAT"},"s3":{"title":"How do you prepare for the post-AI era?","lead":"AI brings far more opportunity than threat. The real challenge, for individuals and companies alike, is managing the transition — steering yourself towards the new jobs the post-AI era creates.","oxfordLead":"Research from the University of Oxford suggests AI skills already pay off — in wages, benefits and interview chances:","oxford":{"pay":{"value":"+23%","label":"Pay","text":"Roles that ask for AI skills advertise salaries about 23% higher on average."},"benefits":{"value":"More perks","label":"Benefits","text":"AI-related roles are more likely to offer remote work and parental leave."},"interviews":{"value":"+8–15%","label":"Interviews","text":"Candidates with AI skills are 8% to 15% more likely to be invited to interview."}},"evergreenTitle":"In a fast-moving AI era, which skills actually last?","evergreen1":"What really matters is not just learning to operate AI, but knowing how to use it to raise the value of your work — while building the judgment, communication and problem-solving skills that AI cannot easily replace.","wong1":"Prof Steven Wong (黄开庄), Director of the Centre for Digital Enablement at the Singapore Institute of Technology, cautions that AI is moving so fast that some of today's AI skills will become obsolete — especially operating tricks tied to specific tools.","wong2":"Even so, his advice is to build AI literacy early, whatever direction the technology takes: learn to use AI, to supervise it, and to combine it with human judgment.","everyone":"As AI spreads, anyone can use it to work faster. Simply 'knowing how to use AI' will not stay an advantage for long.","poon1":"Poon King Wang (潘竞宏), Chief Strategy and Design-AI Officer at the Singapore University of Technology and Design and Director of the Lee Kuan Yew Centre for Innovative Cities, urges workers to shift their mindset from 'AI user' to 'AI creator' — using AI to keep creating value that is distinctly their own. That, he argues, is how you stand out in the future workplace.","tipTitle":"Keep building transferable skills","tipText":"<span class='hl'>Analytical thinking, communication, creativity and deep domain knowledge<\/span> travel with you from job to job. Use AI deliberately to streamline your workflow: hand the repetitive tasks to the machine, and spend your own time on judgment, decisions and problem-solving.","li1":"At Singapore Management University, Prof Li Jia (李嘉), Dean of the School of Economics, and his team are tracking AI's long-term effect on the local job market.","li2":"He says it is impossible to predict precisely how many Singapore jobs will disappear to AI in the next three to five years. What researchers can do is watch hiring ads, spot industries where recruitment is shrinking, and sound the alarm early — giving policymakers and job seekers time to respond.","li3":"Much remains uncertain, including how far large language models can still advance — and that uncertainty will shape the job market's future. For individuals, Li's advice is to 'train your body' before the storm arrives.","li4":"He compares learning AI skills to taking medicine after a health check finds a problem, or exercising to build strength: the results are not guaranteed and rarely instant, but they never make you worse off. When the AI shock reaches your industry, those skills could be what keeps you employed — and what makes you more resilient."},"reading":{"title":"Further reading","note":"The full series on zaobao.com.sg — all articles are in Chinese. Descriptions below are our own summaries.","groups":{"g1":{"title":"New hiring trends","a1":"Demand for AI talent has tripled — and non-tech employers have joined the hunt.","a2":"Why 'new-collar' workers who combine hard and soft skills are now the most sought-after.","a3":"AI is squeezing the 'first job': entry-level openings are set to shrink, and internships are already harder to find."},"g2":{"title":"How AI is reshaping daily work","a1":"AI is rewriting teachers' job descriptions — turning them into 'editors-in-chief' of AI-drafted lessons.","a2":"One minute of AI magic on stage, two years of platform-building backstage: successful transformation cannot be rushed."},"g3":{"title":"The pain of displacement","a1":"Outpaced by an AI that was faster and 'smarter', a 43-year-old content developer works to reinvent themselves after retrenchment.","a2":"'Will AI replace me?' More and more job seekers are bringing that fear to career coaches."},"g4":{"title":"Craft and creativity under pressure","a1":"Artists and writers argue AI can generate the 'plausible' — but not the soul of a work.","a2":"With about 90% of advertising output now made with AI, creatives are moving from making the work to curating it."},"g5":{"title":"Skills that last","a1":"How to choose an AI course: learning to use AI is not enough — learn to create with it.","a2":"No more memorising: a 65-year-old retail worker scans wine labels with AI and answers like an expert."}},"videosTitle":"Watch","videos":{"v1":{"title":"Efficiency boost — or human replacement?","text":"Are you afraid of being replaced by AI? When even tech professionals and lawyers are highly exposed, how should they respond?"},"v2":{"title":"Build a company on AI and multiply productivity 16 times?","text":"Companies are pouring money into AI productivity. What does it really take — and how should we rethink the way we work?"}}},"about":{"title":"About this page","p1":"This is an original educational companion built for multilingual classrooms. It retells, in 13 languages, the facts and findings of an interactive feature by Lianhe Zaobao (联合早报), Singapore's Chinese-language daily — so that students who do not read Chinese can follow the same story, the same charts and the same structure as the original, and discuss them side by side.","p2":"The text on this page is an original summary written for teaching, not a translation of the article. Quotes from the people featured are paraphrased. All data belongs to the sources cited. Please support the original journalism:","originalTitle":"Original feature","originalCredit":"'AI与职场变局' (AI and the Changing Workplace), Lianhe Zaobao interactive, published 16 August 2026. Text: Lin Pingying. Interviews: Lin Pingying, Lu Huijing, Li Gengwei. Planning: Huang Xiaofang. Illustration: Lu Fangkai. Design & development: Wang Yuchen, Huang Junnan. © SPH Media Limited.","romanization":"Chinese names are romanised in hanyu pinyin where no official English spelling was published.","dataTitle":"Data sources","data1":"Lianhe Zaobao × Jobstreet by SEEK analysis of AI keywords in Singapore job ads, 2023–2026","data2":"Goldman Sachs Research / Haver Analytics — AI and the US labour market","data3":"World Economic Forum, Future of Jobs Report 2025; ILOSTAT","data4":"University of Oxford research on AI skills, wages and hiring","disclaimer":"Built for classroom use. Not affiliated with, or endorsed by, SPH Media or Lianhe Zaobao."}},"zh":{"_meta":{"code":"zh","htmlLang":"zh-Hans","name":"中文（简体）","englishName":"Chinese (Simplified)","fontClass":"sc"},"ui":{"brand":"AI变局","brandPlace":"新加坡","languageLabel":"语言","compareLabel":"对照语言","compareOff":"关闭","compareHint":"对照模式已开启——点击任意段落，即可用第二种语言阅读。","readOriginal":"到zaobao.com.sg阅读原版专题","inChinese":"中文版","beforeAI":"AI之前","afterAI":"有了AI","backToTop":"回到顶部","sectionsLabel":"章节","yearNote":"图中标注的每个年份，均指前一年5月至当年4月。","rankLabel":"排名","sourceLabel":"来源","videoTag":"视频","articleTag":"文章","publishedLabel":"发布日期","skillsHint":"选择一个行业，查看其招聘广告中最常提到的AI技能。","tableView":"以表格查看数据","skillsFor":"{industry}招聘广告中最常提到的AI技能"},"nav":{"trends":"当前趋势","future":"未来走向","prepare":"如何准备","reading":"延伸阅读","videos":"视频"},"hero":{"kicker":"13种语言的课堂伴读","title":"AI变局","subtitle":"人工智能（AI）正在改写新加坡的职场——什么正在改变？接下来会发生什么？我们又该如何做好准备？","basedOn":"本页以原创方式重述《联合早报》AI与新加坡就业市场互动专题首发报道的事实与发现，该专题于2026年8月16日发布。","scrollCue":"向下滚动，开始阅读"},"caseStudy":{"kicker":"一所学校的一月","title":"当AI加入乐团","p1":"朱锐雄在新加坡经营一所打击乐音乐学校已有十多年。今年一月，学校引入了AI工具——日常运作从此几乎彻底改观。","cards":{"lesson":{"label":"备课","beforeStat":"1个月","beforeText":"一份三小时的教案，需要两三名教师花大约一个月反复打磨。","afterStat":"3分钟","afterText":"如今点击一下按钮，完整初稿即刻生成，教师只需在此基础上修改完善。"},"score":{"label":"乐谱","beforeStat":"人工制作","beforeText":"过去要从网上下载音频，再用复杂的编曲软件加工处理。","afterStat":"自动生成","afterText":"AI直接生成乐谱和练习材料，甚至还能协助编写新曲。"},"invoice":{"label":"开发票","beforeStat":"半天","beforeText":"为了开一张发票，教师得和行政部门来回沟通。","afterStat":"几秒钟","afterText":"员工口述细节，核对文件后即可发出。"},"progress":{"label":"学习进度","beforeStat":"逐一跟进","beforeText":"教师须逐个跟进每名学生的学习情况。","afterStat":"自动记录","afterText":"学生在线上AI平台练习，平台即时给予反馈并记录进度。"}},"outro1":"AI正在重塑我们大多数人的工作方式和职业路径，也在改变雇主愿意为哪些技能买单。这股浪潮始于科技业，但早已蔓延到各行各业。","outro2":"朱锐雄所在的教育行业已经感受到它的力量——而被颠覆的行业远不止这一个。","outro3":"那么，AI究竟正在如何改变新加坡的就业市场？这对普通打工族意味着什么？我们又该如何为接下来的变化做好准备？"},"s1":{"title":"新加坡哪些行业最渴求AI技能？","lead":"《联合早报》与招聘平台Jobstreet by SEEK合作，统计过去三年新加坡招聘广告中AI相关关键词出现的频率。一个行业的招聘广告越常出现AI，说明这个行业对AI技能的需求就越迫切。","method":"Jobstreet未公布确切的广告数量，但其网站的搜索功能显示，目前刊登的全职和兼职职位接近60,000个。","chart1Title":"AI需求最高的五大行业","chart1Sub":"按招聘广告中AI关键词出现频率排名","industries":{"tech":"电脑与资讯科技（软件）","edu":"教育","hr":"人力资源与咨询","fin":"金融与银行","gov":"政府与国防"},"sixthPlace":"建筑与工程（第6位）","topFiveText":"自2023年AI进入主流以来，这五大行业年年高居榜首。它们招聘广告中AI关键词的出现频率远高于其他行业——平均比排名第六的建筑与工程<span class='hl'>高出约60%<\/span>。","insightTech":"<span class='hl'>电脑与资讯科技（软件）<\/span>站在AI时代的最前沿，已连续三年排名第一。这类工作本身也在变化：除了传统的编程，雇主如今还要求AI统筹调度、安全与治理，以及系统整合等能力。","insightEdu":"<span class='hl'>教育<\/span>行业依赖人与人的接触，通常被视为AI时代较为安全的行业之一。然而过去三年，它对AI技能的需求急速攀升——从2023年的第四位升至去年的第二位。一个可能的原因是该行业长期人手短缺：新的AI岗位可以简化备课、教材制作和后台行政工作。朱锐雄的音乐学校正是这样的故事。","insightHr":"<span class='hl'>人力资源与咨询<\/span>是个特例。由于这一行重视人际交往能力，招聘AI相关职位的雇主对深厚技术功底的要求相对没那么高。这反映出一个更大的趋势：“新领”工作者的崛起——他们把科技与实战经验相结合，适应快、能解决问题。","skillsTitle":"雇主最想要哪些AI技能？","skillsLead":"Jobstreet招聘广告中最常见的AI关键词，是广义的<span class='hl'>分析能力<\/span>——不局限于数据的分析。其他常见要求还包括数据分析、Python编程、计算机科学和自动化。","skills":{"analysis":"分析能力","dataAnalysis":"数据分析","python":"Python编程","compSci":"计算机科学","automation":"自动化","none":"无特定AI关键词"},"entryLabel":"的AI招聘广告属于入门级职位","quotes":{"esther1":{"name":"李美欣（Esther Lee）","role":"Jobstreet新加坡董事总经理","text":"李美欣说，最早采用AI的行业已经看到员工效率和生产力提升，腾出更多时间去处理真正需要人来解决的问题。"},"zhang1":{"name":"张晓云","role":"ADP亚太区高级副总裁","text":"张晓云指出，新加坡高度依赖知识型员工和国际人才，同时面对劳动力供应有限和人口结构变化的挑战。她说，正因如此，本地企业更专注于利用AI提升生产力、释放员工潜能、推动业务增长。"},"zhang2":{"name":"张晓云","role":"ADP亚太区高级副总裁","text":"张晓云更想强调的是：AI正推动新加坡职场从“知识的竞争”走向“判断力的竞争”。未来最有竞争力的，不是掌握最多信息的人，而是最善于把AI的能力与人类智慧结合起来、共同创造价值的人。"}},"trends":{"title":"AI招聘广告：爆发、冰封、回暖","adsLabel":"AI职位招聘广告","appsLabel":"AI职位求职申请","indexNote":"指数化：2024年 = 100","step1":"2022年底，大型语言模型ChatGPT横空出世，掀起一轮AI招聘热潮。随后新加坡雇主按下了暂停键：2024年至2025年间，AI招聘广告骤减<span class='hl'>74%<\/span>。这项技术早期的野蛮生长带来了实实在在的不确定性，企业进入“冷静期”，重新评估AI投资，招聘也变得谨慎许多。","step2":"过去一年，形势逆转。随着AI的实际用途日渐清晰，雇主重启AI人才战略，AI招聘广告数量<span class='hl'>同比增长约两倍<\/span>。李美欣的解释是：经过两年的技术成熟期，企业学会了如何把AI融入工作流程，招聘需求随之而来。","step3":"求职者却没有跟上。截至2026年4月的一年里，AI职位的求职申请再跌<span class='hl'>17%<\/span>。跌幅虽小于前一年的39%，却说明本地AI人才依然短缺——许多求职者还不具备雇主急需的技能。"},"linker":{"title":"冷静期结束：各行各业重回AI赛道","text":"五大行业站在AI变革的最前线，对AI人才的需求正强劲增长。其余行业在AI混沌初期短暂观望之后，如今也纷纷制定起自己的AI人才战略。"}},"s2":{"title":"就业市场接下来会变成什么样？","lead1":"在大多数行业，AI的全面冲击尚未到来。但这并不等于你的工作可以幸免。","lead2":"AI被广泛视为第四次工业革命的引擎，多项重要国际研究已经勾勒出这股浪潮可能波及的范围。","decadeTitle":"全面影响或需10年才会显现","goldman1":"投资银行高盛（Goldman Sachs）针对美国就业市场的研究发现，AI目前只对少数行业构成沉重压力。","goldman2":"高盛估计，大多数领域需要约十年才能实现AI的大规模应用。在这段漫长的过渡期里，可能有<span class='hl'>6%至7%<\/span>的美国劳动者失去工作。","goldman3":"放眼全球，估计有<span class='hl'>3亿<\/span>个职位面临被AI自动化取代的风险。","chart2Title":"面临AI自动化风险的美国职位比例","chart2Sub":"按职业类别，%","chart2Source":"来源：Haver Analytics、Goldman Sachs Research","occupations":{"office":"办公室与行政支援","legal":"法律","architecture":"建筑与工程","science":"生命、自然与社会科学","business":"商业与金融运营","community":"社区与社会服务","management":"管理","sales":"销售及相关","computer":"计算机与数学","farming":"农林渔业","protective":"安保服务","education":"教育与图书馆","healthcare":"医疗保健支援","arts":"艺术、设计、娱乐与体育","all":"所有职业"},"wefTitle":"到2030年，全球职业版图将大不相同","wef1":"世界经济论坛《2025年未来就业报告》预测，到2030年，在AI、绿色转型和经济动荡的推动下，全球<span class='hl'>22%<\/span>的工作将经历结构性变化。","wef2":"届时，预计约有<span class='hl'>9200万<\/span>个职位被取代——但同时将新创造约<span class='hlNew'>1亿7000万<\/span>个职位，净增7800万个工作岗位。","wefDisplaced":"被取代的职位","wefCreated":"新创造的职位","wefNet":"净增","wefUnit":"百万","wefSource":"来源：世界经济论坛《2025年未来就业报告》；ILOSTAT"},"s3":{"title":"如何为后AI时代做好准备？","lead":"AI带来的机遇远多于威胁。真正的挑战——无论对个人还是企业——在于管理好这场转型，把自己引向后AI时代创造出的新工作。","oxfordLead":"牛津大学的研究显示，AI技能已经开始带来回报——体现在薪资、福利和面试机会上：","oxford":{"pay":{"value":"+23%","label":"薪资","text":"要求AI技能的职位，招聘广告上的薪资平均高出约23%。"},"benefits":{"value":"更多福利","label":"福利","text":"AI相关职位更有可能提供远程办公和育儿假等福利。"},"interviews":{"value":"+8–15%","label":"面试机会","text":"具备AI技能的求职者，获邀面试的概率高出8%至15%。"}},"evergreenTitle":"AI时代日新月异，哪些技能真正经得起时间考验？","evergreen1":"真正重要的，不只是学会操作AI，而是懂得用它提升工作的价值——同时培养AI难以取代的判断力、沟通能力和解决问题的能力。","wong1":"新加坡理工大学数码赋能中心主任黄开庄教授（Steven Wong）提醒，AI发展速度太快，今天的一些AI技能将会过时——尤其是绑定特定工具的操作技巧。","wong2":"尽管如此，他仍建议及早建立AI素养，无论技术走向何方：学会使用AI、监督AI，并把它与人类的判断结合起来。","everyone":"随着AI日益普及，人人都能用它提高效率。单单“会用AI”，很快就不再是优势。","poon1":"新加坡科技设计大学首席策略与设计AI官、李光耀创新城市中心主任潘竞宏（Poon King Wang）呼吁打工族转变思维——从“AI使用者”变成“AI创造者”，用AI持续创造具有个人特色的价值。他认为，这才是在未来职场脱颖而出的方法。","tipTitle":"持续积累可迁移技能","tipText":"<span class='hl'>分析思维、沟通能力、创造力和深厚的专业知识<\/span>会跟着你从一份工作走到下一份工作。要有意识地用AI优化工作流程：把重复性任务交给机器，把自己的时间留给判断、决策和解决问题。","li1":"在新加坡管理大学，经济学院院长李嘉教授正与团队追踪AI对本地就业市场的长期影响。","li2":"他说，未来三五年新加坡会有多少工作被AI取代，无法精确预测。研究者能做的，是紧盯招聘广告，及早发现招聘正在收缩的行业并发出预警，让政策制定者和求职者有时间应对。","li3":"许多问题仍是未知数，包括大型语言模型还能进步多远——而这种不确定性将左右就业市场的未来。对个人而言，李嘉的建议是在风暴来临之前先“把身体练好”。","li4":"他把学习AI技能比作体检发现问题后吃药，或是通过运动增强体质：效果没有保证，也很少立竿见影，但绝不会让你变得更糟。当AI的冲击波及你所在的行业时，这些技能可能正是让你保住饭碗、变得更有韧性的关键。"},"reading":{"title":"延伸阅读","note":"完整系列刊于zaobao.com.sg，所有文章均为中文。以下简介由本页自行撰写。","groups":{"g1":{"title":"招聘新趋势","a1":"AI人才需求增长两倍——非科技行业的雇主也加入抢人行列。","a2":"软硬技能兼备的“新领”工作者，为何成为最抢手的人才。","a3":"AI正在挤压“第一份工作”：入门级职位空缺将减少，实习机会已经更难找。"},"g2":{"title":"AI如何重塑日常工作","a1":"AI正在改写教师的工作职责——让他们成为AI初拟教案的“总编辑”。","a2":"台上一分钟的AI魔法，台下两年的平台搭建：成功转型急不得。"},"g3":{"title":"被取代之痛","a1":"被更快、更“聪明”的AI超越，43岁的内容开发员在裁员后努力重塑自己。","a2":"“AI会取代我吗？”越来越多求职者带着这个恐惧走进职业辅导室。"},"g4":{"title":"手艺与创意承压","a1":"艺术家和作家认为，AI能生成“像样”的作品，却生成不了作品的灵魂。","a2":"广告产出约90%已借助AI完成，创意人正从“动手创作”转向“策展把关”。"},"g5":{"title":"经得起时间的技能","a1":"如何挑选AI课程：学会用AI还不够，要学会用AI创造。","a2":"不必再死记硬背：65岁零售员工用AI扫描酒标，答问如行家。"}},"videosTitle":"视频","videos":{"v1":{"title":"是提升效率，还是取代人类？","text":"你害怕被AI取代吗？当连科技专才和律师都高度暴露于AI冲击之下，他们该如何应对？"},"v2":{"title":"用AI打造公司，生产力提升16倍？","text":"企业纷纷重金押注AI生产力。这究竟需要什么条件？我们又该如何重新思考工作方式？"}}},"about":{"title":"关于本页","p1":"这是一个为多语言课堂打造的原创教育伴读页面。它以13种语言重述新加坡华文日报《联合早报》（Lianhe Zaobao）互动专题的事实与发现，让不谙中文的学生也能跟上与原文相同的故事、图表和结构，并进行对照讨论。","p2":"本页文字是为教学而写的原创摘要，并非文章译文。受访者的话均为转述。所有数据版权归所引来源。请支持原创新闻报道：","originalTitle":"原版专题","originalCredit":"《联合早报》互动专题《AI与职场变局》，2026年8月16日发布。文字：Lin Pingying。采访：Lin Pingying、Lu Huijing、Li Gengwei。策划：Huang Xiaofang。插画：Lu Fangkai。设计与开发：Wang Yuchen、Huang Junnan。© SPH Media Limited。","romanization":"凡未公布官方英文拼写的中文人名，均以汉语拼音转写。","dataTitle":"数据来源","data1":"《联合早报》×Jobstreet by SEEK：2023年至2026年新加坡招聘广告AI关键词分析","data2":"高盛研究部（Goldman Sachs Research）/ Haver Analytics——AI与美国劳动力市场","data3":"世界经济论坛《2025年未来就业报告》；ILOSTAT","data4":"牛津大学关于AI技能、薪资与招聘的研究","disclaimer":"本页仅供课堂教学使用，与SPH Media及《联合早报》无关联，亦未获其认可。"}},"ms":{"_meta":{"code":"ms","htmlLang":"ms","name":"Bahasa Melayu","englishName":"Malay","fontClass":"latin"},"ui":{"brand":"Anjakan AI","brandPlace":"Singapura","languageLabel":"Bahasa","compareLabel":"Bandingkan dengan","compareOff":"Tutup","compareHint":"Mod perbandingan aktif — sentuh mana-mana perenggan untuk membacanya dalam bahasa kedua.","readOriginal":"Baca rencana asal di zaobao.com.sg","inChinese":"dalam bahasa Cina","beforeAI":"Sebelum AI","afterAI":"Dengan AI","backToTop":"Kembali ke atas","sectionsLabel":"Bahagian","yearNote":"Setiap tahun berlabel bermula dari Mei tahun sebelumnya hingga April tahun tersebut.","rankLabel":"Kedudukan","sourceLabel":"Sumber","videoTag":"Video","articleTag":"Rencana","publishedLabel":"Diterbitkan","skillsHint":"Pilih satu industri untuk melihat kemahiran AI yang paling kerap disebut dalam iklan pekerjaannya.","tableView":"Lihat data dalam bentuk jadual","skillsFor":"Kemahiran AI paling kerap disebut dalam iklan pekerjaan {industry}"},"nav":{"trends":"Trend hari ini","future":"Apa yang mendatang","prepare":"Cara bersiap sedia","reading":"Bacaan lanjut","videos":"Tonton"},"hero":{"kicker":"Teman bilik darjah dalam 13 bahasa","title":"Anjakan AI","subtitle":"Bagaimana kecerdasan buatan (AI) mengubah dunia pekerjaan di Singapura — apa yang sedang berubah, apa yang mendatang, dan bagaimana untuk bersiap sedia.","basedOn":"Penceritaan semula asli fakta dan penemuan yang mula-mula dilaporkan dalam rencana interaktif Lianhe Zaobao tentang AI dan pasaran pekerjaan Singapura, diterbitkan pada 16 Ogos 2026.","scrollCue":"Skrol untuk mula"},"caseStudy":{"kicker":"Satu sekolah, satu Januari","title":"Apabila AI menyertai kumpulan muzik","p1":"Encik Zhu Ruixiong (朱锐雄) telah mengendalikan sebuah sekolah muzik perkusi di Singapura selama lebih sepuluh tahun. Pada Januari tahun ini, sekolah itu mula menggunakan alat AI — dan kerja hariannya berubah hampir tidak dapat dikenali lagi.","cards":{"lesson":{"label":"Perancangan pengajaran","beforeStat":"1 bulan","beforeText":"Satu rancangan pengajaran tiga jam mengambil masa kira-kira sebulan untuk digilap oleh dua tiga orang guru.","afterStat":"3 minit","afterText":"Draf penuh kini muncul dengan satu klik, sedia untuk diperhalusi oleh guru."},"score":{"label":"Skor muzik","beforeStat":"Kerja manual","beforeText":"Audio dimuat turun dari internet dan diolah semula dalam perisian gubahan yang rumit.","afterStat":"Dijana terus","afterText":"AI menghasilkan skor dan bahan latihan secara terus, malah membantu dengan gubahan baharu."},"invoice":{"label":"Invois","beforeStat":"Setengah hari","beforeText":"Guru terpaksa berulang-alik dengan pejabat pentadbiran semata-mata untuk mengeluarkan satu invois.","afterStat":"Beberapa saat","afterText":"Kakitangan menyebut butiran secara suara, menyemak dokumen, dan terus menghantarnya."},"progress":{"label":"Kemajuan pelajar","beforeStat":"Seorang demi seorang","beforeText":"Guru membuat susulan dengan setiap pelajar secara individu.","afterStat":"Automatik","afterText":"Pelajar berlatih di platform AI dalam talian yang memberi maklum balas dan merekodkan kemajuan mereka."}},"outro1":"AI sedang mengubah cara kebanyakan kita bekerja dan hala tuju kerjaya kita — malah mengubah kemahiran yang sanggup dibayar oleh majikan. Gelombang ini bermula dalam bidang teknologi, tetapi sudah lama merebak ke setiap bidang.","outro2":"Pendidikan, industri Encik Zhu, sudah pun merasai tekanannya — dan ia jauh daripada satu-satunya bidang yang sedang digegarkan.","outro3":"Jadi, apakah sebenarnya kesan AI terhadap pasaran pekerjaan Singapura? Apakah maknanya bagi pekerja biasa? Dan bagaimana kita boleh bersiap sedia untuk apa yang mendatang?"},"s1":{"title":"Industri mana di Singapura yang paling mahukan kemahiran AI?","lead":"Lianhe Zaobao bekerjasama dengan platform pekerjaan Jobstreet by SEEK untuk mengukur kekerapan kata kunci berkaitan AI muncul dalam iklan pekerjaan di Singapura sepanjang tiga tahun lalu. Semakin kerap AI muncul dalam iklan pekerjaan sesebuah industri, semakin gigih industri itu memburu kemahiran AI.","method":"Jobstreet tidak mendedahkan jumlah iklan yang tepat, tetapi fungsi carian di laman webnya menunjukkan hampir 60,000 jawatan sepenuh masa dan separuh masa kini disenaraikan.","chart1Title":"Lima industri teratas bagi permintaan AI","chart1Sub":"Kedudukan industri mengikut kekerapan kata kunci AI dalam iklan pekerjaan","industries":{"tech":"Komputer & IT (perisian)","edu":"Pendidikan","hr":"Sumber manusia & perundingan","fin":"Kewangan & perbankan","gov":"Kerajaan & pertahanan"},"sixthPlace":"Pembinaan & kejuruteraan (ke-6)","topFiveText":"Sejak AI menjadi arus perdana pada 2023, lima industri ini menduduki tangga teratas setiap tahun tanpa gagal. Kata kunci AI muncul jauh lebih kerap dalam iklan mereka berbanding industri lain — secara purata kira-kira <span class='hl'>60% lebih kerap<\/span> daripada pembinaan & kejuruteraan di tempat keenam.","insightTech":"<span class='hl'>Komputer & IT (perisian)<\/span> berada di barisan paling hadapan era AI dan menduduki tempat pertama tiga tahun berturut-turut. Pekerjaannya sendiri sedang berubah: selain pengaturcaraan tradisional, majikan kini mahukan kemahiran orkestrasi AI, keselamatan dan tadbir urus, serta integrasi sistem.","insightEdu":"<span class='hl'>Pendidikan<\/span> bergantung pada sentuhan manusia, jadi ia lazimnya dianggap antara industri yang lebih selamat dalam era AI. Namun sepanjang tiga tahun lalu, permintaannya terhadap kemahiran AI melonjak mendadak — daripada tempat keempat pada 2023 kepada tempat kedua tahun lalu. Satu sebab yang mungkin ialah kekurangan tenaga kerja kronik dalam sektor ini: peranan baharu berasaskan AI dapat melancarkan perancangan pengajaran, bahan pengajaran dan urusan pentadbiran. Sekolah muzik Encik Zhu ialah contoh tepat kisah ini.","insightHr":"<span class='hl'>Sumber manusia & perundingan<\/span> ialah kes istimewa. Oleh sebab industri ini mementingkan kemahiran interpersonal, majikan yang mengambil pekerja untuk peranan AI di sini kurang menekankan kepakaran teknikal yang mendalam. Ini mencerminkan trend yang lebih luas: kebangkitan pekerja 'kolar baharu' — mereka yang menggabungkan teknologi dengan pengalaman dunia sebenar, cepat menyesuaikan diri dan mahir menyelesaikan masalah.","skillsTitle":"Kemahiran AI apakah yang dicari majikan?","skillsLead":"Kata kunci AI paling lazim dalam iklan Jobstreet ialah <span class='hl'>kebolehan analisis<\/span> yang luas — analisis yang melangkaui data semata-mata. Keperluan lazim yang lain termasuk analisis data, pengaturcaraan Python, sains komputer dan automasi.","skills":{"analysis":"Analisis","dataAnalysis":"Analisis data","python":"Pengaturcaraan Python","compSci":"Sains komputer","automation":"Automasi","none":"Tiada kata kunci AI khusus"},"entryLabel":"{pct} daripada iklan pekerjaan AI dalam industri ini adalah peringkat permulaan","quotes":{"esther1":{"name":"Esther Lee (李美欣)","role":"Pengarah Urusan, Jobstreet Singapore","text":"Lee berkata industri yang paling pantas mengguna pakai AI kini menyaksikan pekerja menjadi lebih cekap dan lebih produktif, dengan lebih banyak masa dibebaskan untuk menangani masalah yang benar-benar memerlukan manusia."},"zhang1":{"name":"Zhang Xiaoyun (张晓云)","role":"Naib Presiden Kanan Asia Pasifik, ADP","text":"Zhang menyatakan bahawa Singapura amat bergantung pada pekerja berpengetahuan dan bakat antarabangsa, sambil berdepan bekalan tenaga kerja yang terhad dan struktur penduduk yang berubah. Itulah sebabnya, katanya, syarikat di sini menumpukan pada penggunaan AI untuk meningkatkan produktiviti, membuka potensi pekerja dan mengembangkan perniagaan."},"zhang2":{"name":"Zhang Xiaoyun (张晓云)","role":"Naib Presiden Kanan Asia Pasifik, ADP","text":"Mesej besar Zhang: AI sedang menolak dunia pekerjaan Singapura daripada persaingan pengetahuan kepada persaingan pertimbangan. Insan yang paling berdaya saing pada masa depan bukanlah mereka yang memegang paling banyak maklumat, tetapi mereka yang paling bijak menggabungkan keupayaan AI dengan kebijaksanaan manusia untuk mencipta nilai bersama."}},"trends":{"title":"Iklan pekerjaan AI: melonjak, membeku, melantun semula","adsLabel":"Iklan pekerjaan untuk peranan AI","appsLabel":"Permohonan untuk peranan AI","indexNote":"Indeks: 2024 = 100","step1":"Model bahasa besar ChatGPT muncul secara mengejut pada penghujung 2022 dan mencetuskan ledakan pengambilan pekerja AI. Kemudian majikan Singapura menekan butang jeda: antara 2024 dan 2025, iklan pekerjaan AI menjunam <span class='hl'>74%<\/span>. Pertumbuhan awal teknologi ini yang bercelaru menimbulkan ketidakpastian sebenar, dan syarikat memasuki 'tempoh bertenang' — menilai semula pelaburan AI mereka dan mengambil pekerja dengan jauh lebih berhati-hati.","step2":"Sepanjang setahun lalu, keadaan berbalik. Apabila kegunaan praktikal AI semakin jelas, majikan memulakan semula strategi bakat AI mereka, dan bilangan iklan pekerjaan AI meningkat kira-kira <span class='hl'>tiga kali ganda tahun ke tahun<\/span>. Penjelasan Lee: dua tahun kematangan teknologi telah mengajar syarikat cara menyerapkan AI ke dalam aliran kerja mereka, dan permintaan pengambilan pekerja pun menyusul.","step3":"Pencari kerja pula belum dapat mengejar rentak ini. Dalam tempoh setahun hingga April 2026, permohonan untuk peranan AI jatuh lagi sebanyak <span class='hl'>17%<\/span>. Penurunan ini lebih kecil daripada 39% pada tahun sebelumnya, tetapi ia menandakan bakat AI tempatan masih berkurangan — ramai calon belum lagi memiliki kemahiran yang sangat diperlukan majikan."},"linker":{"title":"Tempoh bertenang sudah berakhir: setiap industri kembali memburu AI","text":"Lima industri teratas berdiri di barisan hadapan anjakan AI, dan permintaan mereka terhadap bakat AI terus berkembang kukuh. Industri selebihnya, selepas seketika teragak-agak semasa fasa awal AI yang bercelaru, kini menggubal strategi bakat AI mereka sendiri."}},"s2":{"title":"Bagaimanakah rupa pasaran pekerjaan seterusnya?","lead1":"Dalam kebanyakan industri, kesan penuh AI belum lagi tiba. Tetapi itu tidak bermakna pekerjaan anda akan terselamat.","lead2":"AI dilihat secara meluas sebagai enjin revolusi perindustrian keempat, dan kajian antarabangsa utama telah pun melakarkan sejauh mana gelombang ini boleh sampai.","decadeTitle":"Kesan penuh mungkin mengambil masa 10 tahun untuk kelihatan","goldman1":"Kajian bank pelaburan Goldman Sachs tentang pasaran pekerjaan Amerika Syarikat (AS) mendapati AI kini memberi tekanan besar hanya kepada segelintir industri.","goldman2":"Ia menganggarkan kebanyakan bidang memerlukan kira-kira sepuluh tahun untuk mencapai penggunaan AI berskala besar. Sepanjang peralihan yang panjang itu, <span class='hl'>6% hingga 7%<\/span> pekerja AS mungkin kehilangan pekerjaan.","goldman3":"Di seluruh dunia, dianggarkan <span class='hl'>300 juta<\/span> jawatan terdedah kepada automasi AI.","chart2Title":"Peratusan pekerjaan AS yang terdedah kepada automasi AI","chart2Sub":"Mengikut kumpulan pekerjaan, %","chart2Source":"Sumber: Haver Analytics, Goldman Sachs Research","occupations":{"office":"Sokongan pejabat & pentadbiran","legal":"Perundangan","architecture":"Seni bina & kejuruteraan","science":"Sains hayat, fizikal & sosial","business":"Operasi perniagaan & kewangan","community":"Khidmat masyarakat & sosial","management":"Pengurusan","sales":"Jualan & yang berkaitan","computer":"Komputer & matematik","farming":"Pertanian, perikanan & perhutanan","protective":"Perkhidmatan perlindungan","education":"Pendidikan & perpustakaan","healthcare":"Sokongan penjagaan kesihatan","arts":"Seni, reka bentuk, hiburan & sukan","all":"Semua pekerjaan"},"wefTitle":"Menjelang 2030, komposisi pekerjaan dunia akan berubah","wef1":"Laporan Future of Jobs Report 2025 oleh Forum Ekonomi Dunia (World Economic Forum) mengunjurkan bahawa menjelang 2030, didorong oleh AI, peralihan hijau dan gelora ekonomi, <span class='hl'>22%<\/span> pekerjaan di seluruh dunia akan melalui perubahan struktur.","wef2":"Menjelang itu, kira-kira <span class='hl'>92 juta<\/span> pekerjaan dijangka tersingkir — tetapi sekitar <span class='hlNew'>170 juta<\/span> pekerjaan baharu tercipta. Itu bermakna pertambahan bersih 78 juta pekerjaan.","wefDisplaced":"Pekerjaan tersingkir","wefCreated":"Pekerjaan baharu dicipta","wefNet":"Pertambahan bersih","wefUnit":"juta","wefSource":"Sumber: Forum Ekonomi Dunia, Future of Jobs Report 2025; ILOSTAT"},"s3":{"title":"Bagaimana bersiap sedia untuk era pasca-AI?","lead":"AI membawa jauh lebih banyak peluang daripada ancaman. Cabaran sebenar, bagi individu mahupun syarikat, ialah mengurus peralihan itu — mengemudi diri ke arah pekerjaan baharu yang dicipta oleh era pasca-AI.","oxfordLead":"Kajian dari Universiti Oxford menunjukkan kemahiran AI sudah pun membuahkan hasil — dari segi gaji, faedah dan peluang temu duga:","oxford":{"pay":{"value":"+23%","label":"Gaji","text":"Peranan yang memerlukan kemahiran AI mengiklankan gaji purata kira-kira 23% lebih tinggi."},"benefits":{"value":"Lebih faedah","label":"Faedah","text":"Peranan berkaitan AI lebih cenderung menawarkan kerja jarak jauh dan cuti ibu bapa."},"interviews":{"value":"+8–15%","label":"Temu duga","text":"Calon dengan kemahiran AI 8% hingga 15% lebih berpeluang dijemput ke temu duga."}},"evergreenTitle":"Dalam era AI yang pantas berubah, kemahiran apa yang benar-benar kekal?","evergreen1":"Yang benar-benar penting bukan sekadar belajar mengendalikan AI, tetapi tahu menggunakannya untuk meningkatkan nilai kerja anda — sambil membina kemahiran pertimbangan, komunikasi dan penyelesaian masalah yang tidak mudah digantikan oleh AI.","wong1":"Prof Steven Wong (黄开庄), Pengarah Pusat Pemerkasaan Digital di Singapore Institute of Technology, mengingatkan bahawa AI bergerak begitu pantas sehingga sesetengah kemahiran AI hari ini akan menjadi usang — terutamanya helah pengendalian yang terikat pada alat tertentu.","wong2":"Namun begitu, nasihatnya ialah bina literasi AI seawal mungkin, walau ke mana pun teknologi ini menghala: belajar menggunakan AI, mengawasinya, dan menggabungkannya dengan pertimbangan manusia.","everyone":"Apabila AI semakin meluas, sesiapa sahaja boleh menggunakannya untuk bekerja lebih pantas. Sekadar 'tahu menggunakan AI' tidak akan lama kekal sebagai kelebihan.","poon1":"Poon King Wang (潘竞宏), Ketua Pegawai Strategi dan Reka Bentuk-AI di Singapore University of Technology and Design serta Pengarah Lee Kuan Yew Centre for Innovative Cities, menggesa pekerja mengubah pemikiran daripada 'pengguna AI' kepada 'pencipta AI' — menggunakan AI untuk terus mencipta nilai yang tersendiri milik mereka. Itulah, hujahnya, cara untuk menyerlah di tempat kerja masa depan.","tipTitle":"Terus bina kemahiran boleh pindah","tipText":"<span class='hl'>Pemikiran analitis, komunikasi, kreativiti dan pengetahuan domain yang mendalam<\/span> mengikut anda dari satu pekerjaan ke pekerjaan yang lain. Gunakan AI secara terancang untuk melancarkan aliran kerja anda: serahkan tugas berulang kepada mesin, dan tumpukan masa anda pada pertimbangan, keputusan dan penyelesaian masalah.","li1":"Di Singapore Management University, Prof Li Jia (李嘉), Dekan Sekolah Ekonomi, dan pasukannya sedang menjejaki kesan jangka panjang AI terhadap pasaran pekerjaan tempatan.","li2":"Beliau berkata mustahil untuk meramalkan dengan tepat berapa banyak pekerjaan di Singapura akan lenyap kepada AI dalam tiga hingga lima tahun akan datang. Apa yang boleh dilakukan penyelidik ialah memantau iklan pengambilan, mengesan industri yang pengambilannya mengecil, dan membunyikan amaran awal — memberi masa kepada penggubal dasar dan pencari kerja untuk bertindak.","li3":"Banyak yang masih tidak pasti, termasuk sejauh mana model bahasa besar masih boleh maju — dan ketidakpastian itu akan membentuk masa depan pasaran pekerjaan. Bagi individu, nasihat Li ialah 'latih tubuh badan' sebelum ribut melanda.","li4":"Beliau mengumpamakan pembelajaran kemahiran AI seperti mengambil ubat selepas pemeriksaan kesihatan menemui masalah, atau bersenam untuk membina kekuatan: hasilnya tidak terjamin dan jarang serta-merta, tetapi ia tidak pernah merugikan anda. Apabila kejutan AI sampai ke industri anda, kemahiran itulah yang mungkin mengekalkan pekerjaan anda — dan menjadikan anda lebih berdaya tahan."},"reading":{"title":"Bacaan lanjut","note":"Siri penuh di zaobao.com.sg — semua rencana dalam bahasa Cina. Huraian di bawah ialah ringkasan kami sendiri.","groups":{"g1":{"title":"Trend pengambilan baharu","a1":"Permintaan bakat AI meningkat tiga kali ganda — dan majikan bukan teknologi turut menyertai perburuan.","a2":"Mengapa pekerja 'kolar baharu' yang menggabungkan kemahiran teknikal dan insaniah kini paling dicari.","a3":"AI menghimpit 'pekerjaan pertama': jawatan peringkat permulaan dijangka mengecil, dan latihan industri sudah pun semakin sukar diperoleh."},"g2":{"title":"Bagaimana AI mengubah kerja harian","a1":"AI menulis semula skop tugas guru — menjadikan mereka 'ketua editor' bagi pelajaran yang didrafkan AI.","a2":"Satu minit keajaiban AI di pentas, dua tahun membina platform di belakang tabir: transformasi yang berjaya tidak boleh dikejar tergesa-gesa."},"g3":{"title":"Derita kehilangan pekerjaan","a1":"Dipintas oleh AI yang lebih pantas dan lebih 'bijak', seorang pembangun kandungan berusia 43 tahun berusaha membina semula diri selepas diberhentikan kerja.","a2":"'Adakah AI akan menggantikan saya?' Semakin ramai pencari kerja membawa kebimbangan itu kepada jurulatih kerjaya."},"g4":{"title":"Seni dan kreativiti di bawah tekanan","a1":"Seniman dan penulis berhujah AI mampu menjana sesuatu yang 'munasabah' — tetapi bukan roh sesebuah karya.","a2":"Dengan kira-kira 90% hasil pengiklanan kini dibuat dengan AI, karyawan kreatif beralih daripada menghasilkan karya kepada menjadi kurator karya."},"g5":{"title":"Kemahiran yang kekal","a1":"Cara memilih kursus AI: belajar menggunakan AI tidak memadai — belajarlah mencipta dengannya.","a2":"Tidak perlu lagi menghafal: pekerja runcit berusia 65 tahun mengimbas label wain dengan AI dan menjawab seperti pakar."}},"videosTitle":"Tonton","videos":{"v1":{"title":"Peningkatan kecekapan — atau penggantian manusia?","text":"Adakah anda takut digantikan oleh AI? Apabila profesional teknologi dan peguam pun sangat terdedah, bagaimana harus mereka bertindak?"},"v2":{"title":"Bina syarikat di atas AI dan gandakan produktiviti 16 kali?","text":"Syarikat mencurahkan wang ke dalam produktiviti AI. Apa yang sebenarnya diperlukan — dan bagaimana harus kita memikirkan semula cara kita bekerja?"}}},"about":{"title":"Tentang halaman ini","p1":"Ini ialah teman pembelajaran asli yang dibina untuk bilik darjah pelbagai bahasa. Ia menceritakan semula, dalam 13 bahasa, fakta dan penemuan sebuah rencana interaktif oleh Lianhe Zaobao (联合早报), akhbar harian berbahasa Cina di Singapura — supaya pelajar yang tidak membaca bahasa Cina dapat mengikuti kisah, carta dan struktur yang sama seperti yang asal, dan membincangkannya secara berdampingan.","p2":"Teks di halaman ini ialah ringkasan asli yang ditulis untuk tujuan pengajaran, bukan terjemahan rencana tersebut. Petikan daripada individu yang ditampilkan telah diolah semula. Semua data adalah milik sumber yang dinyatakan. Sila sokong kewartawanan asal:","originalTitle":"Rencana asal","originalCredit":"'AI与职场变局' (AI dan Perubahan Dunia Pekerjaan), rencana interaktif Lianhe Zaobao, diterbitkan pada 16 Ogos 2026. Teks: Lin Pingying. Wawancara: Lin Pingying, Lu Huijing, Li Gengwei. Perancangan: Huang Xiaofang. Ilustrasi: Lu Fangkai. Reka bentuk & pembangunan: Wang Yuchen, Huang Junnan. © SPH Media Limited.","romanization":"Nama Cina diromanisasikan mengikut hanyu pinyin apabila tiada ejaan Inggeris rasmi diterbitkan.","dataTitle":"Sumber data","data1":"Analisis Lianhe Zaobao × Jobstreet by SEEK terhadap kata kunci AI dalam iklan pekerjaan Singapura, 2023–2026","data2":"Goldman Sachs Research / Haver Analytics — AI dan pasaran buruh AS","data3":"Forum Ekonomi Dunia, Future of Jobs Report 2025; ILOSTAT","data4":"Kajian Universiti Oxford tentang kemahiran AI, gaji dan pengambilan pekerja","disclaimer":"Dibina untuk kegunaan bilik darjah. Tidak bergabung dengan, dan tidak disokong oleh, SPH Media atau Lianhe Zaobao."}},"yue":{"_meta":{"code":"yue","htmlLang":"yue","name":"廣東話","englishName":"Cantonese","fontClass":"tc"},"ui":{"brand":"AI大洗牌","brandPlace":"新加坡","languageLabel":"語言","compareLabel":"對照語言","compareOff":"關閉","compareHint":"對照模式開咗——撳任何一段，就可以用第二種語言睇返。","readOriginal":"去 zaobao.com.sg 睇原版專題","inChinese":"中文版","beforeAI":"用AI前","afterAI":"用AI後","backToTop":"返回最頂","sectionsLabel":"章節","yearNote":"圖入面每個年份，係計由上一年5月到嗰一年4月。","rankLabel":"排名","sourceLabel":"資料來源","videoTag":"影片","articleTag":"文章","publishedLabel":"刊登日期","skillsHint":"揀一個行業，睇下佢啲招聘廣告最常提邊啲AI技能。","tableView":"以表格睇數據","skillsFor":"{industry}招聘廣告最常提到嘅AI技能"},"nav":{"trends":"最新趨勢","future":"未來會點","prepare":"點樣準備","reading":"延伸閱讀","videos":"睇片"},"hero":{"kicker":"一份13種語言嘅課堂讀本","title":"AI大洗牌","subtitle":"人工智能（AI）點樣改寫新加坡嘅工作——乜嘢正喺度變、下一步會點、我哋又可以點準備。","basedOn":"本頁根據《聯合早報》2026年8月16日刊登、關於AI同新加坡就業市場嘅互動專題入面嘅事實同發現，重新演繹而成嘅原創版本。","scrollCue":"碌落去開始"},"caseStudy":{"kicker":"由一間學校講起","title":"當AI加入樂團","p1":"朱銳雄喺新加坡開敲擊樂音樂學校，一開就開咗十幾年。今年1月，學校引入咗AI工具——日常運作幾乎變到認唔出。","cards":{"lesson":{"label":"備課","beforeStat":"1個月","beforeText":"一份三個鐘嘅教案，要兩三位老師磨大約一個月先磨得好。","afterStat":"3分鐘","afterText":"而家撳一下掣就有完整初稿，老師執靚佢就得。"},"score":{"label":"樂譜","beforeStat":"人手處理","beforeText":"以前要喺網上下載音檔，再用複雜嘅編曲軟件慢慢改。","afterStat":"自動生成","afterText":"AI直接生成樂譜同練習材料，仲可以幫手做新編曲。"},"invoice":{"label":"開發票","beforeStat":"半日","beforeText":"為咗開一張發票，老師要同行政部嚟嚟回回傾好耐。","afterStat":"幾秒","afterText":"職員用把口講低資料，核對完份文件就可以發出去。"},"progress":{"label":"學生進度","beforeStat":"逐個跟","beforeText":"以前老師要逐個逐個學生跟進。","afterStat":"自動記錄","afterText":"學生喺網上AI平台練習，平台會畀反饋，仲會自動記低佢哋嘅進度。"}},"outro1":"AI正喺度改變我哋大部分人嘅工作方式同事業路向，仲改埋僱主願意畀錢買嘅技能。呢股浪潮由科技界開始，但一早已經蔓延到各行各業。","outro2":"朱先生身處嘅教育界，已經感受到佢嘅威力——而被顛覆嘅行業，遠遠唔止呢一個。","outro3":"咁AI究竟對新加坡嘅就業市場做緊啲乜？對打工仔嚟講又意味住乜嘢？我哋可以點樣為將來做好準備？"},"s1":{"title":"新加坡邊啲行業最渴求AI技能？","lead":"《聯合早報》聯同招聘平台Jobstreet by SEEK，統計過去三年新加坡招聘廣告出現AI相關關鍵詞嘅頻率。一個行業嘅招聘廣告愈多提到AI，就代表呢個行業愈落力搶AI技能。","method":"Jobstreet冇公開確實嘅廣告數目，但佢網站嘅搜尋功能顯示，而家刊登緊嘅全職同兼職職位接近60,000個。","chart1Title":"AI需求最高嘅五大行業","chart1Sub":"按招聘廣告AI關鍵詞出現頻率排名","industries":{"tech":"電腦及資訊科技（軟件）","edu":"教育","hr":"人力資源及顧問","fin":"金融及銀行","gov":"政府及國防"},"sixthPlace":"建築及工程（第6位）","topFiveText":"自從2023年AI普及以嚟，呢五個行業年年都霸住榜首。佢哋招聘廣告出現AI關鍵詞嘅頻率遠遠拋離其他行業——平均比排第六嘅建築及工程<span class='hl'>高出大約60%<\/span>。","insightTech":"<span class='hl'>電腦及資訊科技（軟件）<\/span>企喺AI時代嘅最前線，連續三年排第一。呢啲工本身都變緊：除咗傳統寫程式，僱主而家仲要求AI統籌、保安同管治，以及系統整合。","insightEdu":"<span class='hl'>教育<\/span>靠人與人之間嘅接觸，所以一向被視為AI時代比較穩陣嘅行業之一。但過去三年，佢對AI技能嘅需求急升——由2023年嘅第四位，升到舊年嘅第二位。一個好可能嘅原因係行業長期人手唔夠：新嘅AI職位可以幫手簡化備課、教材同後勤行政。朱先生間音樂學校正正就係呢個故事。","insightHr":"<span class='hl'>人力資源及顧問<\/span>係一個特別嘅例子。因為呢一行最重視人際技巧，所以請AI相關職位嗰陣，僱主冇咁執着深厚嘅技術底子。呢樣嘢反映咗一個更大嘅趨勢：「新領」打工仔嘅崛起——即係識得將科技同實戰經驗結合、學嘢快、又識解難嘅人。","skillsTitle":"僱主想要邊啲AI技能？","skillsLead":"Jobstreet廣告入面最常見嘅AI關鍵詞，係廣義嘅<span class='hl'>分析能力<\/span>——唔止係識分析數據咁簡單。其他常見要求包括數據分析、Python編程、電腦科學同自動化。","skills":{"analysis":"分析","dataAnalysis":"數據分析","python":"Python編程","compSci":"電腦科學","automation":"自動化","none":"冇特定AI關鍵詞"},"entryLabel":"呢個行業有{pct}嘅AI招聘廣告屬入門級職位","quotes":{"esther1":{"name":"李美欣（Esther Lee）","role":"Jobstreet新加坡董事總經理","text":"李美欣話，最快採用AI嘅行業，員工變得更有效率、更有生產力，仲騰出咗更多時間，去處理真正需要人去諗嘅問題。"},"zhang1":{"name":"張曉雲","role":"ADP亞太區高級副總裁","text":"張曉雲指出，新加坡好依賴知識型員工同國際人才，同時要面對勞動力有限同人口結構轉變。佢話，正因為咁，呢度嘅公司先至專注用AI提升生產力、釋放員工潛能，同埋做大盤生意。"},"zhang2":{"name":"張曉雲","role":"ADP亞太區高級副總裁","text":"張曉雲更大嘅重點係：AI推動緊新加坡職場由「鬥知識」走向「鬥判斷力」。將來最有競爭力嘅，唔係揸住最多資訊嗰啲人，而係最識得將AI嘅能力同人類智慧結合、一齊創造價值嗰啲人。"}},"trends":{"title":"AI招聘廣告：爆升、急凍、反彈","adsLabel":"AI職位招聘廣告","appsLabel":"AI職位求職申請","indexNote":"指數化：2024年 = 100","step1":"大型語言模型ChatGPT喺2022年底橫空出世，掀起一輪AI招聘熱潮。跟住新加坡嘅僱主撳咗暫停掣：2024至2025年間，AI招聘廣告急跌<span class='hl'>74%<\/span>。呢項技術初期發展得太亂，帶嚟好大嘅不確定性，企業於是進入「冷靜期」——重新評估AI投資，請人請得謹慎好多。","step2":"過去一年，形勢完全逆轉。隨住AI嘅實際用途愈嚟愈清晰，僱主重啟AI人才策略，AI招聘廣告數目<span class='hl'>係一年前嘅大約三倍<\/span>。李美欣咁解釋：技術成熟咗兩年，企業已經學識點樣將AI融入工作流程，招聘需求自然跟住嚟。","step3":"但求職者未跟得上。截至2026年4月嘅一年入面，AI職位嘅求職申請再跌<span class='hl'>17%<\/span>。跌幅細過上一年嘅39%，但已經顯示本地AI人才仲係唔夠——好多求職者根本仲未有僱主急需嗰啲技能。"},"linker":{"title":"冷靜期完咗：行行都返嚟搶AI人才","text":"五大行業企喺AI轉型嘅最前線，佢哋對AI人才嘅需求增長強勁。其餘行業喺AI混亂嘅初期短暫觀望之後，而家都開始制定自己嘅AI人才策略。"}},"s2":{"title":"就業市場下一步會變成點？","lead1":"喺大部分行業，AI嘅全面衝擊仲未殺到。但咁唔等於你份工可以獨善其身。","lead2":"AI被廣泛視為第四次工業革命嘅引擎，多項大型國際研究已經勾劃出呢股浪潮可以去到幾遠。","decadeTitle":"全面影響可能要10年先浮現","goldman1":"投資銀行高盛（Goldman Sachs）針對美國就業市場嘅研究發現，AI目前只係對少數行業構成明顯壓力。","goldman2":"高盛估計，大部分領域要用大約十年時間，先達到大規模採用AI。喺呢段漫長嘅過渡期入面，美國可能有<span class='hl'>6%至7%<\/span>嘅打工仔失去工作。","goldman3":"放眼全球，估計有<span class='hl'>3億<\/span>個職位面臨被AI自動化取代嘅風險。","chart2Title":"美國各類職業受AI自動化影響嘅比例","chart2Sub":"按職業組別，%","chart2Source":"資料來源：Haver Analytics、Goldman Sachs Research","occupations":{"office":"辦公室及行政支援","legal":"法律","architecture":"建築及工程","science":"生命、物理及社會科學","business":"商業及金融營運","community":"社區及社會服務","management":"管理","sales":"銷售及相關工作","computer":"電腦及數學","farming":"農業、漁業及林業","protective":"保安及防護服務","education":"教育及圖書館","healthcare":"醫療護理支援","arts":"藝術、設計、娛樂及體育","all":"所有職業"},"wefTitle":"到2030年，全球職業版圖會唔同晒","wef1":"世界經濟論壇（World Economic Forum）《2025年未來就業報告》預測，到2030年，喺AI、綠色轉型同經濟動盪帶動之下，全球<span class='hl'>22%<\/span>嘅工作會經歷結構性改變。","wef2":"到嗰陣，預計會有大約<span class='hl'>9,200萬<\/span>個職位被取代——但同時會創造大約<span class='hlNew'>1.7億<\/span>個新職位，即係淨增加7,800萬份工。","wefDisplaced":"被取代嘅職位","wefCreated":"新創造嘅職位","wefNet":"淨增加","wefUnit":"百萬","wefSource":"資料來源：世界經濟論壇《2025年未來就業報告》；ILOSTAT"},"s3":{"title":"後AI時代，你可以點準備？","lead":"AI帶嚟嘅機會遠多過威脅。真正嘅挑戰——無論對個人定公司——係點樣捱過呢個轉型期，將自己導向後AI時代創造出嚟嘅新工作。","oxfordLead":"牛津大學嘅研究顯示，AI技能而家已經有回報——無論人工、福利定面試機會都係：","oxford":{"pay":{"value":"+23%","label":"人工","text":"要求AI技能嘅職位，招聘廣告開出嘅人工平均高大約23%。"},"benefits":{"value":"福利更多","label":"福利","text":"AI相關職位更大機會提供遙距工作同育兒假。"},"interviews":{"value":"+8–15%","label":"面試","text":"有AI技能嘅求職者，獲邀面試嘅機會高8%至15%。"}},"evergreenTitle":"AI日日變，邊啲技能先至襟用？","evergreen1":"真正重要嘅，唔單止係學識操作AI，而係識得用佢提升自己工作嘅價值——同時建立AI冇咁容易取代嘅判斷力、溝通同解難能力。","wong1":"新加坡理工大學數碼賦能中心總監黃開莊教授（Steven Wong）提醒，AI發展得太快，今日嘅部分AI技能將來會過時——尤其係綁死喺特定工具上面嘅操作技巧。","wong2":"即使係咁，佢嘅建議係及早建立AI素養，無論技術之後點行都好：學識用AI、學識監督AI，仲要識得將AI同人嘅判斷結合。","everyone":"隨住AI普及，人人都可以用佢做嘢做快啲。單係「識用AI」，好快就唔再係優勢。","poon1":"新加坡科技設計大學首席策略及設計AI官、李光耀創新城市中心總監潘競宏（Poon King Wang）就呼籲打工仔轉換心態，由「AI使用者」變成「AI創造者」——用AI不斷創造屬於自己嘅獨特價值。佢認為，咁樣先可以喺未來職場突圍而出。","tipTitle":"繼續累積帶得走嘅技能","tipText":"<span class='hl'>分析思維、溝通、創意同深厚嘅專業知識<\/span>，去到邊份工都用得着。要有意識咁用AI執靚你嘅工作流程：重複性嘅嘢交畀機器做，自己嘅時間就留返畀判斷、決策同解難。","li1":"喺新加坡管理大學，經濟學院院長李嘉教授同佢嘅團隊，正喺度追蹤AI對本地就業市場嘅長遠影響。","li2":"佢話，冇可能準確預測未來三至五年新加坡會有幾多份工被AI取代。研究人員做到嘅，係緊盯招聘廣告，及早發現邊啲行業請人縮緊，然後提早響警號——畀決策者同求職者有時間應對。","li3":"好多嘢仲係未知數，包括大型語言模型仲可以進步幾多——呢啲不確定性會左右就業市場嘅未來。對個人嚟講，李嘉嘅建議係趁風暴未殺到，先「操好個身」。","li4":"佢將學AI技能比喻做身體檢查發現問題之後食藥，又或者做運動練體能：效果冇保證，亦好少立竿見影，但點都唔會令你變差。當AI衝擊殺到你嗰行嘅時候，呢啲技能可能就係令你保得住份工嘅關鍵——仲會令你更有韌力。"},"reading":{"title":"延伸閱讀","note":"成個系列喺zaobao.com.sg——所有文章都係中文。以下簡介係我哋自己寫嘅撮要。","groups":{"g1":{"title":"招聘新趨勢","a1":"AI人才需求升到之前嘅三倍——連非科技行業嘅僱主都加入搶人。","a2":"點解軟硬技能兼備嘅「新領」打工仔，而家最搶手。","a3":"AI擠壓緊「第一份工」：入門職位空缺將會縮減，實習機會已經愈嚟愈難搵。"},"g2":{"title":"AI點樣改寫日常工作","a1":"AI改寫緊老師嘅職責——令佢哋變成AI初稿教案嘅「總編輯」。","a2":"台上一分鐘AI魔法，台下兩年平台建設：成功轉型冇得急。"},"g3":{"title":"被取代嘅痛","a1":"俾一個更快更「醒」嘅AI比下去，一位43歲內容開發員裁員之後努力重新出發。","a2":"「AI會唔會取代我？」愈嚟愈多求職者帶住呢份恐懼去搵職業教練。"},"g4":{"title":"手藝同創意受壓","a1":"藝術家同作家認為，AI可以生成「似模似樣」嘅嘢——但生成唔到作品嘅靈魂。","a2":"廣告製作大約90%已經用AI完成，創作人由「親手做」轉型做「策展人」。"},"g5":{"title":"襟用嘅技能","a1":"點揀AI課程：識用AI唔夠——要學識用AI去創造。","a2":"唔使再靠死背：65歲零售員工用AI影酒標，答問題答得似專家。"}},"videosTitle":"睇片","videos":{"v1":{"title":"提升效率，定係取代人類？","text":"你驚唔驚被AI取代？連科技人同律師都咁高危嘅時候，佢哋應該點應對？"},"v2":{"title":"靠AI開公司，生產力升16倍？","text":"企業瘋狂落注AI生產力。實際上要付出啲乜——我哋又應該點樣重新諗吓自己嘅工作方式？"}}},"about":{"title":"關於呢一頁","p1":"呢個係為多語言課室製作嘅原創教學讀本。佢用13種語言，重新講述新加坡中文日報《聯合早報》（Lianhe Zaobao）一個互動專題嘅事實同發現——等唔識中文嘅同學都可以跟住同一個故事、同一啲圖表、同一個結構，一齊對照討論。","p2":"呢一頁嘅文字係為教學而寫嘅原創撮要，唔係文章嘅翻譯。受訪者嘅引述經過轉述改寫。所有數據版權屬於註明嘅來源。請支持原創新聞報道：","originalTitle":"原版專題","originalCredit":"「AI与职场变局」（即「AI同職場變局」），《聯合早報》互動專題，2026年8月16日刊登。文字：Lin Pingying。採訪：Lin Pingying、Lu Huijing、Li Gengwei。策劃：Huang Xiaofang。插畫：Lu Fangkai。設計及開發：Wang Yuchen、Huang Junnan。© SPH Media Limited。","romanization":"冇官方英文拼法嘅中文人名，一律用漢語拼音轉寫。","dataTitle":"數據來源","data1":"《聯合早報》× Jobstreet by SEEK：2023–2026年新加坡招聘廣告AI關鍵詞分析","data2":"Goldman Sachs Research／Haver Analytics——AI同美國勞動市場","data3":"世界經濟論壇《2025年未來就業報告》；ILOSTAT","data4":"牛津大學關於AI技能、工資同招聘嘅研究","disclaimer":"純為課堂用途而製作。同SPH Media或《聯合早報》冇任何隸屬關係，亦未經佢哋認可。"}}};
+
+/* ---------------- language-independent data ---------------- */
+const ORDER = ["en","zh","ms","ta","sg","yue","th","vi","ja","ko","fr","es","de"];
+const IND = [
+  { id:"tech", color:"var(--c-tech)", ranks:[1,1,1], skills:["analysis","compSci","python","dataAnalysis","automation"], entry:15 },
+  { id:"edu",  color:"var(--c-edu)",  ranks:[4,2,2], skills:["analysis","python","compSci","dataAnalysis"], entry:15 },
+  { id:"hr",   color:"var(--c-hr)",   ranks:[2,3,3], skills:["analysis"], none:true, entry:8 },
+  { id:"fin",  color:"var(--c-fin)",  ranks:[3,4,4], skills:["analysis","dataAnalysis","python"], entry:14 },
+  { id:"gov",  color:"var(--c-gov)",  ranks:[5,5,5], skills:["analysis","python","dataAnalysis","compSci"], entry:6 },
+];
+const YEARS = ["2024","2025","2026"];
+const TRENDS = {
+  ads:  [{year:"2024",v:100},{year:"2025",v:26},{year:"2026",v:78}],
+  apps: [{year:"2024",v:100},{year:"2025",v:61},{year:"2026",v:51}],
+};
+const OCC = [
+  ["office",46],["legal",44],["architecture",37],["science",36],["business",35],
+  ["community",33],["management",32],["sales",31],["computer",29],["farming",28],
+  ["protective",28],["education",27],["healthcare",26],["arts",26],["all",25],
+];
+const READING = {
+  g1:[["a1","https://www.zaobao.com.sg/news/singapore/story20260817-9465496"],
+      ["a2","https://www.zaobao.com.sg/news/singapore/story20260817-9501629"],
+      ["a3","https://www.zaobao.com.sg/news/singapore/story20260817-9501633"]],
+  g2:[["a1","https://www.zaobao.com.sg/news/singapore/story20260818-9502077"],
+      ["a2","https://www.zaobao.com.sg/news/singapore/story20260818-9502345"]],
+  g3:[["a1","https://www.zaobao.com.sg/news/singapore/story20260819-9467869"],
+      ["a2","https://www.zaobao.com.sg/news/singapore/story20260819-9468095"]],
+  g4:[["a1","https://www.zaobao.com.sg/news/singapore/story20260820-9502394"],
+      ["a2","https://www.zaobao.com.sg/news/singapore/story20260820-9502486"]],
+  g5:[["a1","https://www.zaobao.com.sg/news/singapore/story20260821-9468216"],
+      ["a2","https://www.zaobao.com.sg/news/singapore/story20260821-9468381"]],
+};
+const VIDEOS = [
+  ["v1","https://www.zaobao.com.sg/news/singapore/story20260816-9523685"],
+  ["v2","https://www.zaobao.com.sg/news/singapore/story20260821-9534693"],
+];
+const CASES = ["lesson","score","invoice","progress"];
+
+/* ---------------- state ---------------- */
+let lang = "en", cmpLang = "";
+function get(dict, path){ return path.split(".").reduce((o,k)=>o&&o[k]!==undefined?o[k]:undefined, dict); }
+function L(path){ const v = get(I18N[lang], path); return v!==undefined?v:(get(I18N.en, path)||""); }
+function LC(path){ const v = get(I18N[cmpLang]||{}, path); return v!==undefined?v:""; }
+function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function rich(s){
+  // only our own controlled markup survives: hl spans + br
+  s = esc(s);
+  s = s.replace(/&lt;span class='hl'&gt;/g,"<span class='hl'>")
+       .replace(/&lt;span class='hlNew'&gt;/g,"<span class='hlNew'>")
+       .replace(/&lt;span class="hl"&gt;/g,"<span class='hl'>")
+       .replace(/&lt;span class="hlNew"&gt;/g,"<span class='hlNew'>")
+       .replace(/&lt;\/span&gt;/g,"</span>")
+       .replace(/&lt;br\s*\/?&gt;/g,"<br>");
+  return s;
+}
+
+/* ---------------- render text ---------------- */
+function renderText(){
+  document.querySelectorAll("[data-i18n]").forEach(el=>{ el.innerHTML = rich(L(el.getAttribute("data-i18n"))); });
+  document.documentElement.lang = I18N[lang]._meta.htmlLang;
+  document.documentElement.setAttribute("data-font", I18N[lang]._meta.fontClass);
+  document.title = (get(I18N[lang],"hero.title")||"The AI Shift");
+  document.querySelectorAll(".cmp-block").forEach(b=>b.remove());
+  document.querySelectorAll(".cmp[aria-expanded]").forEach(el=>el.setAttribute("aria-expanded","false"));
+}
+
+/* ---------------- language UI ---------------- */
+function buildLangUI(){
+  const bar = document.getElementById("langbar");
+  bar.innerHTML = "";
+  ORDER.filter(c=>I18N[c]).forEach(c=>{
+    const b = document.createElement("button");
+    b.className = "langchip"; b.textContent = I18N[c]._meta.name;
+    b.lang = I18N[c]._meta.htmlLang;
+    b.setAttribute("aria-pressed", c===lang ? "true":"false");
+    b.title = I18N[c]._meta.englishName;
+    b.onclick = ()=>setLang(c);
+    bar.appendChild(b);
+  });
+  const sel = document.getElementById("cmpSel");
+  sel.innerHTML = "";
+  const off = document.createElement("option"); off.value=""; off.textContent = L("ui.compareOff"); sel.appendChild(off);
+  ORDER.filter(c=>I18N[c] && c!==lang).forEach(c=>{
+    const o = document.createElement("option"); o.value=c; o.textContent = I18N[c]._meta.name; sel.appendChild(o);
+  });
+  sel.value = (cmpLang && cmpLang!==lang) ? cmpLang : "";
+  sel.onchange = ()=>{ cmpLang = sel.value; document.body.classList.toggle("compare-on", !!cmpLang); persist(); renderText(); setupCompare(); };
+  document.body.classList.toggle("compare-on", !!cmpLang);
+}
+
+function setLang(c){
+  if(!I18N[c]) return;
+  lang = c;
+  if(cmpLang===c) cmpLang = "";
+  persist();
+  try{ history.replaceState(null,"","#lang="+c); }catch(e){}
+  renderAll();
+}
+function persist(){ try{ localStorage.setItem("aishift-lang",lang); localStorage.setItem("aishift-cmp",cmpLang); }catch(e){} }
+
+/* ---------------- compare mode ---------------- */
+function setupCompare(){
+  document.querySelectorAll(".cmp").forEach(el=>{
+    if(cmpLang){ el.setAttribute("tabindex","0"); el.setAttribute("role","button"); el.setAttribute("aria-expanded","false"); }
+    else{ el.removeAttribute("tabindex"); el.removeAttribute("role"); el.removeAttribute("aria-expanded"); }
+  });
+}
+document.addEventListener("click", cmpToggle);
+document.addEventListener("keydown", e=>{ if((e.key==="Enter"||e.key===" ") && e.target.classList && e.target.classList.contains("cmp")){ e.preventDefault(); cmpToggle({target:e.target}); } });
+function cmpToggle(e){
+  if(!cmpLang) return;
+  const el = e.target.closest ? e.target.closest(".cmp") : null;
+  if(!el) return;
+  const next = el.nextElementSibling;
+  if(next && next.classList.contains("cmp-block")){ next.remove(); el.setAttribute("aria-expanded","false"); return; }
+  const key = el.getAttribute("data-i18n"); if(!key) return;
+  const txt = LC(key); if(!txt) return;
+  const d = document.createElement("div");
+  d.className = "cmp-block"; d.lang = I18N[cmpLang]._meta.htmlLang; d.innerHTML = rich(txt);
+  const fc = I18N[cmpLang]._meta.fontClass;
+  const fonts = {sc:"'Noto Sans SC'",tc:"'Noto Sans TC'",jp:"'Noto Sans JP'",kr:"'Noto Sans KR'",thai:"'Noto Sans Thai'",tamil:"'Noto Sans Tamil'",latin:"'Noto Sans'"};
+  d.style.fontFamily = (fonts[fc]||fonts.latin)+",sans-serif";
+  el.after(d); el.setAttribute("aria-expanded","true");
+}
+
+/* ---------------- case cards ---------------- */
+function renderCases(){
+  const host = document.getElementById("caseCards");
+  host.innerHTML = CASES.map(k=>{
+    const c = p=>L("caseStudy.cards."+k+"."+p);
+    return `<div class="case-card reveal">
+      <div class="label">${esc(c("label"))}</div>
+      <div class="ba">
+        <div class="col before"><span class="tag">${esc(L("ui.beforeAI"))}</span><span class="stat">${esc(c("beforeStat"))}</span><span class="desc">${esc(c("beforeText"))}</span></div>
+        <div class="arrow" aria-hidden="true">→</div>
+        <div class="col after"><span class="tag">${esc(L("ui.afterAI"))}</span><span class="stat">${esc(c("afterStat"))}</span><span class="desc">${esc(c("afterText"))}</span></div>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+/* ---------------- bump chart ---------------- */
+let activeInd = "", indLock = false;
+function wrapLines(str, max){
+  const hasSpace = /\s/.test(str);
+  if(str.length<=max) return [str];
+  if(hasSpace){
+    const words = str.split(/\s+/); const lines=[]; let cur="";
+    words.forEach(w=>{ if((cur+" "+w).trim().length>max && cur){ lines.push(cur); cur=w; } else cur=(cur+" "+w).trim(); });
+    if(cur) lines.push(cur);
+    return lines.slice(0,3);
+  }
+  const lines=[]; for(let i=0;i<str.length;i+=max) lines.push(str.slice(i,i+max));
+  return lines.slice(0,3);
+}
+function renderBump(){
+  const W=900,H=380,mL=250,mR=250,mT=34,mB=30;
+  const iw=W-mL-mR, ih=H-mT-mB;
+  const x=i=>mL+iw*i/(YEARS.length-1);
+  const y=r=>mT+ih*(r-1)/4;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(L("s1.chart1Title"))}">`;
+  s += `<text x="${mL-28}" y="${mT-14}" font-size="12" fill="var(--faint)" text-anchor="start" font-family="var(--f-body)">${esc(L("ui.rankLabel"))}</text>`;
+  YEARS.forEach((yr,i)=>{
+    s+=`<line x1="${x(i)}" y1="${mT-4}" x2="${x(i)}" y2="${H-mB+4}" stroke="var(--line)" stroke-width="1"/>`;
+    s+=`<text x="${x(i)}" y="${H-6}" font-size="13" font-weight="700" fill="var(--muted)" text-anchor="middle" font-family="var(--f-body)">${yr}</text>`;
+  });
+  for(let r=1;r<=5;r++){ s+=`<text x="${mL-14}" y="${y(r)+4}" font-size="11.5" fill="var(--faint)" text-anchor="end" font-family="var(--f-body)">#${r}</text>`; }
+  IND.forEach(d=>{
+    const dim = activeInd && activeInd!==d.id;
+    const op = dim?0.18:1;
+    const pts = d.ranks.map((r,i)=>`${x(i)},${y(r)}`).join(" ");
+    s+=`<g class="bump-series" data-ind="${d.id}" style="opacity:${op};transition:opacity .3s;cursor:pointer">`;
+    s+=`<polyline points="${pts}" fill="none" stroke="${d.color}" stroke-width="${activeInd===d.id?5:3.5}" stroke-linecap="round" stroke-linejoin="round"/>`;
+    d.ranks.forEach((r,i)=>{ s+=`<circle cx="${x(i)}" cy="${y(r)}" r="${activeInd===d.id?7:5.5}" fill="${d.color}" stroke="var(--surface)" stroke-width="2" class="pt" data-tip="${esc(L("s1.industries."+d.id))} · ${YEARS[i]} · #${r}"/>`; });
+    const name = L("s1.industries."+d.id);
+    const linesL = wrapLines(name, 22), linesR = linesL;
+    const y0 = y(d.ranks[0]), yN = y(d.ranks[d.ranks.length-1]);
+    linesL.forEach((ln,li)=>{ s+=`<text x="${mL-46}" y="${y0+4+(li-(linesL.length-1)/2)*15}" font-size="12.5" font-weight="${activeInd===d.id?800:600}" fill="${d.color}" text-anchor="end" font-family="var(--f-body)">${esc(ln)}</text>`; });
+    linesR.forEach((ln,li)=>{ s+=`<text x="${W-mR+46}" y="${yN+4+(li-(linesR.length-1)/2)*15}" font-size="12.5" font-weight="${activeInd===d.id?800:600}" fill="${d.color}" text-anchor="start" font-family="var(--f-body)">${esc(ln)}</text>`; });
+    s+=`</g>`;
+  });
+  s+=`</svg>`;
+  document.getElementById("bump").innerHTML = s;
+  document.querySelectorAll(".bump-series").forEach(g=>{ g.addEventListener("click",()=>selectInd(g.getAttribute("data-ind")===activeInd?"":g.getAttribute("data-ind"), true)); });
+  // legend chips
+  const leg = document.getElementById("bumpLegend");
+  leg.innerHTML = "";
+  IND.forEach(d=>{
+    const b=document.createElement("button");
+    b.className="indchip"; b.style.setProperty("--dot",`var(--c-${d.id})`);
+    b.innerHTML = `<i></i>${esc(L("s1.industries."+d.id))}`;
+    b.setAttribute("aria-pressed", activeInd===d.id?"true":"false");
+    b.onclick=()=>selectInd(activeInd===d.id?"":d.id, true);
+    leg.appendChild(b);
+  });
+  renderSkills();
+  // data table
+  document.getElementById("bumpTable").innerHTML =
+    `<table><tr><th></th>${YEARS.map(yv=>`<th>${yv}</th>`).join("")}</tr>`+
+    IND.map(d=>`<tr><td>${esc(L("s1.industries."+d.id))}</td>${d.ranks.map(r=>`<td>#${r}</td>`).join("")}</tr>`).join("")+`</table>`;
+}
+function selectInd(id, manual){
+  if(manual) indLock = !!id;           // a person's pick beats scroll steps until they deselect
+  else if(indLock) return;
+  activeInd=id; renderBump();
+}
+function renderSkills(){
+  const p = document.getElementById("skillsPanel");
+  if(!activeInd){ p.innerHTML = `<p class="sp-title">${esc(L("ui.skillsHint"))}</p>`; return; }
+  const d = IND.find(x=>x.id===activeInd);
+  const title = L("ui.skillsFor").replace("{industry}", L("s1.industries."+d.id));
+  const chips = d.skills.map(k=>`<span>${esc(L("s1.skills."+k))}</span>`).join("") + (d.none?`<span style="color:var(--faint)">${esc(L("s1.skills.none"))}</span>`:"");
+  const entry = L("s1.entryLabel").replace("{pct}", `<b>${d.entry}%</b>`);
+  p.innerHTML = `<p class="sp-title">${esc(title)}</p><div class="chips">${chips}</div><p class="entry">${entry}</p>`;
+}
+
+/* ---------------- trends chart ---------------- */
+function renderTrends(){
+  const W=760,H=380,mL=52,mR=150,mT=26,mB=40;
+  const iw=W-mL-mR, ih=H-mT-mB;
+  const x=i=>mL+iw*i/2;
+  const y=v=>mT+ih*(1-v/110);
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(L("s1.trends.title"))}">`;
+  [0,25,50,75,100].forEach(g=>{
+    s+=`<line x1="${mL}" y1="${y(g)}" x2="${W-mR}" y2="${y(g)}" stroke="var(--line)" stroke-width="1"/>`;
+    s+=`<text x="${mL-9}" y="${y(g)+4}" font-size="11.5" fill="var(--faint)" text-anchor="end" font-family="var(--f-body)" style="font-variant-numeric:tabular-nums">${g}</text>`;
+  });
+  YEARS.forEach((yr,i)=>{ s+=`<text x="${x(i)}" y="${H-10}" font-size="13" font-weight="700" fill="var(--muted)" text-anchor="middle" font-family="var(--f-body)">${yr}</text>`; });
+  const series=[ {k:"ads", c:"var(--c-tech)", data:TRENDS.ads, lbl:L("s1.trends.adsLabel")},
+                 {k:"apps",c:"var(--c-fin)", data:TRENDS.apps,lbl:L("s1.trends.appsLabel")} ];
+  series.forEach(sr=>{
+    const pts = sr.data.map((d,i)=>`${x(i)},${y(d.v)}`).join(" ");
+    s+=`<polyline points="${pts}" fill="none" stroke="${sr.c}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"${sr.k==="apps"?` stroke-dasharray="1 0"`:""}/>`;
+    sr.data.forEach((d,i)=>{ s+=`<circle cx="${x(i)}" cy="${y(d.v)}" r="6" fill="${sr.c}" stroke="var(--surface)" stroke-width="2" class="pt" tabindex="0" data-tip="${esc(sr.lbl)} · ${d.year} · ${d.v}" aria-label="${esc(sr.lbl)} ${d.year}: ${d.v}"/>`; });
+    const last = sr.data[sr.data.length-1];
+    wrapLines(sr.lbl,18).forEach((ln,li)=>{ s+=`<text x="${W-mR+14}" y="${y(last.v)+4+li*15}" font-size="12.5" font-weight="700" fill="${sr.c}" font-family="var(--f-body)">${esc(ln)}</text>`; });
+  });
+  // annotations
+  s+=`<text x="${x(1)}" y="${y(26)+24}" font-size="13" font-weight="800" fill="var(--c-tech)" text-anchor="middle" font-family="var(--f-body)">−74%</text>`;
+  s+=`<text x="${x(2)-70}" y="${y(68)}" font-size="13" font-weight="800" fill="var(--c-tech)" text-anchor="middle" font-family="var(--f-body)">×3</text>`;
+  s+=`<text x="${x(2)-14}" y="${y(51)+26}" font-size="13" font-weight="800" fill="var(--c-fin)" text-anchor="end" font-family="var(--f-body)">−17%</text>`;
+  s+=`</svg>`;
+  document.getElementById("trendsChart").innerHTML = s;
+  document.getElementById("trendsTable").innerHTML =
+    `<table><tr><th></th>${YEARS.map(yv=>`<th>${yv}</th>`).join("")}</tr>`+
+    series.map(sr=>`<tr><td>${esc(sr.lbl)}</td>${sr.data.map(d=>`<td>${d.v}</td>`).join("")}</tr>`).join("")+`</table>`;
+}
+
+/* ---------------- occupation bars ---------------- */
+function renderOcc(){
+  const host = document.getElementById("occBars");
+  host.innerHTML = OCC.map(([k,v])=>{
+    const name = L("s2.occupations."+k);
+    return `<div class="hbar${k==="all"?" hi":""}"><div class="lbl">${esc(name)}</div>
+      <div class="track"><div class="bar pt" style="width:${v*2}%" data-tip="${esc(name)} · ${v}%"></div><span class="val">${v}%</span></div></div>`;
+  }).join("");
+  document.getElementById("occTable").innerHTML =
+    `<table>`+OCC.map(([k,v])=>`<tr><td>${esc(L("s2.occupations."+k))}</td><td>${v}%</td></tr>`).join("")+`</table>`;
+}
+
+/* ---------------- WEF chart ---------------- */
+function renderWef(){
+  const host = document.getElementById("wefChart");
+  const u = esc(L("s2.wefUnit"));
+  host.innerHTML = `
+    <div class="wefrow displaced"><div class="lbl">${esc(L("s2.wefDisplaced"))}</div>
+      <div class="track"><div class="bar pt" style="width:${92/170*100}%" data-tip="${esc(L("s2.wefDisplaced"))} · 92 ${u}"></div><span class="val">92 <span class="unit">${u}</span></span></div></div>
+    <div class="wefrow created"><div class="lbl">${esc(L("s2.wefCreated"))}</div>
+      <div class="track"><div class="bar pt" style="width:100%" data-tip="${esc(L("s2.wefCreated"))} · 170 ${u}"></div><span class="val">170 <span class="unit">${u}</span></span></div></div>
+    <div class="wefnet">${esc(L("s2.wefNet"))}: +78 ${u}</div>`;
+}
+
+/* ---------------- reading & videos ---------------- */
+function renderReading(){
+  const host = document.getElementById("readGrid");
+  host.innerHTML = Object.keys(READING).map(g=>`
+    <div class="read-group reveal"><h3>${esc(L("reading.groups."+g+".title"))}</h3><ul>`+
+    READING[g].map(([k,url])=>`<li><a href="${url}" target="_blank" rel="noopener">${esc(L("reading.groups."+g+"."+k))}<span class="zh-chip">${esc(L("ui.inChinese"))}</span></a></li>`).join("")+
+    `</ul></div>`).join("");
+  const vh = document.getElementById("videoGrid");
+  vh.innerHTML = VIDEOS.map(([k,url])=>`
+    <a class="video-card reveal" href="${url}" target="_blank" rel="noopener">
+      <div class="play" aria-hidden="true"></div>
+      <h3>${esc(L("reading.videos."+k+".title"))} <span class="zh-chip">${esc(L("ui.inChinese"))}</span></h3>
+      <p>${esc(L("reading.videos."+k+".text"))}</p>
+    </a>`).join("");
+}
+
+/* ---------------- tooltip ---------------- */
+const tip = document.getElementById("tooltip");
+document.addEventListener("pointerover", e=>{
+  const t = e.target.closest ? e.target.closest(".pt") : null;
+  if(!t){ tip.classList.remove("show"); return; }
+  tip.textContent = t.getAttribute("data-tip"); tip.classList.add("show");
+});
+document.addEventListener("pointermove", e=>{
+  if(!tip.classList.contains("show")) return;
+  const pad=14; let xx=e.clientX+pad, yy=e.clientY+pad;
+  const r=tip.getBoundingClientRect();
+  if(xx+r.width>innerWidth-8) xx=e.clientX-r.width-pad;
+  if(yy+r.height>innerHeight-8) yy=e.clientY-r.height-pad;
+  tip.style.left=xx+"px"; tip.style.top=yy+"px";
+});
+document.addEventListener("focusin", e=>{
+  if(e.target.classList && e.target.classList.contains("pt")){
+    tip.textContent=e.target.getAttribute("data-tip"); tip.classList.add("show");
+    const r=e.target.getBoundingClientRect(); tip.style.left=(r.left+r.width/2)+"px"; tip.style.top=(r.bottom+10)+"px";
+  } else tip.classList.remove("show");
+});
+
+/* ---------------- scroll behaviors ---------------- */
+const io = new IntersectionObserver(es=>es.forEach(x=>{ if(x.isIntersecting){ x.target.classList.add("in"); io.unobserve(x.target); } }),{threshold:.12});
+function watchReveals(){ document.querySelectorAll(".reveal:not(.in)").forEach(el=>io.observe(el)); }
+const stepIO = new IntersectionObserver(es=>{
+  es.forEach(x=>{ if(x.isIntersecting){ selectInd(x.target.getAttribute("data-ind")||""); } });
+},{threshold:.6});
+function watchSteps(){ document.querySelectorAll("#bumpSteps .step").forEach(el=>stepIO.observe(el)); }
+const toTop = document.getElementById("toTop");
+addEventListener("scroll",()=>{ toTop.classList.toggle("show", scrollY>1200); },{passive:true});
+toTop.onclick=()=>scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
+
+/* ---------------- boot ---------------- */
+function renderAll(){
+  renderText(); buildLangUI(); renderCases(); renderBump(); renderTrends(); renderOcc(); renderWef(); renderReading(); setupCompare(); watchReveals();
+}
+(function init(){
+  let saved="", savedCmp="";
+  try{ saved=localStorage.getItem("aishift-lang")||""; savedCmp=localStorage.getItem("aishift-cmp")||""; }catch(e){}
+  const m=(location.hash||"").match(/lang=([a-z]+)/);
+  lang = (m && I18N[m[1]]) ? m[1] : (I18N[saved]?saved:"en");
+  cmpLang = (I18N[savedCmp] && savedCmp!==lang) ? savedCmp : "";
+  renderAll(); watchSteps();
+})();
+</script>
