@@ -1,0 +1,279 @@
+{
+ "_meta": {
+  "code": "nl",
+  "htmlLang": "nl",
+  "name": "Nederlands",
+  "englishName": "Dutch",
+  "fontClass": "latin"
+ },
+ "ui": {
+  "brand": "De AI-omslag",
+  "brandPlace": "Singapore",
+  "languageLabel": "Taal",
+  "compareLabel": "Vergelijk met",
+  "compareOff": "Uit",
+  "compareHint": "Vergelijkmodus staat aan — tik op een alinea om die in een tweede taal te lezen.",
+  "readOriginal": "Lees de originele reportage op zaobao.com.sg",
+  "inChinese": "in het Chinees",
+  "beforeAI": "Vóór AI",
+  "afterAI": "Met AI",
+  "backToTop": "Terug naar boven",
+  "sectionsLabel": "Onderdelen",
+  "yearNote": "Elk jaartal loopt van mei van het voorgaande jaar tot en met april van dat jaar.",
+  "rankLabel": "Positie",
+  "sourceLabel": "Bron",
+  "videoTag": "Video",
+  "articleTag": "Artikel",
+  "publishedLabel": "Gepubliceerd",
+  "skillsHint": "Kies een sector om te zien welke AI-vaardigheden het vaakst in de vacatures staan.",
+  "tableView": "Bekijk de gegevens als tabel",
+  "skillsFor": "Meest genoemde AI-vaardigheden in vacatures in de sector {industry}",
+  "moreDetail": "Meer details",
+  "origNudgeCase": "De originele reportage vertelt het verhaal van deze school met geanimeerde illustraties — zie het tot leven komen.",
+  "origNudgeSec": "De originele reportage toont dit onderdeel met animaties en interactieve graphics.",
+  "origNudgeCta": "Open het origineel",
+  "listen": "Luister",
+  "stop": "Stop",
+  "noVoice": "Geen stem beschikbaar voor deze taal op dit apparaat — probeer een telefoon of Chrome."
+ },
+ "nav": {
+  "trends": "Trends van vandaag",
+  "future": "Wat komt eraan",
+  "prepare": "Zo bereid je je voor",
+  "reading": "Verder lezen",
+  "videos": "Kijken"
+ },
+ "hero": {
+  "kicker": "Een gids voor in de klas, in 18 talen",
+  "title": "De AI-omslag",
+  "subtitle": "Hoe kunstmatige intelligentie (AI) het werk in Singapore herschrijft — wat er verandert, wat er komt en hoe je je kunt voorbereiden.",
+  "basedOn": "Een originele hervertelling van de feiten en bevindingen die voor het eerst zijn gepubliceerd in de interactieve reportage van Lianhe Zaobao over AI en de Singaporese arbeidsmarkt, verschenen op 16 augustus 2026.",
+  "scrollCue": "Scrol om te beginnen"
+ },
+ "caseStudy": {
+  "kicker": "Eén school, één januari",
+  "title": "Toen AI de band kwam versterken",
+  "p1": "Zhu Ruixiong (朱锐雄) leidt al meer dan tien jaar een slagwerkschool in Singapore. In januari van dit jaar haalde de school AI-tools in huis — en het dagelijkse werk werd bijna onherkenbaar.",
+  "cards": {
+   "lesson": {
+    "label": "Lesvoorbereiding",
+    "beforeStat": "1 maand",
+    "beforeText": "Aan een lesplan van drie uur schaafden twee of drie docenten ongeveer een maand.",
+    "afterStat": "3 minuten",
+    "afterText": "Met één druk op de knop verschijnt nu een compleet concept, klaar om door docenten te worden bijgeschaafd."
+   },
+   "score": {
+    "label": "Bladmuziek",
+    "beforeStat": "Handwerk",
+    "beforeText": "Audio werd van internet gedownload en bewerkt in ingewikkelde arrangeersoftware.",
+    "afterStat": "Gegenereerd",
+    "afterText": "AI maakt partituren en oefenmateriaal direct, en helpt zelfs bij nieuwe arrangementen."
+   },
+   "invoice": {
+    "label": "Facturen",
+    "beforeStat": "Een halve dag",
+    "beforeText": "Docenten gingen heen en weer met de administratie om één factuur de deur uit te krijgen.",
+    "afterStat": "Seconden",
+    "afterText": "Medewerkers spreken de gegevens in, controleren het document en versturen het."
+   },
+   "progress": {
+    "label": "Voortgang van leerlingen",
+    "beforeStat": "Eén voor één",
+    "beforeText": "Docenten volgden elke leerling afzonderlijk op.",
+    "afterStat": "Automatisch",
+    "afterText": "Leerlingen oefenen op een online AI-platform dat feedback geeft en hun voortgang bijhoudt."
+   }
+  },
+  "outro1": "AI verandert hoe de meesten van ons werken en waar onze loopbaan naartoe kan — en het verandert voor welke vaardigheden werkgevers betalen. De golf begon in de tech, maar is allang overgeslagen naar elk vakgebied.",
+  "outro2": "Het onderwijs, de sector van Zhu, voelt de kracht ervan al — en het is lang niet de enige sector die op zijn kop wordt gezet.",
+  "outro3": "Wat doet AI nu eigenlijk met de arbeidsmarkt van Singapore? Wat betekent dat voor gewone werkende mensen? En hoe maken we ons klaar voor wat komt?"
+ },
+ "s1": {
+  "title": "Welke sectoren in Singapore zoeken het hardst naar AI-vaardigheden?",
+  "lead": "Lianhe Zaobao onderzocht samen met vacatureplatform Jobstreet by SEEK hoe vaak AI-trefwoorden de afgelopen drie jaar in Singaporese personeelsadvertenties opdoken. Hoe vaker AI in de vacatures van een sector voorkomt, hoe harder die sector op zoek is naar AI-vaardigheden.",
+  "method": "Jobstreet maakte geen exacte aantallen advertenties bekend, maar de zoekfunctie van de site toont bijna 60.000 fulltime- en parttimebanen die op dit moment openstaan.",
+  "chart1Title": "De vijf sectoren met de grootste vraag naar AI",
+  "chart1Sub": "Positie van sectoren naar frequentie van AI-trefwoorden in vacatures",
+  "industries": {
+   "tech": "Computers & IT (software)",
+   "edu": "Onderwijs",
+   "hr": "HR & consultancy",
+   "fin": "Financiën & bankwezen",
+   "gov": "Overheid & defensie"
+  },
+  "sixthPlace": "Bouw & techniek (6e)",
+  "topFiveText": "Sinds AI in 2023 doorbrak bij het grote publiek, voeren deze vijf sectoren elk jaar de ranglijst aan. AI-trefwoorden staan veel vaker in hun vacatures dan waar dan ook — gemiddeld zo'n <span class='hl'>60% vaker</span> dan in bouw & techniek op de zesde plaats.",
+  "insightTech": "<span class='hl'>Computers & IT (software)</span> staat helemaal vooraan in het AI-tijdperk en bezet al drie jaar op rij de eerste plaats. De banen zelf veranderen: naast traditioneel programmeren vragen werkgevers nu om AI-orkestratie, beveiliging en governance, en systeemintegratie.",
+  "insightEdu": "<span class='hl'>Onderwijs</span> draait om menselijk contact en geldt daarom meestal als een van de veiligere sectoren in het AI-tijdperk. Toch is de vraag naar AI-vaardigheden er de afgelopen drie jaar sterk gestegen — van de vierde plaats in 2023 naar de tweede plaats vorig jaar. Een waarschijnlijke reden is het chronische personeelstekort in de sector: nieuwe functies met AI kunnen lesvoorbereiding, lesmateriaal en administratie stroomlijnen. De muziekschool van Zhu is precies dit verhaal.",
+  "insightHr": "<span class='hl'>HR & consultancy</span> is een geval apart. Omdat de sector draait om omgang met mensen, letten werkgevers die er AI-functies invullen minder op diepe technische kennis. Dat past in een bredere trend: de opkomst van de 'new-collar'-werker — iemand die technologie combineert met praktijkervaring, zich snel aanpast en problemen oplost.",
+  "skillsTitle": "Welke AI-vaardigheden vragen werkgevers?",
+  "skillsLead": "Het meest voorkomende AI-trefwoord in de vacatures van Jobstreet is breed <span class='hl'>analytisch vermogen</span> — analyse die verder gaat dan data alleen. Andere veelgevraagde eisen zijn data-analyse, programmeren in Python, informatica en automatisering.",
+  "skills": {
+   "analysis": "Analyse",
+   "dataAnalysis": "Data-analyse",
+   "python": "Programmeren in Python",
+   "compSci": "Informatica",
+   "automation": "Automatisering",
+   "none": "Geen specifieke AI-trefwoorden"
+  },
+  "entryLabel": "{pct} van de AI-vacatures in deze sector is voor starters",
+  "quotes": {
+   "esther1": {
+    "name": "Esther Lee (李美欣)",
+    "role": "Algemeen directeur, Jobstreet Singapore",
+    "text": "Volgens Lee zien de sectoren die AI het snelst omarmden hun medewerkers efficiënter en productiever worden, met meer vrijgekomen tijd voor problemen waar echt mensen voor nodig zijn."
+   },
+   "zhang1": {
+    "name": "Zhang Xiaoyun (张晓云)",
+    "role": "Senior vice-president Azië-Pacific, ADP",
+    "text": "Zhang wijst erop dat Singapore sterk leunt op kenniswerkers en internationaal talent, terwijl het kampt met een beperkt arbeidsaanbod en een veranderende bevolkingsopbouw. Daarom, zegt ze, zetten bedrijven hier AI vooral in om de productiviteit te verhogen, het potentieel van hun medewerkers aan te boren en het bedrijf te laten groeien."
+   },
+   "zhang2": {
+    "name": "Zhang Xiaoyun (张晓云)",
+    "role": "Senior vice-president Azië-Pacific, ADP",
+    "text": "Zhangs grotere punt: AI duwt de Singaporese werkvloer van een wedstrijd in kennis naar een wedstrijd in oordeelsvermogen. Wie in de toekomst het sterkst staat, is niet degene die de meeste informatie bezit, maar degene die de kracht van AI het best combineert met menselijke wijsheid om samen waarde te creëren."
+   }
+  },
+  "trends": {
+   "title": "AI-vacatures: boom, bevriezing, opleving",
+   "adsLabel": "Vacatures voor AI-functies",
+   "appsLabel": "Sollicitaties op AI-functies",
+   "indexNote": "Geïndexeerd: 2024 = 100",
+   "step1": "Eind 2022 verscheen het grote taalmodel ChatGPT op het toneel en ontketende een AI-wervingsgolf. Daarna trapten Singaporese werkgevers op de rem: tussen 2024 en 2025 kelderde het aantal AI-vacatures met <span class='hl'>74%</span>. De chaotische begingroei van de technologie zorgde voor echte onzekerheid, en bedrijven gingen een 'afkoelingsperiode' in — ze herzagen hun AI-investeringen en wierven veel voorzichtiger.",
+   "step2": "Het afgelopen jaar kantelde het beeld. Naarmate de praktische toepassingen van AI duidelijker werden, pakten werkgevers hun strategie voor AI-talent weer op, en het aantal AI-vacatures is <span class='hl'>op jaarbasis ongeveer verdrievoudigd</span>. De verklaring van Lee: twee jaar rijpende technologie heeft bedrijven geleerd hoe ze AI in hun werkprocessen kunnen inpassen, en de vraag naar personeel volgde.",
+   "step3": "Werkzoekenden houden dat tempo niet bij. In het jaar tot en met april 2026 daalde het aantal sollicitaties op AI-functies opnieuw, met <span class='hl'>17%</span>. Die daling is kleiner dan de 39% van het jaar ervoor, maar laat zien dat lokaal AI-talent schaars blijft — veel kandidaten hebben simpelweg nog niet de vaardigheden waar werkgevers dringend om vragen."
+  },
+  "linker": {
+   "title": "De afkoeling is voorbij: elke sector jaagt weer op AI",
+   "text": "De top vijf staat in de frontlinie van de AI-omslag, en hun vraag naar AI-talent groeit stevig. De overige sectoren, die tijdens de rommelige beginfase van AI even aarzelden, stellen nu hun eigen strategieën voor AI-talent op."
+  }
+ },
+ "s2": {
+  "title": "Hoe kan de arbeidsmarkt er straks uitzien?",
+  "lead1": "In de meeste sectoren moet de volle impact van AI nog komen. Dat is niet hetzelfde als zeggen dat jouw baan de dans ontspringt.",
+  "lead2": "AI wordt breed gezien als de motor van de vierde industriële revolutie, en grote internationale studies hebben al geschetst hoe ver de golf kan reiken.",
+  "decadeTitle": "De volle impact kan 10 jaar op zich laten wachten",
+  "goldman1": "Onderzoek van zakenbank Goldman Sachs naar de Amerikaanse arbeidsmarkt laat zien dat AI op dit moment slechts op een handvol sectoren zwaar drukt.",
+  "goldman2": "De bank schat dat de meeste vakgebieden ongeveer tien jaar nodig hebben om AI op grote schaal in te voeren. Tijdens die lange overgang kan <span class='hl'>6% tot 7%</span> van de Amerikaanse werkenden hun baan verliezen.",
+  "goldman3": "Wereldwijd staan naar schatting <span class='hl'>300 miljoen</span> banen bloot aan automatisering door AI.",
+  "chart2Title": "Aandeel Amerikaanse banen dat blootstaat aan automatisering door AI",
+  "chart2Sub": "Per beroepsgroep, %",
+  "chart2Source": "Bron: Haver Analytics, Goldman Sachs Research",
+  "occupations": {
+   "office": "Kantoor- & administratieve ondersteuning",
+   "legal": "Juridisch",
+   "architecture": "Architectuur & techniek",
+   "science": "Natuur-, levens- & sociale wetenschappen",
+   "business": "Bedrijfsvoering & financiën",
+   "community": "Maatschappelijk & sociaal werk",
+   "management": "Management",
+   "sales": "Verkoop & aanverwant",
+   "computer": "Computers & wiskunde",
+   "farming": "Landbouw, visserij & bosbouw",
+   "protective": "Beveiliging & veiligheidsdiensten",
+   "education": "Onderwijs & bibliotheken",
+   "healthcare": "Zorgondersteuning",
+   "arts": "Kunst, design, entertainment & sport",
+   "all": "Alle beroepen"
+  },
+  "wefTitle": "In 2030 ziet de wereldwijde banenmix er anders uit",
+  "wef1": "Het Future of Jobs Report 2025 van het World Economic Forum voorspelt dat in 2030, gedreven door AI, de groene transitie en economische turbulentie, <span class='hl'>22%</span> van de banen wereldwijd structureel zal veranderen.",
+  "wef2": "Tegen die tijd verdwijnen er naar verwachting zo'n <span class='hl'>92 miljoen</span> banen — maar komen er ongeveer <span class='hlNew'>170 miljoen</span> nieuwe bij. Per saldo een winst van 78 miljoen banen.",
+  "wefDisplaced": "Banen die verdwijnen",
+  "wefCreated": "Nieuwe banen erbij",
+  "wefNet": "Netto toename",
+  "wefUnit": "miljoen",
+  "wefSource": "Bron: World Economic Forum, Future of Jobs Report 2025; ILOSTAT"
+ },
+ "s3": {
+  "title": "Hoe bereid je je voor op het post-AI-tijdperk?",
+  "lead": "AI brengt veel meer kansen dan bedreigingen. De echte uitdaging, voor mensen én bedrijven, is de overgang in goede banen leiden — jezelf sturen richting de nieuwe banen die het post-AI-tijdperk schept.",
+  "oxfordLead": "Onderzoek van de Universiteit van Oxford wijst erop dat AI-vaardigheden zich nu al uitbetalen — in salaris, arbeidsvoorwaarden en de kans op een sollicitatiegesprek:",
+  "oxford": {
+   "pay": {
+    "value": "+23%",
+    "label": "Salaris",
+    "text": "Functies die om AI-vaardigheden vragen, adverteren met salarissen die gemiddeld zo'n 23% hoger liggen."
+   },
+   "benefits": {
+    "value": "Meer extra's",
+    "label": "Arbeidsvoorwaarden",
+    "text": "AI-functies bieden vaker thuiswerken en ouderschapsverlof."
+   },
+   "interviews": {
+    "value": "+8–15%",
+    "label": "Gesprekken",
+    "text": "Kandidaten met AI-vaardigheden worden 8% tot 15% vaker uitgenodigd voor een sollicitatiegesprek."
+   }
+  },
+  "evergreenTitle": "Welke vaardigheden houden stand in een razendsnel AI-tijdperk?",
+  "evergreen1": "Waar het echt om gaat, is niet alleen leren hoe je AI bedient, maar weten hoe je er de waarde van je werk mee verhoogt — terwijl je bouwt aan het oordeelsvermogen, de communicatieve vaardigheden en het probleemoplossend vermogen die AI niet zomaar kan vervangen.",
+  "wong1": "Prof. Steven Wong (黄开庄), directeur van het Centre for Digital Enablement aan het Singapore Institute of Technology, waarschuwt dat AI zo snel gaat dat sommige AI-vaardigheden van vandaag zullen verouderen — vooral bedieningstrucjes die aan specifieke tools vastzitten.",
+  "wong2": "Toch is zijn advies om vroeg AI-geletterdheid op te bouwen, welke kant de technologie ook op gaat: leer AI te gebruiken, erop toe te zien en het te combineren met menselijk oordeel.",
+  "everyone": "Naarmate AI zich verspreidt, kan iedereen er sneller mee werken. Alleen 'weten hoe je AI gebruikt' blijft niet lang een voorsprong.",
+  "poon1": "Poon King Wang (潘竞宏), Chief Strategy and Design-AI Officer aan de Singapore University of Technology and Design en directeur van het Lee Kuan Yew Centre for Innovative Cities, roept werkenden op om te schakelen van 'AI-gebruiker' naar 'AI-maker' — AI inzetten om waarde te blijven creëren die onmiskenbaar van jou is. Zo val je op, stelt hij, op de werkvloer van de toekomst.",
+  "tipTitle": "Blijf bouwen aan overdraagbare vaardigheden",
+  "tipText": "<span class='hl'>Analytisch denken, communicatie, creativiteit en diepe vakkennis</span> reizen met je mee van baan naar baan. Zet AI bewust in om je werk te stroomlijnen: laat de machine het repeterende werk doen en besteed je eigen tijd aan oordelen, beslissen en problemen oplossen.",
+  "li1": "Aan de Singapore Management University volgen prof. Li Jia (李嘉), decaan van de School of Economics, en zijn team het langetermijneffect van AI op de lokale arbeidsmarkt.",
+  "li2": "Volgens hem valt onmogelijk precies te voorspellen hoeveel Singaporese banen de komende drie tot vijf jaar aan AI verloren gaan. Wat onderzoekers wél kunnen: vacatures in de gaten houden, sectoren opsporen waar de werving krimpt en vroeg aan de bel trekken — zodat beleidsmakers en werkzoekenden tijd hebben om te reageren.",
+  "li3": "Veel blijft onzeker, ook hoe ver grote taalmodellen nog kunnen komen — en die onzekerheid bepaalt mede de toekomst van de arbeidsmarkt. Voor het individu is Li's advies: 'train je lichaam' voordat de storm losbarst.",
+  "li4": "Hij vergelijkt het leren van AI-vaardigheden met medicijnen slikken nadat een gezondheidscheck een probleem heeft gevonden, of met trainen om sterker te worden: het resultaat is niet gegarandeerd en zelden meteen zichtbaar, maar je wordt er nooit slechter van. Wanneer de AI-schok jouw sector bereikt, kunnen die vaardigheden zijn wat je aan het werk houdt — en wat je weerbaarder maakt."
+ },
+ "reading": {
+  "title": "Verder lezen",
+  "note": "De volledige serie op zaobao.com.sg — alle artikelen zijn in het Chinees. De beschrijvingen hieronder zijn onze eigen samenvattingen.",
+  "groups": {
+   "g1": {
+    "title": "Nieuwe wervingstrends",
+    "a1": "De vraag naar AI-talent is verdrievoudigd — en ook werkgevers buiten de tech jagen nu mee.",
+    "a2": "Waarom 'new-collar'-werkers, die harde en zachte vaardigheden combineren, nu het meest gewild zijn.",
+    "a3": "AI knijpt de 'eerste baan' af: het aantal startersfuncties gaat krimpen, en stages zijn nu al moeilijker te vinden."
+   },
+   "g2": {
+    "title": "Hoe AI het dagelijkse werk hertekent",
+    "a1": "AI herschrijft het takenpakket van docenten — ze worden 'hoofdredacteur' van lessen die AI in concept aanlevert.",
+    "a2": "Eén minuut AI-magie op het podium, twee jaar platformbouw achter de schermen: een geslaagde transformatie laat zich niet overhaasten."
+   },
+   "g3": {
+    "title": "De pijn van verdringing",
+    "a1": "Ingehaald door een AI die sneller en 'slimmer' was, werkt een 43-jarige contentontwikkelaar na ontslag aan een nieuwe start.",
+    "a2": "'Vervangt AI mij straks?' Steeds meer werkzoekenden leggen die angst voor aan loopbaancoaches."
+   },
+   "g4": {
+    "title": "Vakmanschap en creativiteit onder druk",
+    "a1": "Kunstenaars en schrijvers stellen dat AI het 'aannemelijke' kan genereren — maar niet de ziel van een werk.",
+    "a2": "Nu ongeveer 90% van de reclameproductie met AI wordt gemaakt, verschuiven creatieven van het maken van het werk naar het cureren ervan."
+   },
+   "g5": {
+    "title": "Vaardigheden die blijven",
+    "a1": "Hoe kies je een AI-cursus: leren AI te gebruiken is niet genoeg — leer ermee te creëren.",
+    "a2": "Niet meer stampen: een 65-jarige winkelmedewerker scant wijnetiketten met AI en antwoordt als een kenner."
+   }
+  },
+  "videosTitle": "Kijken",
+  "videos": {
+   "v1": {
+    "title": "Efficiënter werken — of mensen vervangen?",
+    "text": "Ben jij bang om door AI vervangen te worden? Nu zelfs techprofessionals en advocaten zwaar zijn blootgesteld: hoe moeten zij reageren?"
+   },
+   "v2": {
+    "title": "Een bedrijf bouwen op AI en 16 keer zo productief worden?",
+    "text": "Bedrijven pompen geld in AI-productiviteit. Wat is er echt voor nodig — en hoe moeten we onze manier van werken herzien?"
+   }
+  }
+ },
+ "about": {
+  "title": "Over deze pagina",
+  "p1": "Dit is een origineel educatief hulpmiddel voor meertalige klassen. Het hervertelt, in 18 talen, de feiten en bevindingen van een interactieve reportage van Lianhe Zaobao (联合早报), het Chineestalige dagblad van Singapore — zodat leerlingen die geen Chinees lezen hetzelfde verhaal, dezelfde grafieken en dezelfde opbouw kunnen volgen als in het origineel, en ze naast elkaar kunnen bespreken.",
+  "p2": "De tekst op deze pagina is een originele samenvatting geschreven voor het onderwijs, geen vertaling van het artikel. Citaten van de geportretteerde personen zijn geparafraseerd. Alle gegevens behoren toe aan de genoemde bronnen. Steun de oorspronkelijke journalistiek:",
+  "originalTitle": "Originele reportage",
+  "originalCredit": "'AI与职场变局' (AI en de veranderende werkvloer), interactieve reportage van Lianhe Zaobao, gepubliceerd op 16 augustus 2026. Tekst: Lin Pingying. Interviews: Lin Pingying, Lu Huijing, Li Gengwei. Planning: Huang Xiaofang. Illustraties: Lu Fangkai. Ontwerp & ontwikkeling: Wang Yuchen, Huang Junnan. © SPH Media Limited.",
+  "romanization": "Chinese namen zijn geromaniseerd in hanyu pinyin waar geen officiële Engelse spelling is gepubliceerd.",
+  "dataTitle": "Databronnen",
+  "data1": "Analyse door Lianhe Zaobao × Jobstreet by SEEK van AI-trefwoorden in Singaporese vacatures, 2023–2026",
+  "data2": "Goldman Sachs Research / Haver Analytics — AI en de Amerikaanse arbeidsmarkt",
+  "data3": "World Economic Forum, Future of Jobs Report 2025; ILOSTAT",
+  "data4": "Onderzoek van de Universiteit van Oxford naar AI-vaardigheden, lonen en werving",
+  "disclaimer": "Gemaakt voor gebruik in de klas. Niet verbonden aan en niet goedgekeurd door SPH Media of Lianhe Zaobao."
+ }
+}

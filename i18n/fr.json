@@ -31,7 +31,10 @@
   "moreDetail": "Plus de détails",
   "origNudgeCase": "L'article original raconte l'histoire de cette école avec des illustrations animées — à voir absolument.",
   "origNudgeSec": "L'article original présente cette partie avec des animations et des graphiques interactifs.",
-  "origNudgeCta": "Ouvrir l'original"
+  "origNudgeCta": "Ouvrir l'original",
+  "listen": "Écouter",
+  "stop": "Arrêter",
+  "noVoice": "Pas de voix pour cette langue sur cet appareil — essayez un téléphone ou Chrome."
  },
  "nav": {
   "trends": "Tendances actuelles",
@@ -41,7 +44,7 @@
   "videos": "Vidéos"
  },
  "hero": {
-  "kicker": "Un compagnon pédagogique en 13 langues",
+  "kicker": "Un compagnon pédagogique en 18 langues",
   "title": "Le virage de l'IA",
   "subtitle": "Comment l'intelligence artificielle (IA) réécrit le travail à Singapour — ce qui change, ce qui s'annonce, et comment s'y préparer.",
   "basedOn": "Un récit original des faits et conclusions d'abord rapportés dans le reportage interactif de Lianhe Zaobao sur l'IA et le marché de l'emploi singapourien, publié le 16 août 2026.",
@@ -261,7 +264,7 @@
  },
  "about": {
   "title": "À propos de cette page",
-  "p1": "Ceci est un compagnon pédagogique original conçu pour les classes multilingues. Il raconte, en 13 langues, les faits et conclusions d'un reportage interactif de Lianhe Zaobao (联合早报), le quotidien de langue chinoise de Singapour — afin que les élèves qui ne lisent pas le chinois puissent suivre la même histoire, les mêmes graphiques et la même structure que l'original, et en discuter côte à côte.",
+  "p1": "Ceci est un compagnon pédagogique original conçu pour les classes multilingues. Il raconte, en 18 langues, les faits et conclusions d'un reportage interactif de Lianhe Zaobao (联合早报), le quotidien de langue chinoise de Singapour — afin que les élèves qui ne lisent pas le chinois puissent suivre la même histoire, les mêmes graphiques et la même structure que l'original, et en discuter côte à côte.",
   "p2": "Le texte de cette page est un résumé original rédigé à des fins pédagogiques, non une traduction de l'article. Les propos des personnes citées sont reformulés. Toutes les données appartiennent aux sources citées. Merci de soutenir le journalisme original :",
   "originalTitle": "Reportage original",
   "originalCredit": "« AI与职场变局 » (L'IA et les mutations du monde du travail), reportage interactif de Lianhe Zaobao, publié le 16 août 2026. Texte : Lin Pingying. Entretiens : Lin Pingying, Lu Huijing, Li Gengwei. Conception éditoriale : Huang Xiaofang. Illustration : Lu Fangkai. Design et développement : Wang Yuchen, Huang Junnan. © SPH Media Limited.",

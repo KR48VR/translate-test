@@ -31,7 +31,10 @@
   "moreDetail": "More detail",
   "origNudgeCase": "The original feature tells this school's story with animated illustrations — see it come alive.",
   "origNudgeSec": "The original feature shows this part with animations and interactive graphics.",
-  "origNudgeCta": "Open the original"
+  "origNudgeCta": "Open the original",
+  "listen": "Listen",
+  "stop": "Stop",
+  "noVoice": "No voice for this language on this device — try a phone or Chrome."
  },
  "nav": {
   "trends": "Today's trends",
@@ -41,7 +44,7 @@
   "videos": "Watch"
  },
  "hero": {
-  "kicker": "A classroom companion in 13 languages",
+  "kicker": "A classroom companion in 18 languages",
   "title": "The AI Shift",
   "subtitle": "How artificial intelligence is rewriting work in Singapore — what is changing, what comes next, and how to get ready.",
   "basedOn": "An original retelling of the facts and findings first reported in Lianhe Zaobao's interactive feature on AI and Singapore's job market, published 16 August 2026.",
@@ -261,7 +264,7 @@
  },
  "about": {
   "title": "About this page",
-  "p1": "This is an original educational companion built for multilingual classrooms. It retells, in 13 languages, the facts and findings of an interactive feature by Lianhe Zaobao (联合早报), Singapore's Chinese-language daily — so that students who do not read Chinese can follow the same story, the same charts and the same structure as the original, and discuss them side by side.",
+  "p1": "This is an original educational companion built for multilingual classrooms. It retells, in 18 languages, the facts and findings of an interactive feature by Lianhe Zaobao (联合早报), Singapore's Chinese-language daily — so that students who do not read Chinese can follow the same story, the same charts and the same structure as the original, and discuss them side by side.",
   "p2": "The text on this page is an original summary written for teaching, not a translation of the article. Quotes from the people featured are paraphrased. All data belongs to the sources cited. Please support the original journalism:",
   "originalTitle": "Original feature",
   "originalCredit": "'AI与职场变局' (AI and the Changing Workplace), Lianhe Zaobao interactive, published 16 August 2026. Text: Lin Pingying. Interviews: Lin Pingying, Lu Huijing, Li Gengwei. Planning: Huang Xiaofang. Illustration: Lu Fangkai. Design & development: Wang Yuchen, Huang Junnan. © SPH Media Limited.",

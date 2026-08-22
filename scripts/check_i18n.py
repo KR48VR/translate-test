@@ -73,7 +73,7 @@ def check(code):
 
 
 def main():
-    codes = sys.argv[1:] or ["zh", "ms", "ta", "sg", "yue", "th", "vi", "ja", "ko", "fr", "es", "de"]
+    codes = sys.argv[1:] or ["zh", "ms", "ta", "sg", "yue", "th", "vi", "ja", "ko", "hi", "ml", "si", "fr", "es", "de", "nl", "ru"]
     bad = False
     for c in codes:
         errs = check(c)

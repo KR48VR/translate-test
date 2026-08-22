@@ -7,7 +7,7 @@ from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-ORDER = ["en", "zh", "ms", "ta", "sg", "yue", "th", "vi", "ja", "ko", "fr", "es", "de"]
+ORDER = ["en", "zh", "ms", "ta", "sg", "yue", "th", "vi", "ja", "ko", "hi", "ml", "si", "fr", "es", "de", "nl", "ru"]
 
 
 def rich(s: str) -> str:

@@ -31,7 +31,10 @@
   "moreDetail": "Xem thêm",
   "origNudgeCase": "Bài gốc kể câu chuyện của ngôi trường này bằng hình minh họa động — rất đáng xem.",
   "origNudgeSec": "Bài gốc trình bày phần này bằng hoạt hình và đồ họa tương tác.",
-  "origNudgeCta": "Mở bài gốc"
+  "origNudgeCta": "Mở bài gốc",
+  "listen": "Nghe",
+  "stop": "Dừng",
+  "noVoice": "Thiết bị này không có giọng đọc cho ngôn ngữ này — hãy thử điện thoại hoặc Chrome."
  },
  "nav": {
   "trends": "Xu hướng hiện nay",
@@ -41,7 +44,7 @@
   "videos": "Xem"
  },
  "hero": {
-  "kicker": "Bạn đồng hành trong lớp học — bằng 13 ngôn ngữ",
+  "kicker": "Bạn đồng hành trong lớp học — bằng 18 ngôn ngữ",
   "title": "Làn sóng AI",
   "subtitle": "Trí tuệ nhân tạo (AI) đang viết lại thế giới việc làm ở Singapore — điều gì đang thay đổi, điều gì sắp đến, và làm sao để sẵn sàng.",
   "basedOn": "Bản kể lại nguyên bản các dữ kiện và phát hiện được đăng lần đầu trong chuyên trang tương tác của Lianhe Zaobao về AI và thị trường việc làm Singapore, xuất bản ngày 16/8/2026.",
@@ -261,7 +264,7 @@
  },
  "about": {
   "title": "Về trang này",
-  "p1": "Đây là tài liệu học tập nguyên bản, được xây dựng cho lớp học đa ngôn ngữ. Trang kể lại bằng 13 ngôn ngữ các dữ kiện và phát hiện trong chuyên trang tương tác của Lianhe Zaobao (联合早报), nhật báo tiếng Trung của Singapore — để học sinh không đọc được tiếng Trung vẫn theo dõi được cùng câu chuyện, cùng biểu đồ và cùng bố cục với bản gốc, và thảo luận song song với nhau.",
+  "p1": "Đây là tài liệu học tập nguyên bản, được xây dựng cho lớp học đa ngôn ngữ. Trang kể lại bằng 18 ngôn ngữ các dữ kiện và phát hiện trong chuyên trang tương tác của Lianhe Zaobao (联合早报), nhật báo tiếng Trung của Singapore — để học sinh không đọc được tiếng Trung vẫn theo dõi được cùng câu chuyện, cùng biểu đồ và cùng bố cục với bản gốc, và thảo luận song song với nhau.",
   "p2": "Nội dung trên trang là bản tóm tắt nguyên bản viết cho mục đích giảng dạy, không phải bản dịch của bài báo. Phát biểu của các nhân vật được diễn đạt lại. Mọi dữ liệu thuộc về các nguồn được trích dẫn. Hãy ủng hộ bài báo gốc:",
   "originalTitle": "Bài gốc",
   "originalCredit": "'AI与职场变局' (AI và biến chuyển nơi làm việc), chuyên trang tương tác của Lianhe Zaobao, đăng ngày 16/8/2026. Bài viết: Lin Pingying. Phỏng vấn: Lin Pingying, Lu Huijing, Li Gengwei. Lên kế hoạch: Huang Xiaofang. Minh họa: Lu Fangkai. Thiết kế & phát triển: Wang Yuchen, Huang Junnan. © SPH Media Limited.",

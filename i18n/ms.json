@@ -31,7 +31,10 @@
   "moreDetail": "Lagi lanjut",
   "origNudgeCase": "Rencana asal menceritakan kisah sekolah ini dengan ilustrasi animasi — saksikannya sendiri.",
   "origNudgeSec": "Rencana asal memaparkan bahagian ini dengan animasi dan grafik interaktif.",
-  "origNudgeCta": "Buka rencana asal"
+  "origNudgeCta": "Buka rencana asal",
+  "listen": "Dengar",
+  "stop": "Berhenti",
+  "noVoice": "Tiada suara untuk bahasa ini pada peranti ini — cuba telefon atau Chrome."
  },
  "nav": {
   "trends": "Trend hari ini",
@@ -41,7 +44,7 @@
   "videos": "Tonton"
  },
  "hero": {
-  "kicker": "Teman bilik darjah dalam 13 bahasa",
+  "kicker": "Teman bilik darjah dalam 18 bahasa",
   "title": "Anjakan AI",
   "subtitle": "Bagaimana kecerdasan buatan (AI) mengubah dunia pekerjaan di Singapura — apa yang sedang berubah, apa yang mendatang, dan bagaimana untuk bersiap sedia.",
   "basedOn": "Penceritaan semula asli tentang fakta dan penemuan yang pertama kali dilaporkan dalam rencana interaktif Lianhe Zaobao tentang AI dan pasaran pekerjaan Singapura, diterbitkan pada 16 Ogos 2026.",
@@ -261,7 +264,7 @@
  },
  "about": {
   "title": "Tentang halaman ini",
-  "p1": "Ini ialah teman pembelajaran asli yang dibina untuk bilik darjah pelbagai bahasa. Ia menceritakan semula, dalam 13 bahasa, fakta dan penemuan sebuah rencana interaktif oleh Lianhe Zaobao (联合早报), akhbar harian berbahasa Cina di Singapura — supaya pelajar yang tidak membaca bahasa Cina dapat mengikuti kisah, carta dan struktur yang sama seperti yang asal, dan membincangkannya secara berdampingan.",
+  "p1": "Ini ialah teman pembelajaran asli yang dibina untuk bilik darjah pelbagai bahasa. Ia menceritakan semula, dalam 18 bahasa, fakta dan penemuan sebuah rencana interaktif oleh Lianhe Zaobao (联合早报), akhbar harian berbahasa Cina di Singapura — supaya pelajar yang tidak membaca bahasa Cina dapat mengikuti kisah, carta dan struktur yang sama seperti yang asal, dan membincangkannya secara berdampingan.",
   "p2": "Teks di halaman ini ialah ringkasan asli yang ditulis untuk tujuan pengajaran, bukan terjemahan rencana tersebut. Petikan daripada individu yang ditampilkan telah diolah semula. Semua data adalah milik sumber yang dinyatakan. Sila sokong kewartawanan asal:",
   "originalTitle": "Rencana asal",
   "originalCredit": "'AI与职场变局' (AI dan Perubahan Dunia Pekerjaan), rencana interaktif Lianhe Zaobao, diterbitkan pada 16 Ogos 2026. Teks: Lin Pingying. Wawancara: Lin Pingying, Lu Huijing, Li Gengwei. Perancangan: Huang Xiaofang. Ilustrasi: Lu Fangkai. Reka bentuk & pembangunan: Wang Yuchen, Huang Junnan. © SPH Media Limited.",

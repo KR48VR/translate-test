@@ -1,6 +1,6 @@
 # The AI Shift — a multilingual classroom companion
 
-An original, single-page interactive website that retells — in **13 languages** — the facts and
+An original, single-page interactive website that retells — in **18 languages** — the facts and
 findings of Lianhe Zaobao's interactive feature on how AI is reshaping Singapore's job market
 ([original feature, in Chinese](https://interactive.zaobao.com.sg/2026/artificial-intelligence-impact-on-singapore-jobs/)).
 
@@ -12,7 +12,8 @@ copy.
 ## Languages
 
 English · 中文（简体）· Bahasa Melayu · தமிழ் · Singlish · 廣東話 (written Cantonese) ·
-ไทย · Tiếng Việt · 日本語 · 한국어 · Français · Español · Deutsch
+ไทย · Tiếng Việt · 日本語 · 한국어 · हिन्दी · മലയാളം · සිංහල · Français · Español · Deutsch ·
+Nederlands · Русский
 
 ## Features
 
@@ -26,6 +27,10 @@ English · 中文（简体）· Bahasa Melayu · தமிழ் · Singlish · 
 - **Visit-the-original nudges** — one card per section encourages students to open the
   Zaobao original (with its animations and illustrations), deep-linked to the matching
   section anchor of their page.
+- **Read-aloud** — a Listen button in each main section reads it out using the browser's
+  built-in voices (no external service), highlighting each paragraph as it goes. Voice
+  availability depends on the device; phones and Chrome carry the widest set. Languages
+  without an installed voice get a friendly hint instead.
 - **Interactive charts** (no external libraries):
   - Top-5 industries for AI hiring demand in Singapore, 2024–2026 (rank bump chart; select an
     industry to see the AI skills its ads mention and its entry-level share)

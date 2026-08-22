@@ -31,7 +31,10 @@
   "moreDetail": "Mehr Details",
   "origNudgeCase": "Das Original erzählt die Geschichte dieser Schule mit animierten Illustrationen — sehenswert.",
   "origNudgeSec": "Das Original zeigt diesen Teil mit Animationen und interaktiven Grafiken.",
-  "origNudgeCta": "Zum Original"
+  "origNudgeCta": "Zum Original",
+  "listen": "Vorlesen",
+  "stop": "Stopp",
+  "noVoice": "Keine Stimme für diese Sprache auf diesem Gerät — probieren Sie ein Smartphone oder Chrome."
  },
  "nav": {
   "trends": "Aktuelle Trends",
@@ -41,7 +44,7 @@
   "videos": "Videos"
  },
  "hero": {
-  "kicker": "Ein Unterrichtsbegleiter in 13 Sprachen",
+  "kicker": "Ein Unterrichtsbegleiter in 18 Sprachen",
   "title": "Der KI-Umbruch",
   "subtitle": "Wie künstliche Intelligenz (KI) die Arbeit in Singapur neu schreibt – was sich verändert, was als Nächstes kommt und wie du dich bereit machst.",
   "basedOn": "Eine eigenständige Nacherzählung der Fakten und Ergebnisse aus dem interaktiven Feature von Lianhe Zaobao über KI und Singapurs Arbeitsmarkt, veröffentlicht am 16. August 2026.",
@@ -261,7 +264,7 @@
  },
  "about": {
   "title": "Über diese Seite",
-  "p1": "Dies ist ein eigenständiger Unterrichtsbegleiter für mehrsprachige Klassenzimmer. Er erzählt in 13 Sprachen die Fakten und Ergebnisse eines interaktiven Features von Lianhe Zaobao (联合早报), Singapurs chinesischsprachiger Tageszeitung, nach – damit Schülerinnen und Schüler, die kein Chinesisch lesen, derselben Geschichte, denselben Grafiken und derselben Struktur folgen können wie im Original und beide Fassungen nebeneinander diskutieren können.",
+  "p1": "Dies ist ein eigenständiger Unterrichtsbegleiter für mehrsprachige Klassenzimmer. Er erzählt in 18 Sprachen die Fakten und Ergebnisse eines interaktiven Features von Lianhe Zaobao (联合早报), Singapurs chinesischsprachiger Tageszeitung, nach – damit Schülerinnen und Schüler, die kein Chinesisch lesen, derselben Geschichte, denselben Grafiken und derselben Struktur folgen können wie im Original und beide Fassungen nebeneinander diskutieren können.",
   "p2": "Der Text auf dieser Seite ist eine eigenständige, für den Unterricht geschriebene Zusammenfassung, keine Übersetzung des Artikels. Zitate der vorgestellten Personen sind sinngemäß wiedergegeben. Alle Daten gehören den genannten Quellen. Bitte unterstütze den Originaljournalismus:",
   "originalTitle": "Original-Feature",
   "originalCredit": "'AI与职场变局' (KI und der Umbruch der Arbeitswelt), interaktives Feature von Lianhe Zaobao, veröffentlicht am 16. August 2026. Text: Lin Pingying. Interviews: Lin Pingying, Lu Huijing, Li Gengwei. Planung: Huang Xiaofang. Illustration: Lu Fangkai. Design & Entwicklung: Wang Yuchen, Huang Junnan. © SPH Media Limited.",

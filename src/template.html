@@ -3,7 +3,7 @@
 <meta name="description" content="A multilingual classroom companion on how AI is reshaping Singapore's job market — read the same story in 13 languages.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Noto+Sans:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+Thai:wght@400;600;700;800&family=Noto+Sans+Tamil:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Noto+Sans:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Sans+Thai:wght@400;600;700;800&family=Noto+Sans+Tamil:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700;800&family=Noto+Sans+Malayalam:wght@400;600;700;800&family=Noto+Sans+Sinhala:wght@400;600;700;800&display=swap">
 <style>
 :root{
   --bg:#F7F8F6; --surface:#FFFFFF; --surface2:#EFF1EC;
@@ -43,6 +43,9 @@ html[data-font="jp"]{ --f-body:'Noto Sans JP','Noto Sans',sans-serif; --f-displa
 html[data-font="kr"]{ --f-body:'Noto Sans KR','Noto Sans',sans-serif; --f-display:'Archivo','Noto Sans KR',sans-serif; --lh-body:1.8; }
 html[data-font="thai"]{ --f-body:'Noto Sans Thai','Noto Sans',sans-serif; --f-display:'Archivo','Noto Sans Thai',sans-serif; --lh-body:1.9; }
 html[data-font="tamil"]{ --f-body:'Noto Sans Tamil','Noto Sans',sans-serif; --f-display:'Archivo','Noto Sans Tamil',sans-serif; --lh-body:1.85; }
+html[data-font="deva"]{ --f-body:'Noto Sans Devanagari','Noto Sans',sans-serif; --f-display:'Archivo','Noto Sans Devanagari',sans-serif; --lh-body:1.85; }
+html[data-font="mlym"]{ --f-body:'Noto Sans Malayalam','Noto Sans',sans-serif; --f-display:'Archivo','Noto Sans Malayalam',sans-serif; --lh-body:1.9; }
+html[data-font="sinh"]{ --f-body:'Noto Sans Sinhala','Noto Sans',sans-serif; --f-display:'Archivo','Noto Sans Sinhala',sans-serif; --lh-body:1.9; }
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -288,8 +291,8 @@ body.compare-on .cmp-hint{display:block}
 .px svg{display:block; width:100%; height:auto; shape-rendering:crispEdges}
 #skyline{margin:34px 0 6px; max-width:760px; opacity:.95}
 .sec-head.with-art{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:18px 28px; align-items:center}
-.sec-head.with-art .art{width:clamp(74px,9vw,110px); justify-self:end; align-self:end}
-@media(max-width:560px){ .sec-head.with-art .art{width:64px} }
+.sec-head.with-art > .art{width:clamp(74px,9vw,110px); justify-self:end; align-self:end}
+@media(max-width:560px){ .sec-head.with-art > .art{width:64px} }
 .art-row{display:grid; grid-template-columns:auto minmax(0,1fr); gap:26px; align-items:start; max-width:680px; margin:0 auto}
 .art-row .art{width:clamp(64px,8vw,96px); margin-top:6px}
 @media(max-width:560px){ .art-row{grid-template-columns:1fr} .art-row .art{width:64px} }
@@ -326,6 +329,23 @@ body.compare-on .cmp-hint{display:block}
 }
 .more-stub:hover{background:color-mix(in srgb,var(--accent) 9%,transparent); border-style:solid}
 [data-detail].expanded + .more-stub{display:none}
+
+/* ---------- read aloud ---------- */
+.listen-btn{
+  display:inline-flex; align-items:center; gap:8px; margin-top:14px;
+  border:1.5px solid var(--line); background:var(--surface); color:var(--muted);
+  border-radius:99px; padding:6px 16px; font-family:var(--f-body); font-size:13px; font-weight:700;
+  cursor:pointer; transition:all .15s;
+}
+.listen-btn .art{width:15px}
+.listen-btn:hover{border-color:var(--accent); color:var(--ink)}
+.listen-btn[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 12%,var(--surface)); border-color:var(--accent); color:var(--accent-ink)}
+.speaking{outline:2.5px solid color-mix(in srgb,var(--accent) 55%,transparent); outline-offset:4px; border-radius:6px}
+.voice-hint{font-size:12.5px; color:var(--accent-ink); margin-top:8px; max-width:420px}
+@media (prefers-reduced-motion: no-preference){
+  .listen-btn[aria-pressed="true"] .art{animation:pulse 1.2s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+}
 
 /* ---------- visit-the-original nudges ---------- */
 .orig-nudge{
@@ -399,6 +419,7 @@ body.compare-on .cmp-hint{display:block}
           <p class="kicker" data-i18n="caseStudy.kicker"></p>
           <h2 data-i18n="caseStudy.title"></h2>
           <p class="lead cmp" data-i18n="caseStudy.p1"></p>
+          <button class="listen-btn" data-say="case" aria-pressed="false"><span class="art px" data-art="speaker" aria-hidden="true"></span><span class="lbl" data-i18n="ui.listen"></span></button>
         </div>
         <span class="art px" data-art="robot" aria-hidden="true"></span>
       </div>
@@ -423,6 +444,7 @@ body.compare-on .cmp-hint{display:block}
         <h2 data-i18n="s1.title"></h2>
         <p class="lead cmp" data-i18n="s1.lead"></p>
         <p class="note cmp" data-i18n="s1.method"></p>
+        <button class="listen-btn" data-say="trends" aria-pressed="false"><span class="art px" data-art="speaker" aria-hidden="true"></span><span class="lbl" data-i18n="ui.listen"></span></button>
       </div>
 
       <div class="scrolly">
@@ -499,6 +521,7 @@ body.compare-on .cmp-hint{display:block}
           <h2 data-i18n="s2.title"></h2>
           <p class="lead cmp" data-i18n="s2.lead1"></p>
           <p class="cmp" data-detail data-i18n="s2.lead2"></p>
+          <button class="listen-btn" data-say="future" aria-pressed="false"><span class="art px" data-art="speaker" aria-hidden="true"></span><span class="lbl" data-i18n="ui.listen"></span></button>
         </div>
         <span class="art px" data-art="crystal" aria-hidden="true"></span>
       </div>
@@ -539,6 +562,7 @@ body.compare-on .cmp-hint{display:block}
           <h2 data-i18n="s3.title"></h2>
           <p class="lead cmp" data-i18n="s3.lead"></p>
           <p class="cmp" data-i18n="s3.oxfordLead"></p>
+          <button class="listen-btn" data-say="prepare" aria-pressed="false"><span class="art px" data-art="speaker" aria-hidden="true"></span><span class="lbl" data-i18n="ui.listen"></span></button>
         </div>
         <span class="art px" data-art="dumbbell" aria-hidden="true"></span>
       </div>
@@ -634,7 +658,7 @@ body.compare-on .cmp-hint{display:block}
 const I18N = "__I18N_DATA__";
 
 /* ---------------- language-independent data ---------------- */
-const ORDER = ["en","zh","ms","ta","sg","yue","th","vi","ja","ko","fr","es","de"];
+const ORDER = ["en","zh","ms","ta","sg","yue","th","vi","ja","ko","hi","ml","si","fr","es","de","nl","ru"];
 const IND = [
   { id:"tech", color:"var(--c-tech)", ranks:[1,1,1], skills:["analysis","compSci","python","dataAnalysis","automation"], entry:15 },
   { id:"edu",  color:"var(--c-edu)",  ranks:[4,2,2], skills:["analysis","python","compSci","dataAnalysis"], entry:15 },
@@ -833,6 +857,7 @@ const SPRITES = {
   meter: ["..........",".kkkkkkkk.",".kgggwwwk.",".kkkkkkkk.","..........",".kkkkkkkk.",".kgggggwk.",".kkkkkkkk."],
   bolt: ["...yy...","..yy....",".yyyyy..","...yy...","..yy....",".yy....."],
   origpage: [".kkkkkkkkkkkk.",".kbyg.......k.",".kkkkkkkkkkkk.",".kwwwwwwwwwwk.",".kwwowwwwwywk.",".kwwoowwwwwwk.",".kwwowwwwwwwk.",".kwwwwwwwwwwk.",".kkkkkkkkkkkk."],
+  speaker: ["....k.....","...kk.....","..kkk..k..","kkkkk...k.","kkkkk.k.k.","kkkkk...k.","..kkk..k..","...kk.....","....k....."],
   avEsther: avatar("h","p"), avZhang: avatar("k","y"), avWong: avatar("k","b"), avPoon: avatar("k","g"), avLi: avatar("d","o"),
 };
 function renderArt(){
@@ -1057,9 +1082,102 @@ const toTop = document.getElementById("toTop");
 addEventListener("scroll",()=>{ toTop.classList.toggle("show", scrollY>1200); },{passive:true});
 toTop.onclick=()=>scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
 
+/* ---------------- read aloud ---------------- */
+const VOICE_PREFS = { en:["en-sg","en-gb","en-us","en"], sg:["en-sg","en-gb","en"], zh:["zh-cn","zh-sg","cmn","zh"],
+  yue:["yue","zh-hk"], ms:["ms"], ta:["ta"], th:["th"], vi:["vi"], ja:["ja"], ko:["ko"],
+  hi:["hi"], ml:["ml"], si:["si"], fr:["fr"], es:["es"], de:["de"], nl:["nl"], ru:["ru"] };
+const speechOK = "speechSynthesis" in window;
+let sayBtnActive = null, sayQueue = [], sayEl = null;
+function getVoice(){
+  if(!speechOK) return null;
+  const voices = speechSynthesis.getVoices();
+  const prefs = VOICE_PREFS[lang] || [I18N[lang]._meta.htmlLang.toLowerCase()];
+  for(const p of prefs){
+    const v = voices.find(x=>x.lang && x.lang.toLowerCase().replace("_","-").startsWith(p));
+    if(v) return v;
+  }
+  return null;
+}
+function chunkText(t){
+  const parts = t.split(/(?<=[.!?。！？…；;])\s*/u).filter(x=>x.trim());
+  const out = [];
+  for(let part of (parts.length?parts:[t])){
+    while(part.length>200){
+      let cut = part.lastIndexOf(" ",200); if(cut<80) cut = 200;
+      out.push(part.slice(0,cut)); part = part.slice(cut);
+    }
+    if(part.trim()) out.push(part.trim());
+  }
+  return out;
+}
+function stopSay(){
+  if(speechOK) speechSynthesis.cancel();
+  if(sayEl) sayEl.classList.remove("speaking");
+  sayEl = null; sayQueue = [];
+  if(sayBtnActive){
+    sayBtnActive.setAttribute("aria-pressed","false");
+    sayBtnActive.querySelector(".lbl").textContent = L("ui.listen");
+    sayBtnActive = null;
+  }
+}
+function sayNext(){
+  if(sayEl) sayEl.classList.remove("speaking");
+  const el = sayQueue.shift();
+  if(!el){ stopSay(); return; }
+  sayEl = el; el.classList.add("speaking");
+  el.scrollIntoView({block:"nearest", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto":"smooth"});
+  const chunks = chunkText(el.innerText || "");
+  if(!chunks.length){ sayNext(); return; }
+  const voice = getVoice();
+  let i = 0;
+  const speakChunk = ()=>{
+    if(sayEl!==el) return;
+    if(i>=chunks.length){ sayNext(); return; }
+    const u = new SpeechSynthesisUtterance(chunks[i++]);
+    u.lang = I18N[lang]._meta.htmlLang;
+    if(voice) u.voice = voice;
+    u.rate = 0.98;
+    u.onend = speakChunk;
+    u.onerror = ()=>{ if(sayEl===el) sayNext(); };
+    speechSynthesis.speak(u);
+  };
+  speakChunk();
+}
+function sayables(section){
+  return [...section.querySelectorAll("[data-i18n]")].filter(el=>{
+    if(el.closest(".tableview, svg, .orig-nudge, .zh-chip, .more-stub, .listen-btn, .bump-legend")) return false;
+    if(el.classList.contains("note")||el.classList.contains("chart-note")||el.classList.contains("chart-src")) return false;
+    if(!el.innerText || !el.innerText.trim()) return false;
+    return el.offsetParent!==null;
+  });
+}
+function showVoiceHint(btn){
+  if(btn.parentElement.querySelector(".voice-hint")) return;
+  const d = document.createElement("div"); d.className = "voice-hint"; d.textContent = L("ui.noVoice");
+  btn.after(d); setTimeout(()=>d.remove(), 7000);
+}
+function initListen(){
+  document.querySelectorAll(".listen-btn").forEach(btn=>{
+    btn.onclick = ()=>{
+      if(sayBtnActive===btn){ stopSay(); return; }
+      stopSay();
+      if(!speechOK){ showVoiceHint(btn); return; }
+      const section = btn.closest("section");
+      sayQueue = sayables(section);
+      if(!getVoice()) showVoiceHint(btn);   // still try — some engines route by u.lang alone
+      sayBtnActive = btn;
+      btn.setAttribute("aria-pressed","true");
+      btn.querySelector(".lbl").textContent = L("ui.stop");
+      sayNext();
+    };
+  });
+}
+if(speechOK) speechSynthesis.getVoices();   // warm the voice list; some browsers populate it async
+
 /* ---------------- boot ---------------- */
 function renderAll(){
-  renderText(); buildLangUI(); renderCases(); renderBump(); renderTrends(); renderOcc(); renderWef(); renderReading(); renderArt(); setupCompare(); renderStubs(); watchReveals();
+  stopSay();
+  renderText(); buildLangUI(); renderCases(); renderBump(); renderTrends(); renderOcc(); renderWef(); renderReading(); renderArt(); setupCompare(); renderStubs(); initListen(); watchReveals();
 }
 (function init(){
   let saved="", savedCmp="";

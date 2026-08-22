@@ -31,7 +31,10 @@
   "moreDetail": "Más detalles",
   "origNudgeCase": "El reportaje original cuenta la historia de esta escuela con ilustraciones animadas — vale la pena verlo.",
   "origNudgeSec": "El reportaje original muestra esta parte con animaciones y gráficos interactivos.",
-  "origNudgeCta": "Abrir el original"
+  "origNudgeCta": "Abrir el original",
+  "listen": "Escuchar",
+  "stop": "Detener",
+  "noVoice": "No hay voz para este idioma en este dispositivo — prueba un teléfono o Chrome."
  },
  "nav": {
   "trends": "Tendencias de hoy",
@@ -41,7 +44,7 @@
   "videos": "Videos"
  },
  "hero": {
-  "kicker": "Un recurso para el aula en 13 idiomas",
+  "kicker": "Un recurso para el aula en 18 idiomas",
   "title": "El giro de la IA",
   "subtitle": "Cómo la inteligencia artificial (IA) está reescribiendo el trabajo en Singapur: qué está cambiando, qué viene después y cómo prepararse.",
   "basedOn": "Una narración original de los hechos y hallazgos reportados por primera vez en el especial interactivo de Lianhe Zaobao sobre la IA y el mercado laboral de Singapur, publicado el 16 de agosto de 2026.",
@@ -261,7 +264,7 @@
  },
  "about": {
   "title": "Acerca de esta página",
-  "p1": "Este es un recurso educativo original creado para aulas multilingües. Vuelve a contar, en 13 idiomas, los hechos y hallazgos de un reportaje interactivo de Lianhe Zaobao (联合早报), el diario en chino de Singapur, para que los estudiantes que no leen chino puedan seguir la misma historia, los mismos gráficos y la misma estructura del original, y comentarlos lado a lado.",
+  "p1": "Este es un recurso educativo original creado para aulas multilingües. Vuelve a contar, en 18 idiomas, los hechos y hallazgos de un reportaje interactivo de Lianhe Zaobao (联合早报), el diario en chino de Singapur, para que los estudiantes que no leen chino puedan seguir la misma historia, los mismos gráficos y la misma estructura del original, y comentarlos lado a lado.",
   "p2": "El texto de esta página es un resumen original escrito para la enseñanza, no una traducción del artículo. Las citas de las personas entrevistadas están parafraseadas. Todos los datos pertenecen a las fuentes citadas. Apoya el periodismo original:",
   "originalTitle": "Reportaje original",
   "originalCredit": "'AI与职场变局' (La IA y la transformación del mundo laboral), reportaje interactivo de Lianhe Zaobao, publicado el 16 de agosto de 2026. Texto: Lin Pingying. Entrevistas: Lin Pingying, Lu Huijing, Li Gengwei. Planificación: Huang Xiaofang. Ilustración: Lu Fangkai. Diseño y desarrollo: Wang Yuchen, Huang Junnan. © SPH Media Limited.",
