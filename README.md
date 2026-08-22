@@ -20,6 +20,12 @@ English · 中文（简体）· Bahasa Melayu · தமிழ் · Singlish · 
   shareable via URL (`index.html#lang=ta` opens the Tamil version directly).
 - **Compare mode** — pick a second language in the header, then tap any paragraph to see the
   same paragraph in that language inline. Made for vocabulary matching and bilingual reading.
+- **Light by default** — the deepest-dive paragraphs are collapsed behind inline
+  "＋ More detail" chips, so the page reads short and keen students expand exactly
+  where they want depth (edit the `data-detail` marks in `src/template.html` to change which).
+- **Visit-the-original nudges** — one card per section encourages students to open the
+  Zaobao original (with its animations and illustrations), deep-linked to the matching
+  section anchor of their page.
 - **Interactive charts** (no external libraries):
   - Top-5 industries for AI hiring demand in Singapore, 2024–2026 (rank bump chart; select an
     industry to see the AI skills its ads mention and its entry-level share)

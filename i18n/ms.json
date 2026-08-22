@@ -28,8 +28,10 @@
   "skillsHint": "Pilih satu industri untuk melihat kemahiran AI yang paling kerap disebut dalam iklan pekerjaannya.",
   "tableView": "Lihat data dalam bentuk jadual",
   "skillsFor": "Kemahiran AI paling kerap disebut dalam iklan pekerjaan {industry}",
-  "quickRead": "Bacaan ringkas",
-  "moreDetail": "Lagi lanjut"
+  "moreDetail": "Lagi lanjut",
+  "origNudgeCase": "Rencana asal menceritakan kisah sekolah ini dengan ilustrasi animasi — saksikannya sendiri.",
+  "origNudgeSec": "Rencana asal memaparkan bahagian ini dengan animasi dan grafik interaktif.",
+  "origNudgeCta": "Buka rencana asal"
  },
  "nav": {
   "trends": "Trend hari ini",

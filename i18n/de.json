@@ -28,8 +28,10 @@
   "skillsHint": "Wähle eine Branche, um zu sehen, welche KI-Kompetenzen ihre Stellenanzeigen am häufigsten nennen.",
   "tableView": "Daten als Tabelle anzeigen",
   "skillsFor": "Meistgenannte KI-Kompetenzen in Stellenanzeigen der Branche {industry}",
-  "quickRead": "Schnellversion",
-  "moreDetail": "Mehr Details"
+  "moreDetail": "Mehr Details",
+  "origNudgeCase": "Das Original erzählt die Geschichte dieser Schule mit animierten Illustrationen — sehenswert.",
+  "origNudgeSec": "Das Original zeigt diesen Teil mit Animationen und interaktiven Grafiken.",
+  "origNudgeCta": "Zum Original"
  },
  "nav": {
   "trends": "Aktuelle Trends",

@@ -28,8 +28,10 @@
   "skillsHint": "Choisissez un secteur pour voir les compétences IA les plus citées dans ses offres d'emploi.",
   "tableView": "Voir les données sous forme de tableau",
   "skillsFor": "Compétences IA les plus citées dans les offres du secteur {industry}",
-  "quickRead": "Lecture rapide",
-  "moreDetail": "Plus de détails"
+  "moreDetail": "Plus de détails",
+  "origNudgeCase": "L'article original raconte l'histoire de cette école avec des illustrations animées — à voir absolument.",
+  "origNudgeSec": "L'article original présente cette partie avec des animations et des graphiques interactifs.",
+  "origNudgeCta": "Ouvrir l'original"
  },
  "nav": {
   "trends": "Tendances actuelles",

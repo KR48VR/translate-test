@@ -28,8 +28,10 @@
   "skillsHint": "Select an industry to see the AI skills its job ads mention most.",
   "tableView": "View the data as a table",
   "skillsFor": "Most-mentioned AI skills in {industry} job ads",
-  "quickRead": "Quick read",
-  "moreDetail": "More detail"
+  "moreDetail": "More detail",
+  "origNudgeCase": "The original feature tells this school's story with animated illustrations — see it come alive.",
+  "origNudgeSec": "The original feature shows this part with animations and interactive graphics.",
+  "origNudgeCta": "Open the original"
  },
  "nav": {
   "trends": "Today's trends",

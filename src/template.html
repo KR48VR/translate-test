@@ -315,21 +315,29 @@ body.compare-on .cmp-hint{display:block}
 .case-card .label .art{width:22px}
 .case-card .label::before{display:none}
 
-/* ---------- quick read ---------- */
-.qr-btn{display:inline-flex; align-items:center; gap:7px; border:1px solid var(--line); background:var(--surface); color:var(--muted); border-radius:99px; padding:4.5px 13px; font-size:13px; font-family:var(--f-body); cursor:pointer; white-space:nowrap}
-.qr-btn .art{width:15px}
-.qr-btn[aria-pressed="true"]{background:color-mix(in srgb,var(--c-edu) 14%,var(--surface)); border-color:var(--c-edu); color:var(--ink); font-weight:700}
-body.quick [data-detail]:not(.expanded){display:none}
-body.quick [data-detail]:not(.expanded) + .cmp-block{display:none}
+/* ---------- more-detail chips (deep-dive paragraphs collapsed by default) ---------- */
+[data-detail]:not(.expanded){display:none}
+[data-detail]:not(.expanded) + .cmp-block{display:none}
 .more-stub{
-  display:none; align-items:center; gap:7px; margin:2px 0 16px;
+  display:inline-flex; align-items:center; gap:7px; margin:2px 0 16px;
   border:1.5px dashed color-mix(in srgb,var(--accent) 50%,transparent); background:transparent;
   color:var(--accent-ink); border-radius:99px; padding:4.5px 15px;
   font-family:var(--f-body); font-size:12.5px; font-weight:700; cursor:pointer; transition:all .15s;
 }
 .more-stub:hover{background:color-mix(in srgb,var(--accent) 9%,transparent); border-style:solid}
-body.quick .more-stub{display:inline-flex}
-body.quick [data-detail].expanded + .more-stub{display:none}
+[data-detail].expanded + .more-stub{display:none}
+
+/* ---------- visit-the-original nudges ---------- */
+.orig-nudge{
+  display:grid; grid-template-columns:46px minmax(0,1fr); gap:16px; align-items:center;
+  max-width:680px; margin:30px auto 0; padding:16px 20px; border-radius:14px;
+  background:color-mix(in srgb,var(--c-gov) 9%,var(--surface));
+  border:1px solid color-mix(in srgb,var(--c-gov) 35%,var(--line));
+  text-decoration:none; color:var(--ink); font-size:14px; line-height:1.55; transition:transform .15s;
+}
+.orig-nudge:hover{transform:translateY(-2px)}
+.orig-nudge .art{width:46px}
+.orig-nudge b{color:var(--accent-ink); white-space:nowrap}
 
 /* ---------- misc ---------- */
 #toTop{
@@ -357,7 +365,6 @@ body.quick [data-detail].expanded + .more-stub{display:none}
       <span data-i18n="ui.brand"></span>
     </a>
     <nav class="langbar" id="langbar" aria-label="Language"></nav>
-    <button class="qr-btn" id="qrBtn" aria-pressed="false"><span class="art" data-art="bolt" aria-hidden="true"></span><span data-i18n="ui.quickRead"></span></button>
     <div class="cmpbox">
       <label for="cmpSel" data-i18n="ui.compareLabel"></label>
       <select id="cmpSel"></select>
@@ -404,6 +411,7 @@ body.quick [data-detail].expanded + .more-stub{display:none}
           <p class="cmp" data-i18n="caseStudy.outro3"></p>
         </div>
       </div>
+      <a class="orig-nudge reveal" href="https://interactive.zaobao.com.sg/2026/artificial-intelligence-impact-on-singapore-jobs/" target="_blank" rel="noopener"><span class="art px" data-art="origpage" aria-hidden="true"></span><span><span data-i18n="ui.origNudgeCase"></span> <b><span data-i18n="ui.origNudgeCta"></span> &#8599;</b> <span class="zh-chip" data-i18n="ui.inChinese"></span></span></a>
     </div>
   </section>
 
@@ -478,6 +486,7 @@ body.quick [data-detail].expanded + .more-stub{display:none}
         <p class="qtext cmp" data-i18n="s1.quotes.zhang2.text"></p>
         <div class="qwho"><span class="art px" data-art="avZhang" aria-hidden="true"></span><span class="qmeta"><span class="qname" data-i18n="s1.quotes.zhang2.name"></span><span class="qrole" data-i18n="s1.quotes.zhang2.role"></span></span></div>
       </div>
+      <a class="orig-nudge reveal" href="https://interactive.zaobao.com.sg/2026/artificial-intelligence-impact-on-singapore-jobs/#subhead1" target="_blank" rel="noopener"><span class="art px" data-art="origpage" aria-hidden="true"></span><span><span data-i18n="ui.origNudgeSec"></span> <b><span data-i18n="ui.origNudgeCta"></span> &#8599;</b> <span class="zh-chip" data-i18n="ui.inChinese"></span></span></a>
     </div>
   </section>
 
@@ -517,6 +526,7 @@ body.quick [data-detail].expanded + .more-stub{display:none}
         <div class="wef" id="wefChart"></div>
         <p class="chart-src" data-i18n="s2.wefSource"></p>
       </div>
+      <a class="orig-nudge reveal" href="https://interactive.zaobao.com.sg/2026/artificial-intelligence-impact-on-singapore-jobs/#subhead2" target="_blank" rel="noopener"><span class="art px" data-art="origpage" aria-hidden="true"></span><span><span data-i18n="ui.origNudgeSec"></span> <b><span data-i18n="ui.origNudgeCta"></span> &#8599;</b> <span class="zh-chip" data-i18n="ui.inChinese"></span></span></a>
     </div>
   </section>
 
@@ -562,6 +572,7 @@ body.quick [data-detail].expanded + .more-stub{display:none}
         <p class="cmp" data-i18n="s3.li3"></p>
         <p class="cmp" data-i18n="s3.li4"></p>
       </div>
+      <a class="orig-nudge reveal" href="https://interactive.zaobao.com.sg/2026/artificial-intelligence-impact-on-singapore-jobs/#subhead3" target="_blank" rel="noopener"><span class="art px" data-art="origpage" aria-hidden="true"></span><span><span data-i18n="ui.origNudgeSec"></span> <b><span data-i18n="ui.origNudgeCta"></span> &#8599;</b> <span class="zh-chip" data-i18n="ui.inChinese"></span></span></a>
     </div>
   </section>
 
@@ -821,6 +832,7 @@ const SPRITES = {
   receipt: [".kkkkkkkk.",".kwwwwwwk.",".kwkkkwwk.",".kwwwwwwk.",".kwkkkkwk.",".kwwwwwwk.",".kwkkwwwk.",".kwkwkwkk."],
   meter: ["..........",".kkkkkkkk.",".kgggwwwk.",".kkkkkkkk.","..........",".kkkkkkkk.",".kgggggwk.",".kkkkkkkk."],
   bolt: ["...yy...","..yy....",".yyyyy..","...yy...","..yy....",".yy....."],
+  origpage: [".kkkkkkkkkkkk.",".kbyg.......k.",".kkkkkkkkkkkk.",".kwwwwwwwwwwk.",".kwwowwwwwywk.",".kwwoowwwwwwk.",".kwwowwwwwwwk.",".kwwwwwwwwwwk.",".kkkkkkkkkkkk."],
   avEsther: avatar("h","p"), avZhang: avatar("k","y"), avWong: avatar("k","b"), avPoon: avatar("k","g"), avLi: avatar("d","o"),
 };
 function renderArt(){
@@ -832,8 +844,7 @@ function renderArt(){
   if(sky) sky.innerHTML = px(buildSkyline());
 }
 
-/* ---------------- quick read ---------------- */
-const qrBtn = document.getElementById("qrBtn");
+/* ---------------- more-detail chips ---------------- */
 function renderStubs(){
   // every hidden paragraph leaves a visible "＋ more detail" chip in its place
   document.querySelectorAll(".more-stub").forEach(el=>el.remove());
@@ -849,14 +860,6 @@ function renderStubs(){
     el.after(b);
   });
 }
-function setQuick(on){
-  document.body.classList.toggle("quick", on);
-  qrBtn.setAttribute("aria-pressed", on?"true":"false");
-  renderStubs();   // toggling resets any per-paragraph expansions
-  try{ localStorage.setItem("aishift-quick", on?"1":"0"); }catch(e){}
-}
-qrBtn.addEventListener("click", ()=>setQuick(!document.body.classList.contains("quick")));
-
 /* ---------------- case cards ---------------- */
 function renderCases(){
   const host = document.getElementById("caseCards");
@@ -1059,10 +1062,8 @@ function renderAll(){
   renderText(); buildLangUI(); renderCases(); renderBump(); renderTrends(); renderOcc(); renderWef(); renderReading(); renderArt(); setupCompare(); renderStubs(); watchReveals();
 }
 (function init(){
-  let saved="", savedCmp="", savedQuick="1";   // Quick read is on by default; "0" = reader chose full text
-  try{ saved=localStorage.getItem("aishift-lang")||""; savedCmp=localStorage.getItem("aishift-cmp")||"";
-       savedQuick=localStorage.getItem("aishift-quick")||"1"; }catch(e){}
-  setQuick(savedQuick!=="0");
+  let saved="", savedCmp="";
+  try{ saved=localStorage.getItem("aishift-lang")||""; savedCmp=localStorage.getItem("aishift-cmp")||""; }catch(e){}
   const m=(location.hash||"").match(/lang=([a-z]+)/);
   lang = (m && I18N[m[1]]) ? m[1] : (I18N[saved]?saved:"en");
   cmpLang = (I18N[savedCmp] && savedCmp!==lang) ? savedCmp : "";

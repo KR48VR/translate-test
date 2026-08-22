@@ -28,8 +28,10 @@
   "skillsHint": "选择一个行业，查看其招聘广告中最常提到的AI技能。",
   "tableView": "以表格查看数据",
   "skillsFor": "{industry}招聘广告中最常提到的AI技能",
-  "quickRead": "速读模式",
-  "moreDetail": "展开细节"
+  "moreDetail": "展开细节",
+  "origNudgeCase": "原版专题以生动的动画插图讲述这所学校的故事——值得一看。",
+  "origNudgeSec": "原版专题以动画和互动图表呈现这一部分。",
+  "origNudgeCta": "查看原版"
  },
  "nav": {
   "trends": "当前趋势",

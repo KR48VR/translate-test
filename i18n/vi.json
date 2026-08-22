@@ -28,8 +28,10 @@
   "skillsHint": "Chọn một ngành để xem các kỹ năng AI được nhắc đến nhiều nhất trong tin tuyển dụng của ngành đó.",
   "tableView": "Xem dữ liệu dạng bảng",
   "skillsFor": "Kỹ năng AI được nhắc đến nhiều nhất trong tin tuyển dụng ngành {industry}",
-  "quickRead": "Đọc nhanh",
-  "moreDetail": "Xem thêm"
+  "moreDetail": "Xem thêm",
+  "origNudgeCase": "Bài gốc kể câu chuyện của ngôi trường này bằng hình minh họa động — rất đáng xem.",
+  "origNudgeSec": "Bài gốc trình bày phần này bằng hoạt hình và đồ họa tương tác.",
+  "origNudgeCta": "Mở bài gốc"
  },
  "nav": {
   "trends": "Xu hướng hiện nay",
