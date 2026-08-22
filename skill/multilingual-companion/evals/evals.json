@@ -1,0 +1,23 @@
+{
+  "skill_name": "multilingual-companion",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My students are reading this BBC piece for economics class but half of them are stronger in other languages. Can you make a version they can all read? Languages: English, Chinese, Malay and Vietnamese. https://www.bbc.com/news/articles/c0k3700zljjo",
+      "expected_output": "A single self-contained multilingual page: original retelling (not translated source text), 4 languages with identical layout, language switcher, compare mode, attribution + link to the BBC original, all key facts/figures preserved, i18n gate passing.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "translate this article into french and spanish for my newsletter readers please: [pasted 600-word news article text]",
+      "expected_output": "Recognizes the copyright issue with literal translation of the pasted article, explains briefly, and produces an original retelling companion in French and Spanish with attribution — rather than a direct translation.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We have a 2-page internal report on our school's device usage survey (I'll paste it). Turn it into a little multilingual site for parents — English, Chinese, Tamil, Malay — light version is fine, and use our school colours (navy and gold).",
+      "expected_output": "Light companion (text + compare mode) in the 4 languages, navy/gold identity, charts optional, survey numbers preserved exactly through translation, gate passing. Internal report = user's own content, so retelling constraints relax but the pipeline still applies.",
+      "files": []
+    }
+  ]
+}
