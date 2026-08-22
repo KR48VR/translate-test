@@ -828,7 +828,7 @@ const qrBtn = document.getElementById("qrBtn");
 function setQuick(on){
   document.body.classList.toggle("quick", on);
   qrBtn.setAttribute("aria-pressed", on?"true":"false");
-  try{ localStorage.setItem("aishift-quick", on?"1":""); }catch(e){}
+  try{ localStorage.setItem("aishift-quick", on?"1":"0"); }catch(e){}
 }
 qrBtn.addEventListener("click", ()=>setQuick(!document.body.classList.contains("quick")));
 
@@ -1034,9 +1034,10 @@ function renderAll(){
   renderText(); buildLangUI(); renderCases(); renderBump(); renderTrends(); renderOcc(); renderWef(); renderReading(); renderArt(); setupCompare(); watchReveals();
 }
 (function init(){
-  let saved="", savedCmp="";
+  let saved="", savedCmp="", savedQuick="1";   // Quick read is on by default; "0" = reader chose full text
   try{ saved=localStorage.getItem("aishift-lang")||""; savedCmp=localStorage.getItem("aishift-cmp")||"";
-       if(localStorage.getItem("aishift-quick")==="1") setQuick(true); }catch(e){}
+       savedQuick=localStorage.getItem("aishift-quick")||"1"; }catch(e){}
+  setQuick(savedQuick!=="0");
   const m=(location.hash||"").match(/lang=([a-z]+)/);
   lang = (m && I18N[m[1]]) ? m[1] : (I18N[saved]?saved:"en");
   cmpLang = (I18N[savedCmp] && savedCmp!==lang) ? savedCmp : "";
