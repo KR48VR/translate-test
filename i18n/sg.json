@@ -28,7 +28,8 @@
   "skillsHint": "Pick an industry to see which AI skills its job ads mention the most.",
   "tableView": "See the data as a table",
   "skillsFor": "Most-mentioned AI skills in {industry} job ads",
-  "quickRead": "Short version"
+  "quickRead": "Short version",
+  "moreDetail": "Got more"
  },
  "nav": {
   "trends": "What's hot now",

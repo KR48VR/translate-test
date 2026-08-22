@@ -319,8 +319,17 @@ body.compare-on .cmp-hint{display:block}
 .qr-btn{display:inline-flex; align-items:center; gap:7px; border:1px solid var(--line); background:var(--surface); color:var(--muted); border-radius:99px; padding:4.5px 13px; font-size:13px; font-family:var(--f-body); cursor:pointer; white-space:nowrap}
 .qr-btn .art{width:15px}
 .qr-btn[aria-pressed="true"]{background:color-mix(in srgb,var(--c-edu) 14%,var(--surface)); border-color:var(--c-edu); color:var(--ink); font-weight:700}
-body.quick [data-detail]{display:none}
-body.quick [data-detail] + .cmp-block{display:none}
+body.quick [data-detail]:not(.expanded){display:none}
+body.quick [data-detail]:not(.expanded) + .cmp-block{display:none}
+.more-stub{
+  display:none; align-items:center; gap:7px; margin:2px 0 16px;
+  border:1.5px dashed color-mix(in srgb,var(--accent) 50%,transparent); background:transparent;
+  color:var(--accent-ink); border-radius:99px; padding:4.5px 15px;
+  font-family:var(--f-body); font-size:12.5px; font-weight:700; cursor:pointer; transition:all .15s;
+}
+.more-stub:hover{background:color-mix(in srgb,var(--accent) 9%,transparent); border-style:solid}
+body.quick .more-stub{display:inline-flex}
+body.quick [data-detail].expanded + .more-stub{display:none}
 
 /* ---------- misc ---------- */
 #toTop{
@@ -825,9 +834,25 @@ function renderArt(){
 
 /* ---------------- quick read ---------------- */
 const qrBtn = document.getElementById("qrBtn");
+function renderStubs(){
+  // every hidden paragraph leaves a visible "＋ more detail" chip in its place
+  document.querySelectorAll(".more-stub").forEach(el=>el.remove());
+  document.querySelectorAll("[data-detail]").forEach((el,i)=>{
+    el.classList.remove("expanded");
+    if(!el.id) el.id = "detail-"+i;
+    const b = document.createElement("button");
+    b.className = "more-stub"; b.type = "button";
+    b.setAttribute("aria-controls", el.id);
+    b.setAttribute("aria-expanded", "false");
+    b.innerHTML = `<span aria-hidden="true">＋</span> ${esc(L("ui.moreDetail"))}`;
+    b.addEventListener("click", ()=>{ el.classList.add("expanded"); b.setAttribute("aria-expanded","true"); b.remove(); });
+    el.after(b);
+  });
+}
 function setQuick(on){
   document.body.classList.toggle("quick", on);
   qrBtn.setAttribute("aria-pressed", on?"true":"false");
+  renderStubs();   // toggling resets any per-paragraph expansions
   try{ localStorage.setItem("aishift-quick", on?"1":"0"); }catch(e){}
 }
 qrBtn.addEventListener("click", ()=>setQuick(!document.body.classList.contains("quick")));
@@ -1031,7 +1056,7 @@ toTop.onclick=()=>scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: 
 
 /* ---------------- boot ---------------- */
 function renderAll(){
-  renderText(); buildLangUI(); renderCases(); renderBump(); renderTrends(); renderOcc(); renderWef(); renderReading(); renderArt(); setupCompare(); watchReveals();
+  renderText(); buildLangUI(); renderCases(); renderBump(); renderTrends(); renderOcc(); renderWef(); renderReading(); renderArt(); setupCompare(); renderStubs(); watchReveals();
 }
 (function init(){
   let saved="", savedCmp="", savedQuick="1";   // Quick read is on by default; "0" = reader chose full text

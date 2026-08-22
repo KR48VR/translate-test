@@ -28,7 +28,8 @@
   "skillsHint": "Choisissez un secteur pour voir les compétences IA les plus citées dans ses offres d'emploi.",
   "tableView": "Voir les données sous forme de tableau",
   "skillsFor": "Compétences IA les plus citées dans les offres du secteur {industry}",
-  "quickRead": "Lecture rapide"
+  "quickRead": "Lecture rapide",
+  "moreDetail": "Plus de détails"
  },
  "nav": {
   "trends": "Tendances actuelles",

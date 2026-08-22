@@ -28,7 +28,8 @@
   "skillsHint": "揀一個行業，睇下佢啲招聘廣告最常提邊啲AI技能。",
   "tableView": "以表格睇數據",
   "skillsFor": "{industry}招聘廣告最常提到嘅AI技能",
-  "quickRead": "快速版"
+  "quickRead": "快速版",
+  "moreDetail": "睇多啲"
  },
  "nav": {
   "trends": "最新趨勢",

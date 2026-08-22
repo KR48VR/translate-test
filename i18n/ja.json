@@ -28,7 +28,8 @@
   "skillsHint": "業界を選ぶと、その業界の求人広告で最も多く挙げられるAIスキルが表示されます。",
   "tableView": "データを表で見る",
   "skillsFor": "{industry}の求人広告で最も多く挙げられるAIスキル",
-  "quickRead": "クイック版"
+  "quickRead": "クイック版",
+  "moreDetail": "詳しく見る"
  },
  "nav": {
   "trends": "いまの動き",

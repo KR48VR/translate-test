@@ -28,7 +28,8 @@
   "skillsHint": "Selecciona una industria para ver las habilidades de IA que más mencionan sus anuncios de empleo.",
   "tableView": "Ver los datos en una tabla",
   "skillsFor": "Habilidades de IA más mencionadas en los anuncios de empleo de {industry}",
-  "quickRead": "Lectura rápida"
+  "quickRead": "Lectura rápida",
+  "moreDetail": "Más detalles"
  },
  "nav": {
   "trends": "Tendencias de hoy",

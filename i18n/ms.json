@@ -28,7 +28,8 @@
   "skillsHint": "Pilih satu industri untuk melihat kemahiran AI yang paling kerap disebut dalam iklan pekerjaannya.",
   "tableView": "Lihat data dalam bentuk jadual",
   "skillsFor": "Kemahiran AI paling kerap disebut dalam iklan pekerjaan {industry}",
-  "quickRead": "Bacaan ringkas"
+  "quickRead": "Bacaan ringkas",
+  "moreDetail": "Lagi lanjut"
  },
  "nav": {
   "trends": "Trend hari ini",
