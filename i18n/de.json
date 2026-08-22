@@ -1,0 +1,272 @@
+{
+  "_meta": {
+    "code": "de",
+    "htmlLang": "de",
+    "name": "Deutsch",
+    "englishName": "German",
+    "fontClass": "latin"
+  },
+  "ui": {
+    "brand": "Der KI-Umbruch",
+    "brandPlace": "Singapur",
+    "languageLabel": "Sprache",
+    "compareLabel": "Vergleichen mit",
+    "compareOff": "Aus",
+    "compareHint": "Vergleichsmodus ist an – tippe auf einen Absatz, um ihn in einer zweiten Sprache zu lesen.",
+    "readOriginal": "Das Original-Feature auf zaobao.com.sg lesen",
+    "inChinese": "auf Chinesisch",
+    "beforeAI": "Ohne KI",
+    "afterAI": "Mit KI",
+    "backToTop": "Nach oben",
+    "sectionsLabel": "Abschnitte",
+    "yearNote": "Jedes ausgewiesene Jahr läuft von Mai des Vorjahres bis April des genannten Jahres.",
+    "rankLabel": "Rang",
+    "sourceLabel": "Quelle",
+    "videoTag": "Video",
+    "articleTag": "Artikel",
+    "publishedLabel": "Veröffentlicht",
+    "skillsHint": "Wähle eine Branche, um zu sehen, welche KI-Kompetenzen ihre Stellenanzeigen am häufigsten nennen.",
+    "tableView": "Daten als Tabelle anzeigen",
+    "skillsFor": "Meistgenannte KI-Kompetenzen in Stellenanzeigen der Branche {industry}"
+  },
+  "nav": {
+    "trends": "Aktuelle Trends",
+    "future": "Was kommt",
+    "prepare": "Vorbereitung",
+    "reading": "Weiterlesen",
+    "videos": "Videos"
+  },
+  "hero": {
+    "kicker": "Ein Unterrichtsbegleiter in 13 Sprachen",
+    "title": "Der KI-Umbruch",
+    "subtitle": "Wie künstliche Intelligenz (KI) die Arbeit in Singapur neu schreibt – was sich verändert, was als Nächstes kommt und wie du dich bereit machst.",
+    "basedOn": "Eine eigenständige Nacherzählung der Fakten und Ergebnisse aus dem interaktiven Feature von Lianhe Zaobao über KI und Singapurs Arbeitsmarkt, veröffentlicht am 16. August 2026.",
+    "scrollCue": "Zum Start scrollen"
+  },
+  "caseStudy": {
+    "kicker": "Eine Schule, ein Januar",
+    "title": "Als die KI in die Band kam",
+    "p1": "Zhu Ruixiong (朱锐雄) leitet seit mehr als zehn Jahren eine Percussion-Musikschule in Singapur. Im Januar dieses Jahres führte die Schule KI-Werkzeuge ein – und ihr Arbeitsalltag veränderte sich fast bis zur Unkenntlichkeit.",
+    "cards": {
+      "lesson": {
+        "label": "Unterrichtsplanung",
+        "beforeStat": "1 Monat",
+        "beforeText": "An einem dreistündigen Unterrichtsplan feilten zwei oder drei Lehrkräfte rund einen Monat lang.",
+        "afterStat": "3 Minuten",
+        "afterText": "Ein kompletter Entwurf erscheint jetzt per Knopfdruck – bereit, von den Lehrkräften verfeinert zu werden."
+      },
+      "score": {
+        "label": "Notenmaterial",
+        "beforeStat": "Handarbeit",
+        "beforeText": "Audiodateien wurden aus dem Internet geladen und in komplizierter Arrangier-Software mühsam umgearbeitet.",
+        "afterStat": "Generiert",
+        "afterText": "Die KI erstellt Noten und Übungsmaterial direkt – und hilft sogar bei neuen Arrangements."
+      },
+      "invoice": {
+        "label": "Rechnungen",
+        "beforeStat": "Ein halber Tag",
+        "beforeText": "Für eine einzige Rechnung stimmten sich Lehrkräfte mehrfach mit dem Sekretariat ab.",
+        "afterStat": "Sekunden",
+        "afterText": "Mitarbeitende diktieren die Angaben per Spracheingabe, prüfen das Dokument und verschicken es."
+      },
+      "progress": {
+        "label": "Lernfortschritt",
+        "beforeStat": "Einzeln",
+        "beforeText": "Lehrkräfte hakten bei jeder Schülerin und jedem Schüler einzeln nach.",
+        "afterStat": "Automatisch",
+        "afterText": "Die Schülerinnen und Schüler üben auf einer KI-Onlineplattform, die Feedback gibt und ihre Fortschritte protokolliert."
+      }
+    },
+    "outro1": "KI verändert, wie die meisten von uns arbeiten und wohin unsere Karrieren führen können – und sie verschiebt, welche Fähigkeiten Arbeitgeber bezahlen. Die Welle begann in der Tech-Branche, hat aber längst jedes Feld erfasst.",
+    "outro2": "Die Bildungsbranche, in der Zhu arbeitet, spürt ihre Wucht bereits – und sie ist bei Weitem nicht die einzige, die gerade umgekrempelt wird.",
+    "outro3": "Was macht KI also tatsächlich mit Singapurs Arbeitsmarkt? Was bedeutet das für ganz normale Berufstätige? Und wie machen wir uns bereit für das, was kommt?"
+  },
+  "s1": {
+    "title": "Welche Branchen in Singapur suchen KI-Kompetenzen am dringendsten?",
+    "lead": "Lianhe Zaobao hat gemeinsam mit der Jobplattform Jobstreet by SEEK gemessen, wie oft KI-bezogene Stichwörter in den vergangenen drei Jahren in Singapurs Stellenanzeigen auftauchten. Je häufiger 'AI' in den Anzeigen einer Branche steht, desto intensiver jagt diese Branche nach KI-Kompetenzen.",
+    "method": "Genaue Anzeigenzahlen nannte Jobstreet nicht, doch die Suchfunktion der Website zeigt aktuell knapp 60.000 ausgeschriebene Voll- und Teilzeitstellen.",
+    "chart1Title": "Die Top 5 Branchen bei der KI-Nachfrage",
+    "chart1Sub": "Branchenrang nach Häufigkeit von AI-Stichwörtern in Stellenanzeigen",
+    "industries": {
+      "tech": "Computer & IT (Software)",
+      "edu": "Bildung",
+      "hr": "Personal & Beratung",
+      "fin": "Finanzen & Banken",
+      "gov": "Staat & Verteidigung"
+    },
+    "sixthPlace": "Bau & Ingenieurwesen (Platz 6)",
+    "topFiveText": "Seit KI 2023 im Mainstream ankam, führen diese fünf Branchen die Tabelle Jahr für Jahr an. AI-Stichwörter erscheinen in ihren Anzeigen weit häufiger als anderswo – im Schnitt etwa <span class='hl'>60% häufiger</span> als in der sechstplatzierten Bau- und Ingenieurbranche.",
+    "insightTech": "<span class='hl'>Computer & IT (Software)</span> steht ganz vorn im KI-Zeitalter und belegt seit drei Jahren in Folge Platz 1. Die Jobs selbst wandeln sich: Neben klassischem Programmieren verlangen Arbeitgeber inzwischen KI-Orchestrierung, Sicherheit und Governance sowie Systemintegration.",
+    "insightEdu": "<span class='hl'>Bildung</span> lebt vom menschlichen Kontakt und gilt deshalb als eine der sichereren Branchen im KI-Zeitalter. Trotzdem ist die Nachfrage nach KI-Kompetenzen hier in den vergangenen drei Jahren steil gestiegen – von Platz 4 im Jahr 2023 auf Platz 2 im vergangenen Jahr. Ein wahrscheinlicher Grund ist der chronische Personalmangel des Sektors: Neue KI-gestützte Rollen können Unterrichtsplanung, Lehrmaterial und Verwaltung verschlanken. Zhus Musikschule erzählt genau diese Geschichte.",
+    "insightHr": "<span class='hl'>Personal & Beratung</span> ist ein Sonderfall. Weil die Branche zwischenmenschliche Fähigkeiten schätzt, pochen Arbeitgeber bei KI-Stellen dort weniger auf tiefes technisches Spezialwissen. Dahinter steckt ein größerer Trend: der Aufstieg der 'New-Collar'-Arbeitskräfte – Menschen, die Technologie mit Praxiserfahrung verbinden, sich schnell anpassen und Probleme lösen.",
+    "skillsTitle": "Welche KI-Kompetenzen verlangen Arbeitgeber?",
+    "skillsLead": "Das häufigste AI-Stichwort in den Jobstreet-Anzeigen ist breite <span class='hl'>analytische Kompetenz</span> – Analyse, die über reine Daten hinausgeht. Ebenfalls oft gefordert: Datenanalyse, Programmieren in Python, Informatik und Automatisierung.",
+    "skills": {
+      "analysis": "Analyse",
+      "dataAnalysis": "Datenanalyse",
+      "python": "Python-Programmierung",
+      "compSci": "Informatik",
+      "automation": "Automatisierung",
+      "none": "Keine spezifischen AI-Stichwörter"
+    },
+    "entryLabel": "{pct} der KI-Stellenanzeigen in dieser Branche richten sich an Berufseinsteiger",
+    "quotes": {
+      "esther1": {
+        "name": "Esther Lee (李美欣)",
+        "role": "Geschäftsführerin von Jobstreet Singapore",
+        "text": "Lee sagt: In den Branchen, die KI am schnellsten eingeführt haben, arbeiten die Beschäftigten effizienter und produktiver – und haben mehr freie Zeit für Probleme, für die es wirklich Menschen braucht."
+      },
+      "zhang1": {
+        "name": "Zhang Xiaoyun (张晓云)",
+        "role": "Senior Vice President für den Asien-Pazifik-Raum, ADP",
+        "text": "Zhang weist darauf hin, dass Singapur stark auf Wissensarbeit und internationale Talente setzt – bei begrenztem Arbeitskräfteangebot und einer sich wandelnden Bevölkerungsstruktur. Genau deshalb, sagt sie, konzentrieren sich Unternehmen hier darauf, mit KI die Produktivität zu steigern, das Potenzial ihrer Beschäftigten freizusetzen und das Geschäft auszubauen."
+      },
+      "zhang2": {
+        "name": "Zhang Xiaoyun (张晓云)",
+        "role": "Senior Vice President für den Asien-Pazifik-Raum, ADP",
+        "text": "Zhangs größere These: KI verschiebt Singapurs Arbeitswelt vom Wettbewerb des Wissens hin zum Wettbewerb des Urteilsvermögens. Am wettbewerbsfähigsten wird künftig nicht sein, wer die meisten Informationen besitzt, sondern wer die Fähigkeiten der KI am besten mit menschlicher Klugheit verbindet, um gemeinsam Wert zu schaffen."
+      }
+    },
+    "trends": {
+      "title": "KI-Stellenanzeigen: Boom, Flaute, Comeback",
+      "adsLabel": "Stellenanzeigen für KI-Jobs",
+      "appsLabel": "Bewerbungen auf KI-Jobs",
+      "indexNote": "Indexiert: 2024 = 100",
+      "step1": "Ende 2022 stürmte das große Sprachmodell ChatGPT auf die Bühne und löste einen KI-Einstellungsboom aus. Dann drückten Singapurs Arbeitgeber die Pausentaste: Zwischen 2024 und 2025 stürzten die KI-Stellenanzeigen um <span class='hl'>74%</span> ab. Das chaotische Frühwachstum der Technologie hatte echte Unsicherheit geschaffen, und die Unternehmen gingen in eine 'Abkühlphase' – sie überprüften ihre KI-Investitionen und stellten deutlich vorsichtiger ein.",
+      "step2": "Im vergangenen Jahr drehte sich das Bild. Als der praktische Nutzen von KI klarer wurde, starteten Arbeitgeber ihre KI-Talentstrategien neu, und die Zahl der KI-Stellenanzeigen hat sich <span class='hl'>im Jahresvergleich ungefähr verdreifacht</span>. Lees Erklärung: Zwei Jahre reifende Technologie haben den Unternehmen beigebracht, KI in ihre Arbeitsabläufe einzubauen – und die Nachfrage nach Personal zog nach.",
+      "step3": "Die Jobsuchenden halten nicht Schritt. Im Jahr bis April 2026 gingen die Bewerbungen auf KI-Stellen um weitere <span class='hl'>17%</span> zurück. Der Rückgang ist kleiner als die 39% des Vorjahres, zeigt aber: Lokale KI-Talente bleiben knapp – vielen Bewerberinnen und Bewerbern fehlen schlicht noch die Fähigkeiten, die Arbeitgeber dringend suchen."
+    },
+    "linker": {
+      "title": "Die Abkühlphase ist vorbei: Alle Branchen sind zurück auf KI-Kurs",
+      "text": "Die Top 5 stehen an vorderster Front des KI-Umbruchs, und ihre Nachfrage nach KI-Talenten wächst kräftig. Die übrigen Branchen zögerten während der chaotischen Anfangsphase kurz – und schmieden nun eigene KI-Talentstrategien."
+    }
+  },
+  "s2": {
+    "title": "Wie könnte der Arbeitsmarkt von morgen aussehen?",
+    "lead1": "In den meisten Branchen ist die volle Wucht der KI noch gar nicht angekommen. Das heißt aber nicht, dass dein Job verschont bleibt.",
+    "lead2": "KI gilt weithin als Motor der vierten industriellen Revolution, und große internationale Studien haben bereits skizziert, wie weit die Welle reichen könnte.",
+    "decadeTitle": "Die volle Wirkung zeigt sich vielleicht erst in 10 Jahren",
+    "goldman1": "Eine Untersuchung der Investmentbank Goldman Sachs zum US-Arbeitsmarkt zeigt: Bislang lastet KI nur auf einer Handvoll Branchen wirklich schwer.",
+    "goldman2": "Sie schätzt, dass die meisten Bereiche etwa zehn Jahre brauchen werden, bis KI im großen Stil eingeführt ist. In diesem langen Übergang könnten <span class='hl'>6% bis 7%</span> der US-Beschäftigten ihren Job verlieren.",
+    "goldman3": "Weltweit sind schätzungsweise <span class='hl'>300 Millionen</span> Stellen der KI-Automatisierung ausgesetzt.",
+    "chart2Title": "Anteil der US-Jobs, die der KI-Automatisierung ausgesetzt sind",
+    "chart2Sub": "Nach Berufsgruppe, %",
+    "chart2Source": "Quelle: Haver Analytics, Goldman Sachs Research",
+    "occupations": {
+      "office": "Büro & Verwaltung",
+      "legal": "Recht",
+      "architecture": "Architektur & Ingenieurwesen",
+      "science": "Bio-, Natur- & Sozialwissenschaften",
+      "business": "Betriebswirtschaft & Finanzen",
+      "community": "Soziale Arbeit & Gemeinwesen",
+      "management": "Management",
+      "sales": "Verkauf & Vertrieb",
+      "computer": "Informatik & Mathematik",
+      "farming": "Land-, Fisch- & Forstwirtschaft",
+      "protective": "Sicherheitsdienste",
+      "education": "Bildung & Bibliotheken",
+      "healthcare": "Pflege & Gesundheitshilfe",
+      "arts": "Kunst, Design, Unterhaltung & Sport",
+      "all": "Alle Berufe"
+    },
+    "wefTitle": "Bis 2030 sieht der globale Jobmix anders aus",
+    "wef1": "Der Future of Jobs Report 2025 des Weltwirtschaftsforums prognostiziert: Bis 2030 werden – getrieben von KI, grüner Transformation und wirtschaftlichen Turbulenzen – <span class='hl'>22%</span> der Jobs weltweit einen Strukturwandel durchlaufen.",
+    "wef2": "Bis dahin dürften rund <span class='hl'>92 Millionen</span> Stellen wegfallen – aber etwa <span class='hlNew'>170 Millionen</span> neue entstehen. Unterm Strich ein Plus von 78 Millionen Jobs.",
+    "wefDisplaced": "Wegfallende Jobs",
+    "wefCreated": "Neu entstehende Jobs",
+    "wefNet": "Nettozuwachs",
+    "wefUnit": "Millionen",
+    "wefSource": "Quelle: Weltwirtschaftsforum, Future of Jobs Report 2025; ILOSTAT"
+  },
+  "s3": {
+    "title": "Wie bereitest du dich auf die Arbeitswelt nach dem KI-Umbruch vor?",
+    "lead": "KI bringt weit mehr Chancen als Bedrohungen. Die eigentliche Herausforderung – für Einzelne wie für Unternehmen – ist der Übergang: sich selbst in Richtung der neuen Jobs zu steuern, die die Zeit nach dem KI-Umbruch hervorbringt.",
+    "oxfordLead": "Forschung der Universität Oxford legt nahe, dass sich KI-Kompetenzen schon heute auszahlen – bei Gehalt, Extras und Interview-Chancen:",
+    "oxford": {
+      "pay": {
+        "value": "+23%",
+        "label": "Gehalt",
+        "text": "Stellen, die KI-Kompetenzen verlangen, werben im Schnitt mit rund 23% höheren Gehältern."
+      },
+      "benefits": {
+        "value": "Mehr Extras",
+        "label": "Benefits",
+        "text": "KI-nahe Stellen bieten häufiger Homeoffice und Elternzeit."
+      },
+      "interviews": {
+        "value": "+8–15%",
+        "label": "Interviews",
+        "text": "Wer KI-Kompetenzen mitbringt, wird mit 8% bis 15% höherer Wahrscheinlichkeit zum Vorstellungsgespräch eingeladen."
+      }
+    },
+    "evergreenTitle": "Welche Fähigkeiten halten im rasanten KI-Zeitalter wirklich?",
+    "evergreen1": "Entscheidend ist nicht nur, KI bedienen zu lernen, sondern zu wissen, wie man mit ihr den Wert der eigenen Arbeit steigert – und dabei Urteilsvermögen, Kommunikationsstärke und Problemlösefähigkeiten aufbaut, die KI nicht so leicht ersetzen kann.",
+    "wong1": "Prof. Steven Wong (黄开庄), Direktor des Centre for Digital Enablement am Singapore Institute of Technology, warnt: KI entwickelt sich so schnell, dass manche der heutigen KI-Fähigkeiten veralten werden – vor allem Bedienkniffe, die an bestimmte Werkzeuge gebunden sind.",
+    "wong2": "Sein Rat lautet trotzdem, früh KI-Grundkompetenz aufzubauen, egal wohin sich die Technologie entwickelt: lernen, KI zu nutzen, sie zu beaufsichtigen und sie mit menschlichem Urteilsvermögen zu verbinden.",
+    "everyone": "Je weiter sich KI verbreitet, desto mehr Menschen können mit ihr schneller arbeiten. 'KI bedienen können' allein bleibt also nicht lange ein Vorteil.",
+    "poon1": "Poon King Wang (潘竞宏), Chief Strategy and Design-AI Officer der Singapore University of Technology and Design und Direktor des Lee Kuan Yew Centre for Innovative Cities, rät Berufstätigen zu einem Perspektivwechsel: vom 'KI-Nutzer' zum 'KI-Gestalter' – also KI einzusetzen, um immer wieder Wert zu schaffen, der unverwechselbar der eigene ist. So, argumentiert er, hebt man sich in der Arbeitswelt von morgen ab.",
+    "tipTitle": "Baue weiter übertragbare Fähigkeiten auf",
+    "tipText": "<span class='hl'>Analytisches Denken, Kommunikation, Kreativität und tiefes Fachwissen</span> nimmst du von Job zu Job mit. Setze KI gezielt ein, um deine Abläufe zu verschlanken: Gib die Routineaufgaben an die Maschine ab – und nutze deine eigene Zeit für Urteilen, Entscheiden und Problemlösen.",
+    "li1": "An der Singapore Management University verfolgen Prof. Li Jia (李嘉), Dekan der School of Economics, und sein Team die Langzeitwirkung von KI auf den lokalen Arbeitsmarkt.",
+    "li2": "Wie viele Jobs in Singapur in den nächsten drei bis fünf Jahren an KI verloren gehen, lässt sich seiner Ansicht nach unmöglich genau vorhersagen. Was Forschende aber tun können: Stellenanzeigen beobachten, Branchen mit schrumpfenden Einstellungszahlen aufspüren und früh Alarm schlagen – damit Politik und Jobsuchende Zeit zum Reagieren haben.",
+    "li3": "Vieles bleibt ungewiss – auch, wie weit große Sprachmodelle noch vorankommen können. Diese Ungewissheit wird die Zukunft des Arbeitsmarkts prägen. Jedem Einzelnen rät Li, 'den Körper zu trainieren', bevor der Sturm losbricht.",
+    "li4": "Er vergleicht das Erlernen von KI-Fähigkeiten mit der Einnahme von Medikamenten nach einem auffälligen Gesundheitscheck oder mit Krafttraining: Die Wirkung ist nicht garantiert und selten sofort spürbar, aber schlechter stellt man sich damit nie. Wenn der KI-Schock deine Branche erreicht, könnten genau diese Fähigkeiten deinen Job sichern – und dich widerstandsfähiger machen."
+  },
+  "reading": {
+    "title": "Zum Weiterlesen",
+    "note": "Die komplette Serie auf zaobao.com.sg – alle Artikel sind auf Chinesisch. Die Beschreibungen unten sind unsere eigenen Zusammenfassungen.",
+    "groups": {
+      "g1": {
+        "title": "Neue Einstellungstrends",
+        "a1": "Die Nachfrage nach KI-Talenten hat sich verdreifacht – und Arbeitgeber außerhalb der Tech-Branche jagen jetzt mit.",
+        "a2": "Warum 'New-Collar'-Kräfte, die harte und weiche Fähigkeiten verbinden, jetzt am gefragtesten sind.",
+        "a3": "KI drückt auf den 'ersten Job': Einstiegsstellen dürften schrumpfen, und Praktika sind schon jetzt schwerer zu finden."
+      },
+      "g2": {
+        "title": "Wie KI den Arbeitsalltag umbaut",
+        "a1": "KI schreibt die Stellenbeschreibung von Lehrkräften um – und macht sie zu 'Chefredakteuren' KI-entworfener Unterrichtsstunden.",
+        "a2": "Eine Minute KI-Zauber auf der Bühne, zwei Jahre Plattform-Aufbau hinter den Kulissen: Erfolgreicher Wandel lässt sich nicht übers Knie brechen."
+      },
+      "g3": {
+        "title": "Der Schmerz der Verdrängung",
+        "a1": "Von einer schnelleren, 'klügeren' KI überholt: Ein 43-jähriger Content-Entwickler erfindet sich nach der Entlassung neu.",
+        "a2": "'Wird KI mich ersetzen?' Immer mehr Jobsuchende kommen mit dieser Angst zu Karriereberatern."
+      },
+      "g4": {
+        "title": "Handwerk und Kreativität unter Druck",
+        "a1": "Kunstschaffende und Autoren argumentieren: KI kann das 'Plausible' erzeugen – aber nicht die Seele eines Werks.",
+        "a2": "Rund 90% der Werbeproduktion entsteht inzwischen mit KI – Kreative wandeln sich vom Macher zum Kurator."
+      },
+      "g5": {
+        "title": "Fähigkeiten, die bleiben",
+        "a1": "Wie man einen KI-Kurs auswählt: KI nutzen zu lernen reicht nicht – lerne, mit ihr zu erschaffen.",
+        "a2": "Schluss mit Auswendiglernen: Ein 65-jähriger Einzelhandelsmitarbeiter scannt Weinetiketten mit KI und antwortet wie ein Profi."
+      }
+    },
+    "videosTitle": "Videos",
+    "videos": {
+      "v1": {
+        "title": "Effizienzschub – oder Ersatz für den Menschen?",
+        "text": "Hast du Angst, von KI ersetzt zu werden? Wenn selbst Tech-Profis und Juristen stark exponiert sind – wie sollen sie reagieren?"
+      },
+      "v2": {
+        "title": "Mit KI eine Firma aufbauen und die Produktivität um das 16-Fache steigern?",
+        "text": "Unternehmen stecken viel Geld in KI-Produktivität. Was braucht es wirklich – und wie sollten wir unsere Art zu arbeiten neu denken?"
+      }
+    }
+  },
+  "about": {
+    "title": "Über diese Seite",
+    "p1": "Dies ist ein eigenständiger Unterrichtsbegleiter für mehrsprachige Klassenzimmer. Er erzählt in 13 Sprachen die Fakten und Ergebnisse eines interaktiven Features von Lianhe Zaobao (联合早报), Singapurs chinesischsprachiger Tageszeitung, nach – damit Schülerinnen und Schüler, die kein Chinesisch lesen, derselben Geschichte, denselben Grafiken und derselben Struktur folgen können wie im Original und beide Fassungen nebeneinander diskutieren können.",
+    "p2": "Der Text auf dieser Seite ist eine eigenständige, für den Unterricht geschriebene Zusammenfassung, keine Übersetzung des Artikels. Zitate der vorgestellten Personen sind sinngemäß wiedergegeben. Alle Daten gehören den genannten Quellen. Bitte unterstütze den Originaljournalismus:",
+    "originalTitle": "Original-Feature",
+    "originalCredit": "'AI与职场变局' (KI und der Umbruch der Arbeitswelt), interaktives Feature von Lianhe Zaobao, veröffentlicht am 16. August 2026. Text: Lin Pingying. Interviews: Lin Pingying, Lu Huijing, Li Gengwei. Planung: Huang Xiaofang. Illustration: Lu Fangkai. Design & Entwicklung: Wang Yuchen, Huang Junnan. © SPH Media Limited.",
+    "romanization": "Chinesische Namen sind in Hanyu Pinyin umschrieben, wo keine offizielle englische Schreibweise veröffentlicht wurde.",
+    "dataTitle": "Datenquellen",
+    "data1": "Lianhe Zaobao × Jobstreet by SEEK: Analyse von AI-Stichwörtern in Singapurs Stellenanzeigen, 2023–2026",
+    "data2": "Goldman Sachs Research / Haver Analytics – KI und der US-Arbeitsmarkt",
+    "data3": "Weltwirtschaftsforum, Future of Jobs Report 2025; ILOSTAT",
+    "data4": "Forschung der Universität Oxford zu KI-Kompetenzen, Löhnen und Einstellungschancen",
+    "disclaimer": "Erstellt für den Unterricht. Nicht verbunden mit SPH Media oder Lianhe Zaobao und nicht von ihnen autorisiert."
+  }
+}

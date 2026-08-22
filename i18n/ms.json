@@ -19,7 +19,7 @@
     "afterAI": "Dengan AI",
     "backToTop": "Kembali ke atas",
     "sectionsLabel": "Bahagian",
-    "yearNote": "Setiap tahun berlabel bermula dari Mei tahun sebelumnya hingga April tahun tersebut.",
+    "yearNote": "Setiap tahun yang dilabelkan berlangsung dari Mei tahun sebelumnya hingga April tahun berkenaan.",
     "rankLabel": "Kedudukan",
     "sourceLabel": "Sumber",
     "videoTag": "Video",
@@ -40,13 +40,13 @@
     "kicker": "Teman bilik darjah dalam 13 bahasa",
     "title": "Anjakan AI",
     "subtitle": "Bagaimana kecerdasan buatan (AI) mengubah dunia pekerjaan di Singapura — apa yang sedang berubah, apa yang mendatang, dan bagaimana untuk bersiap sedia.",
-    "basedOn": "Penceritaan semula asli fakta dan penemuan yang mula-mula dilaporkan dalam rencana interaktif Lianhe Zaobao tentang AI dan pasaran pekerjaan Singapura, diterbitkan pada 16 Ogos 2026.",
+    "basedOn": "Penceritaan semula asli tentang fakta dan penemuan yang pertama kali dilaporkan dalam rencana interaktif Lianhe Zaobao tentang AI dan pasaran pekerjaan Singapura, diterbitkan pada 16 Ogos 2026.",
     "scrollCue": "Skrol untuk mula"
   },
   "caseStudy": {
     "kicker": "Satu sekolah, satu Januari",
     "title": "Apabila AI menyertai kumpulan muzik",
-    "p1": "Encik Zhu Ruixiong (朱锐雄) telah mengendalikan sebuah sekolah muzik perkusi di Singapura selama lebih sepuluh tahun. Pada Januari tahun ini, sekolah itu mula menggunakan alat AI — dan kerja hariannya berubah hampir tidak dapat dikenali lagi.",
+    "p1": "Encik Zhu Ruixiong (朱锐雄) telah mengendalikan sebuah sekolah muzik perkusi di Singapura selama lebih sepuluh tahun. Pada Januari tahun ini, sekolah itu mula menggunakan alat AI — dan kerja hariannya berubah sehingga hampir tidak dapat dikenali lagi.",
     "cards": {
       "lesson": {
         "label": "Perancangan pengajaran",
@@ -67,7 +67,7 @@
         "beforeStat": "Setengah hari",
         "beforeText": "Guru terpaksa berulang-alik dengan pejabat pentadbiran semata-mata untuk mengeluarkan satu invois.",
         "afterStat": "Beberapa saat",
-        "afterText": "Kakitangan menyebut butiran secara suara, menyemak dokumen, dan terus menghantarnya."
+        "afterText": "Kakitangan menyebut butiran secara lisan, menyemak dokumen, dan terus menghantarnya."
       },
       "progress": {
         "label": "Kemajuan pelajar",
@@ -77,8 +77,8 @@
         "afterText": "Pelajar berlatih di platform AI dalam talian yang memberi maklum balas dan merekodkan kemajuan mereka."
       }
     },
-    "outro1": "AI sedang mengubah cara kebanyakan kita bekerja dan hala tuju kerjaya kita — malah mengubah kemahiran yang sanggup dibayar oleh majikan. Gelombang ini bermula dalam bidang teknologi, tetapi sudah lama merebak ke setiap bidang.",
-    "outro2": "Pendidikan, industri Encik Zhu, sudah pun merasai tekanannya — dan ia jauh daripada satu-satunya bidang yang sedang digegarkan.",
+    "outro1": "AI sedang mengubah cara kebanyakan kita bekerja dan hala tuju kerjaya kita — malah mengubah kemahiran yang majikan sanggup bayar. Gelombang ini bermula dalam bidang teknologi, tetapi sudah lama merebak ke setiap bidang.",
+    "outro2": "Pendidikan, industri Encik Zhu, sudah pun merasai tekanannya — dan ia sama sekali bukan satu-satunya bidang yang sedang digegarkan.",
     "outro3": "Jadi, apakah sebenarnya kesan AI terhadap pasaran pekerjaan Singapura? Apakah maknanya bagi pekerja biasa? Dan bagaimana kita boleh bersiap sedia untuk apa yang mendatang?"
   },
   "s1": {
@@ -109,7 +109,7 @@
       "automation": "Automasi",
       "none": "Tiada kata kunci AI khusus"
     },
-    "entryLabel": "{pct} daripada iklan pekerjaan AI dalam industri ini adalah peringkat permulaan",
+    "entryLabel": "{pct} daripada iklan pekerjaan AI dalam industri ini ialah jawatan peringkat permulaan",
     "quotes": {
       "esther1": {
         "name": "Esther Lee (李美欣)",
@@ -124,7 +124,7 @@
       "zhang2": {
         "name": "Zhang Xiaoyun (张晓云)",
         "role": "Naib Presiden Kanan Asia Pasifik, ADP",
-        "text": "Mesej besar Zhang: AI sedang menolak dunia pekerjaan Singapura daripada persaingan pengetahuan kepada persaingan pertimbangan. Insan yang paling berdaya saing pada masa depan bukanlah mereka yang memegang paling banyak maklumat, tetapi mereka yang paling bijak menggabungkan keupayaan AI dengan kebijaksanaan manusia untuk mencipta nilai bersama."
+        "text": "Mesej besar Zhang: AI sedang menolak dunia pekerjaan Singapura daripada persaingan pengetahuan kepada persaingan pertimbangan. Individu yang paling berdaya saing pada masa depan bukanlah mereka yang memegang paling banyak maklumat, tetapi mereka yang paling bijak menggabungkan keupayaan AI dengan kebijaksanaan manusia untuk mencipta nilai bersama."
       }
     },
     "trends": {
@@ -132,9 +132,9 @@
       "adsLabel": "Iklan pekerjaan untuk peranan AI",
       "appsLabel": "Permohonan untuk peranan AI",
       "indexNote": "Indeks: 2024 = 100",
-      "step1": "Model bahasa besar ChatGPT muncul secara mengejut pada penghujung 2022 dan mencetuskan ledakan pengambilan pekerja AI. Kemudian majikan Singapura menekan butang jeda: antara 2024 dan 2025, iklan pekerjaan AI menjunam <span class='hl'>74%</span>. Pertumbuhan awal teknologi ini yang bercelaru menimbulkan ketidakpastian sebenar, dan syarikat memasuki 'tempoh bertenang' — menilai semula pelaburan AI mereka dan mengambil pekerja dengan jauh lebih berhati-hati.",
-      "step2": "Sepanjang setahun lalu, keadaan berbalik. Apabila kegunaan praktikal AI semakin jelas, majikan memulakan semula strategi bakat AI mereka, dan bilangan iklan pekerjaan AI meningkat kira-kira <span class='hl'>tiga kali ganda tahun ke tahun</span>. Penjelasan Lee: dua tahun kematangan teknologi telah mengajar syarikat cara menyerapkan AI ke dalam aliran kerja mereka, dan permintaan pengambilan pekerja pun menyusul.",
-      "step3": "Pencari kerja pula belum dapat mengejar rentak ini. Dalam tempoh setahun hingga April 2026, permohonan untuk peranan AI jatuh lagi sebanyak <span class='hl'>17%</span>. Penurunan ini lebih kecil daripada 39% pada tahun sebelumnya, tetapi ia menandakan bakat AI tempatan masih berkurangan — ramai calon belum lagi memiliki kemahiran yang sangat diperlukan majikan."
+      "step1": "Model bahasa besar ChatGPT muncul secara mengejut pada penghujung 2022 dan mencetuskan ledakan pengambilan pekerja AI. Kemudian majikan Singapura menekan butang jeda: antara 2024 dan 2025, iklan pekerjaan AI menjunam <span class='hl'>74%</span>. Pertumbuhan awal teknologi ini yang bercelaru menimbulkan ketidakpastian yang nyata, dan syarikat memasuki 'tempoh bertenang' — menilai semula pelaburan AI mereka dan mengambil pekerja dengan jauh lebih berhati-hati.",
+      "step2": "Sepanjang setahun lalu, keadaan berbalik. Apabila kegunaan praktikal AI semakin jelas, majikan memulakan semula strategi bakat AI mereka, dan bilangan iklan pekerjaan AI meningkat kira-kira <span class='hl'>tiga kali ganda berbanding tahun sebelumnya</span>. Penjelasan Lee: dua tahun kematangan teknologi telah mengajar syarikat cara menyerapkan AI ke dalam aliran kerja mereka, dan permintaan pengambilan pekerja pun menyusul.",
+      "step3": "Pencari kerja pula belum dapat mengejar rentak ini. Dalam tempoh setahun hingga April 2026, permohonan untuk peranan AI jatuh lagi sebanyak <span class='hl'>17%</span>. Penurunan ini lebih kecil daripada 39% pada tahun sebelumnya, tetapi ia menandakan bekalan bakat AI tempatan masih tidak mencukupi — ramai calon belum lagi memiliki kemahiran yang sangat diperlukan majikan."
     },
     "linker": {
       "title": "Tempoh bertenang sudah berakhir: setiap industri kembali memburu AI",
@@ -170,7 +170,7 @@
       "all": "Semua pekerjaan"
     },
     "wefTitle": "Menjelang 2030, komposisi pekerjaan dunia akan berubah",
-    "wef1": "Laporan Future of Jobs Report 2025 oleh Forum Ekonomi Dunia (World Economic Forum) mengunjurkan bahawa menjelang 2030, didorong oleh AI, peralihan hijau dan gelora ekonomi, <span class='hl'>22%</span> pekerjaan di seluruh dunia akan melalui perubahan struktur.",
+    "wef1": "Future of Jobs Report 2025 terbitan Forum Ekonomi Dunia (World Economic Forum) mengunjurkan bahawa menjelang 2030, didorong oleh AI, peralihan hijau dan gelora ekonomi, <span class='hl'>22%</span> pekerjaan di seluruh dunia akan melalui perubahan struktur.",
     "wef2": "Menjelang itu, kira-kira <span class='hl'>92 juta</span> pekerjaan dijangka tersingkir — tetapi sekitar <span class='hlNew'>170 juta</span> pekerjaan baharu tercipta. Itu bermakna pertambahan bersih 78 juta pekerjaan.",
     "wefDisplaced": "Pekerjaan tersingkir",
     "wefCreated": "Pekerjaan baharu dicipta",
@@ -180,7 +180,7 @@
   },
   "s3": {
     "title": "Bagaimana bersiap sedia untuk era pasca-AI?",
-    "lead": "AI membawa jauh lebih banyak peluang daripada ancaman. Cabaran sebenar, bagi individu mahupun syarikat, ialah mengurus peralihan itu — mengemudi diri ke arah pekerjaan baharu yang dicipta oleh era pasca-AI.",
+    "lead": "AI membawa jauh lebih banyak peluang daripada ancaman. Cabaran sebenar, bagi individu mahupun syarikat, ialah mengurus peralihan itu — mengemudikan diri ke arah pekerjaan baharu yang dicipta oleh era pasca-AI.",
     "oxfordLead": "Kajian dari Universiti Oxford menunjukkan kemahiran AI sudah pun membuahkan hasil — dari segi gaji, faedah dan peluang temu duga:",
     "oxford": {
       "pay": {
@@ -201,14 +201,14 @@
     },
     "evergreenTitle": "Dalam era AI yang pantas berubah, kemahiran apa yang benar-benar kekal?",
     "evergreen1": "Yang benar-benar penting bukan sekadar belajar mengendalikan AI, tetapi tahu menggunakannya untuk meningkatkan nilai kerja anda — sambil membina kemahiran pertimbangan, komunikasi dan penyelesaian masalah yang tidak mudah digantikan oleh AI.",
-    "wong1": "Prof Steven Wong (黄开庄), Pengarah Pusat Pemerkasaan Digital di Singapore Institute of Technology, mengingatkan bahawa AI bergerak begitu pantas sehingga sesetengah kemahiran AI hari ini akan menjadi usang — terutamanya helah pengendalian yang terikat pada alat tertentu.",
+    "wong1": "Prof Steven Wong (黄开庄), Pengarah Pusat Pemerkasaan Digital di Singapore Institute of Technology, mengingatkan bahawa AI bergerak begitu pantas sehingga sesetengah kemahiran AI hari ini akan menjadi usang — terutamanya teknik pengendalian yang terikat pada alat tertentu.",
     "wong2": "Namun begitu, nasihatnya ialah bina literasi AI seawal mungkin, walau ke mana pun teknologi ini menghala: belajar menggunakan AI, mengawasinya, dan menggabungkannya dengan pertimbangan manusia.",
     "everyone": "Apabila AI semakin meluas, sesiapa sahaja boleh menggunakannya untuk bekerja lebih pantas. Sekadar 'tahu menggunakan AI' tidak akan lama kekal sebagai kelebihan.",
-    "poon1": "Poon King Wang (潘竞宏), Ketua Pegawai Strategi dan Reka Bentuk-AI di Singapore University of Technology and Design serta Pengarah Lee Kuan Yew Centre for Innovative Cities, menggesa pekerja mengubah pemikiran daripada 'pengguna AI' kepada 'pencipta AI' — menggunakan AI untuk terus mencipta nilai yang tersendiri milik mereka. Itulah, hujahnya, cara untuk menyerlah di tempat kerja masa depan.",
-    "tipTitle": "Terus bina kemahiran boleh pindah",
+    "poon1": "Poon King Wang (潘竞宏), Ketua Pegawai Strategi dan Reka Bentuk-AI di Singapore University of Technology and Design serta Pengarah Lee Kuan Yew Centre for Innovative Cities, menggesa pekerja mengubah pemikiran daripada 'pengguna AI' kepada 'pencipta AI' — menggunakan AI untuk terus mencipta nilai yang benar-benar milik mereka sendiri. Itulah, hujahnya, cara untuk menyerlah di tempat kerja masa depan.",
+    "tipTitle": "Terus bina kemahiran mudah alih",
     "tipText": "<span class='hl'>Pemikiran analitis, komunikasi, kreativiti dan pengetahuan domain yang mendalam</span> mengikut anda dari satu pekerjaan ke pekerjaan yang lain. Gunakan AI secara terancang untuk melancarkan aliran kerja anda: serahkan tugas berulang kepada mesin, dan tumpukan masa anda pada pertimbangan, keputusan dan penyelesaian masalah.",
     "li1": "Di Singapore Management University, Prof Li Jia (李嘉), Dekan Sekolah Ekonomi, dan pasukannya sedang menjejaki kesan jangka panjang AI terhadap pasaran pekerjaan tempatan.",
-    "li2": "Beliau berkata mustahil untuk meramalkan dengan tepat berapa banyak pekerjaan di Singapura akan lenyap kepada AI dalam tiga hingga lima tahun akan datang. Apa yang boleh dilakukan penyelidik ialah memantau iklan pengambilan, mengesan industri yang pengambilannya mengecil, dan membunyikan amaran awal — memberi masa kepada penggubal dasar dan pencari kerja untuk bertindak.",
+    "li2": "Beliau berkata mustahil untuk meramalkan dengan tepat berapa banyak pekerjaan di Singapura akan lenyap akibat AI dalam tiga hingga lima tahun akan datang. Apa yang boleh dilakukan penyelidik ialah memantau iklan pengambilan, mengesan industri yang pengambilannya mengecil, dan membunyikan amaran awal — memberi masa kepada penggubal dasar dan pencari kerja untuk bertindak.",
     "li3": "Banyak yang masih tidak pasti, termasuk sejauh mana model bahasa besar masih boleh maju — dan ketidakpastian itu akan membentuk masa depan pasaran pekerjaan. Bagi individu, nasihat Li ialah 'latih tubuh badan' sebelum ribut melanda.",
     "li4": "Beliau mengumpamakan pembelajaran kemahiran AI seperti mengambil ubat selepas pemeriksaan kesihatan menemui masalah, atau bersenam untuk membina kekuatan: hasilnya tidak terjamin dan jarang serta-merta, tetapi ia tidak pernah merugikan anda. Apabila kejutan AI sampai ke industri anda, kemahiran itulah yang mungkin mengekalkan pekerjaan anda — dan menjadikan anda lebih berdaya tahan."
   },
@@ -225,7 +225,7 @@
       "g2": {
         "title": "Bagaimana AI mengubah kerja harian",
         "a1": "AI menulis semula skop tugas guru — menjadikan mereka 'ketua editor' bagi pelajaran yang didrafkan AI.",
-        "a2": "Satu minit keajaiban AI di pentas, dua tahun membina platform di belakang tabir: transformasi yang berjaya tidak boleh dikejar tergesa-gesa."
+        "a2": "Satu minit keajaiban AI di pentas, dua tahun membina platform di belakang tabir: transformasi yang berjaya tidak boleh dilakukan secara tergesa-gesa."
       },
       "g3": {
         "title": "Derita kehilangan pekerjaan",
@@ -250,7 +250,7 @@
         "text": "Adakah anda takut digantikan oleh AI? Apabila profesional teknologi dan peguam pun sangat terdedah, bagaimana harus mereka bertindak?"
       },
       "v2": {
-        "title": "Bina syarikat di atas AI dan gandakan produktiviti 16 kali?",
+        "title": "Bina syarikat berasaskan AI dan lipat gandakan produktiviti 16 kali?",
         "text": "Syarikat mencurahkan wang ke dalam produktiviti AI. Apa yang sebenarnya diperlukan — dan bagaimana harus kita memikirkan semula cara kita bekerja?"
       }
     }
@@ -267,6 +267,6 @@
     "data2": "Goldman Sachs Research / Haver Analytics — AI dan pasaran buruh AS",
     "data3": "Forum Ekonomi Dunia, Future of Jobs Report 2025; ILOSTAT",
     "data4": "Kajian Universiti Oxford tentang kemahiran AI, gaji dan pengambilan pekerja",
-    "disclaimer": "Dibina untuk kegunaan bilik darjah. Tidak bergabung dengan, dan tidak disokong oleh, SPH Media atau Lianhe Zaobao."
+    "disclaimer": "Dibina untuk kegunaan bilik darjah. Tiada kaitan dengan, dan tidak disokong oleh, SPH Media atau Lianhe Zaobao."
   }
 }

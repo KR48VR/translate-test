@@ -1,0 +1,272 @@
+{
+  "_meta": {
+    "code": "vi",
+    "htmlLang": "vi",
+    "name": "Tiếng Việt",
+    "englishName": "Vietnamese",
+    "fontClass": "latin"
+  },
+  "ui": {
+    "brand": "Làn sóng AI",
+    "brandPlace": "Singapore",
+    "languageLabel": "Ngôn ngữ",
+    "compareLabel": "So sánh với",
+    "compareOff": "Tắt",
+    "compareHint": "Chế độ so sánh đang bật — chạm vào bất kỳ đoạn văn nào để đọc bằng ngôn ngữ thứ hai.",
+    "readOriginal": "Đọc bài gốc trên zaobao.com.sg",
+    "inChinese": "bằng tiếng Trung",
+    "beforeAI": "Trước AI",
+    "afterAI": "Với AI",
+    "backToTop": "Về đầu trang",
+    "sectionsLabel": "Mục",
+    "yearNote": "Mỗi năm được ghi nhãn tính từ tháng 5 năm trước đến tháng 4 năm đó.",
+    "rankLabel": "Hạng",
+    "sourceLabel": "Nguồn",
+    "videoTag": "Video",
+    "articleTag": "Bài viết",
+    "publishedLabel": "Đăng ngày",
+    "skillsHint": "Chọn một ngành để xem các kỹ năng AI được nhắc đến nhiều nhất trong tin tuyển dụng của ngành đó.",
+    "tableView": "Xem dữ liệu dạng bảng",
+    "skillsFor": "Kỹ năng AI được nhắc đến nhiều nhất trong tin tuyển dụng ngành {industry}"
+  },
+  "nav": {
+    "trends": "Xu hướng hiện nay",
+    "future": "Điều gì sắp tới",
+    "prepare": "Chuẩn bị thế nào",
+    "reading": "Đọc thêm",
+    "videos": "Xem"
+  },
+  "hero": {
+    "kicker": "Bạn đồng hành trong lớp học — bằng 13 ngôn ngữ",
+    "title": "Làn sóng AI",
+    "subtitle": "Trí tuệ nhân tạo (AI) đang viết lại thế giới việc làm ở Singapore — điều gì đang thay đổi, điều gì sắp đến, và làm sao để sẵn sàng.",
+    "basedOn": "Bản kể lại nguyên bản các dữ kiện và phát hiện được đăng lần đầu trong chuyên trang tương tác của Lianhe Zaobao về AI và thị trường việc làm Singapore, xuất bản ngày 16/8/2026.",
+    "scrollCue": "Cuộn để bắt đầu"
+  },
+  "caseStudy": {
+    "kicker": "Một ngôi trường, một tháng Giêng",
+    "title": "Khi AI gia nhập ban nhạc",
+    "p1": "Ông Zhu Ruixiong (朱锐雄) đã điều hành một trường dạy nhạc cụ gõ ở Singapore hơn mười năm. Tháng 1 năm nay, trường bắt đầu đưa các công cụ AI vào — và công việc thường ngày thay đổi đến mức gần như không nhận ra.",
+    "cards": {
+      "lesson": {
+        "label": "Soạn giáo án",
+        "beforeStat": "1 tháng",
+        "beforeText": "Một giáo án cho buổi dạy ba tiếng cần hai, ba giáo viên trau chuốt suốt khoảng một tháng.",
+        "afterStat": "3 phút",
+        "afterText": "Giờ đây chỉ một cú nhấp chuột là có ngay bản nháp hoàn chỉnh để giáo viên tinh chỉnh."
+      },
+      "score": {
+        "label": "Bản nhạc",
+        "beforeStat": "Làm thủ công",
+        "beforeText": "Tải âm thanh từ internet rồi xử lý lại bằng phần mềm soạn nhạc phức tạp.",
+        "afterStat": "Tự động tạo",
+        "afterText": "AI tạo trực tiếp bản nhạc và tài liệu luyện tập, thậm chí còn hỗ trợ phối khí mới."
+      },
+      "invoice": {
+        "label": "Xuất hóa đơn",
+        "beforeStat": "Nửa ngày",
+        "beforeText": "Giáo viên phải qua lại với văn phòng hành chính chỉ để xuất một tờ hóa đơn.",
+        "afterStat": "Vài giây",
+        "afterText": "Nhân viên đọc thông tin bằng giọng nói, kiểm tra lại chứng từ rồi gửi đi."
+      },
+      "progress": {
+        "label": "Tiến bộ của học sinh",
+        "beforeStat": "Từng em một",
+        "beforeText": "Giáo viên phải theo sát riêng từng học sinh.",
+        "afterStat": "Tự động",
+        "afterText": "Học sinh luyện tập trên nền tảng AI trực tuyến, được phản hồi và ghi lại tiến bộ."
+      }
+    },
+    "outro1": "AI đang định hình lại cách hầu hết chúng ta làm việc và hướng đi sự nghiệp của mỗi người — đồng thời thay đổi cả những kỹ năng mà nhà tuyển dụng sẵn sàng trả tiền. Làn sóng khởi đầu từ ngành công nghệ, nhưng từ lâu đã lan sang mọi lĩnh vực.",
+    "outro2": "Giáo dục — ngành của ông Zhu — đã cảm nhận rõ sức ép, và còn lâu mới là ngành duy nhất bị xáo trộn.",
+    "outro3": "Vậy AI thực sự đang làm gì với thị trường việc làm Singapore? Điều đó có ý nghĩa gì với người lao động bình thường? Và chúng ta chuẩn bị thế nào cho những gì sắp tới?"
+  },
+  "s1": {
+    "title": "Ngành nào ở Singapore cần kỹ năng AI nhất?",
+    "lead": "Lianhe Zaobao phối hợp với nền tảng tuyển dụng Jobstreet by SEEK để đo tần suất các từ khóa liên quan đến AI xuất hiện trong tin tuyển dụng ở Singapore suốt ba năm qua. Từ khóa AI xuất hiện càng nhiều trong tin tuyển dụng của một ngành, ngành đó càng ráo riết săn tìm kỹ năng AI.",
+    "method": "Jobstreet không công bố số lượng tin tuyển dụng cụ thể, nhưng công cụ tìm kiếm trên trang web này cho thấy gần 60.000 vị trí toàn thời gian và bán thời gian đang được đăng.",
+    "chart1Title": "Năm ngành dẫn đầu về nhu cầu AI",
+    "chart1Sub": "Xếp hạng ngành theo tần suất từ khóa AI trong tin tuyển dụng",
+    "industries": {
+      "tech": "Máy tính & CNTT (phần mềm)",
+      "edu": "Giáo dục",
+      "hr": "Nhân sự & tư vấn",
+      "fin": "Tài chính & ngân hàng",
+      "gov": "Chính phủ & quốc phòng"
+    },
+    "sixthPlace": "Xây dựng & kỹ thuật (thứ 6)",
+    "topFiveText": "Từ khi AI trở nên phổ biến vào năm 2023, năm ngành này luôn đứng đầu bảng qua từng năm. Từ khóa AI xuất hiện trong tin tuyển dụng của họ nhiều hơn hẳn mọi ngành khác — trung bình <span class='hl'>nhiều hơn khoảng 60%</span> so với ngành xây dựng & kỹ thuật xếp thứ sáu.",
+    "insightTech": "<span class='hl'>Máy tính & CNTT (phần mềm)</span> đứng ở tuyến đầu của kỷ nguyên AI và giữ vị trí số một suốt ba năm liền. Bản thân công việc cũng đang đổi khác: ngoài lập trình truyền thống, nhà tuyển dụng giờ còn yêu cầu điều phối AI, bảo mật và quản trị AI, cùng tích hợp hệ thống.",
+    "insightEdu": "<span class='hl'>Giáo dục</span> dựa vào sự tiếp xúc giữa người với người, nên thường được xem là một trong những ngành 'an toàn' hơn trong kỷ nguyên AI. Vậy mà ba năm qua, nhu cầu kỹ năng AI của ngành này tăng vọt — từ vị trí thứ tư năm 2023 lên thứ hai vào năm ngoái. Một lý do dễ thấy là tình trạng thiếu nhân lực kéo dài của ngành: các vị trí mới ứng dụng AI có thể tinh gọn khâu soạn giáo án, làm tài liệu giảng dạy và công việc hành chính. Trường nhạc của ông Zhu chính là câu chuyện đó.",
+    "insightHr": "<span class='hl'>Nhân sự & tư vấn</span> là một trường hợp đặc biệt. Vì ngành này coi trọng kỹ năng giao tiếp giữa người với người, nhà tuyển dụng khi tìm nhân sự AI ở đây không quá đặt nặng chuyên môn kỹ thuật sâu. Điều đó phản ánh một xu hướng rộng hơn: sự trỗi dậy của lao động 'cổ cồn mới' — người kết hợp công nghệ với kinh nghiệm thực tế, thích nghi nhanh và giỏi giải quyết vấn đề.",
+    "skillsTitle": "Nhà tuyển dụng đang yêu cầu những kỹ năng AI nào?",
+    "skillsLead": "Từ khóa AI phổ biến nhất trong tin tuyển dụng trên Jobstreet là <span class='hl'>năng lực phân tích</span> theo nghĩa rộng — phân tích vượt ra ngoài dữ liệu đơn thuần. Các yêu cầu thường gặp khác gồm phân tích dữ liệu, lập trình Python, khoa học máy tính và tự động hóa.",
+    "skills": {
+      "analysis": "Phân tích",
+      "dataAnalysis": "Phân tích dữ liệu",
+      "python": "Lập trình Python",
+      "compSci": "Khoa học máy tính",
+      "automation": "Tự động hóa",
+      "none": "Không có từ khóa AI cụ thể"
+    },
+    "entryLabel": "{pct} tin tuyển dụng AI trong ngành này là vị trí cho người mới vào nghề",
+    "quotes": {
+      "esther1": {
+        "name": "Esther Lee (李美欣)",
+        "role": "Giám đốc điều hành, Jobstreet Singapore",
+        "text": "Bà Lee cho biết những ngành ứng dụng AI nhanh nhất đang chứng kiến nhân viên làm việc hiệu quả và năng suất hơn, có thêm thời gian cho những vấn đề thực sự cần đến con người."
+      },
+      "zhang1": {
+        "name": "Zhang Xiaoyun (张晓云)",
+        "role": "Phó Chủ tịch cấp cao khu vực châu Á – Thái Bình Dương, ADP",
+        "text": "Bà Zhang nhận xét rằng Singapore dựa nhiều vào lao động tri thức và nhân tài quốc tế, trong khi nguồn cung lao động hạn chế và cơ cấu dân số đang thay đổi. Theo bà, chính vì thế các công ty ở đây tập trung dùng AI để nâng năng suất, khai mở tiềm năng của nhân viên và phát triển doanh nghiệp."
+      },
+      "zhang2": {
+        "name": "Zhang Xiaoyun (张晓云)",
+        "role": "Phó Chủ tịch cấp cao khu vực châu Á – Thái Bình Dương, ADP",
+        "text": "Thông điệp lớn hơn của bà Zhang: AI đang đẩy môi trường làm việc Singapore từ cuộc đua về kiến thức sang cuộc đua về khả năng phán đoán. Người cạnh tranh nhất trong tương lai không phải là người nắm nhiều thông tin nhất, mà là người biết kết hợp năng lực của AI với trí tuệ con người để cùng tạo ra giá trị."
+      }
+    },
+    "trends": {
+      "title": "Tin tuyển dụng AI: bùng nổ, đóng băng, hồi phục",
+      "adsLabel": "Tin tuyển dụng vị trí AI",
+      "appsLabel": "Hồ sơ ứng tuyển vị trí AI",
+      "indexNote": "Chỉ số hóa: 2024 = 100",
+      "step1": "Mô hình ngôn ngữ lớn ChatGPT xuất hiện đình đám cuối năm 2022 và châm ngòi cho cơn sốt tuyển dụng AI. Rồi các nhà tuyển dụng Singapore bấm nút tạm dừng: từ 2024 đến 2025, tin tuyển dụng AI lao dốc <span class='hl'>74%</span>. Giai đoạn phát triển hỗn loạn ban đầu của công nghệ tạo ra nhiều bất định, và các công ty bước vào 'thời kỳ nguội lại' — đánh giá lại các khoản đầu tư AI và tuyển dụng thận trọng hơn hẳn.",
+      "step2": "Một năm qua, bức tranh đảo chiều. Khi các ứng dụng thực tế của AI trở nên rõ ràng hơn, nhà tuyển dụng khởi động lại chiến lược nhân tài AI, và số tin tuyển dụng AI <span class='hl'>tăng khoảng gấp ba so với năm trước</span>. Bà Lee lý giải: hai năm công nghệ chín muồi đã dạy các công ty cách đưa AI vào quy trình làm việc, và nhu cầu tuyển dụng theo đó tăng lên.",
+      "step3": "Người tìm việc lại chưa theo kịp. Trong năm tính đến tháng 4 năm 2026, hồ sơ ứng tuyển vị trí AI giảm thêm <span class='hl'>17%</span>. Mức giảm nhỏ hơn con số 39% của năm trước, nhưng cho thấy nhân tài AI trong nước vẫn khan hiếm — nhiều ứng viên đơn giản là chưa có những kỹ năng mà nhà tuyển dụng đang cần gấp."
+    },
+    "linker": {
+      "title": "Hết thời kỳ nguội lại: mọi ngành trở lại đường đua AI",
+      "text": "Năm ngành dẫn đầu đứng ở tuyến đầu của làn sóng AI, và nhu cầu nhân tài AI của họ đang tăng mạnh. Các ngành còn lại, sau một thoáng chần chừ trong giai đoạn đầu bề bộn của AI, giờ cũng đang vạch ra chiến lược nhân tài AI của riêng mình."
+    }
+  },
+  "s2": {
+    "title": "Thị trường việc làm sắp tới sẽ ra sao?",
+    "lead1": "Ở hầu hết các ngành, tác động đầy đủ của AI vẫn chưa đến. Nhưng điều đó không có nghĩa là công việc của bạn sẽ bình an vô sự.",
+    "lead2": "AI được xem rộng rãi là động cơ của cuộc cách mạng công nghiệp lần thứ tư, và các nghiên cứu quốc tế lớn đã phác họa làn sóng này có thể lan xa đến đâu.",
+    "decadeTitle": "Tác động đầy đủ có thể cần 10 năm mới lộ rõ",
+    "goldman1": "Nghiên cứu của ngân hàng đầu tư Goldman Sachs về thị trường việc làm Mỹ cho thấy AI hiện mới gây sức ép lớn lên một số ít ngành.",
+    "goldman2": "Goldman Sachs ước tính phần lớn các lĩnh vực sẽ cần khoảng mười năm để ứng dụng AI trên quy mô lớn. Trong giai đoạn chuyển tiếp kéo dài đó, <span class='hl'>6% đến 7%</span> lao động Mỹ có thể mất việc.",
+    "goldman3": "Trên toàn thế giới, ước tính <span class='hl'>300 triệu</span> vị trí việc làm đứng trước nguy cơ bị AI tự động hóa.",
+    "chart2Title": "Tỷ lệ việc làm ở Mỹ có nguy cơ bị AI tự động hóa",
+    "chart2Sub": "Theo nhóm nghề, %",
+    "chart2Source": "Nguồn: Haver Analytics, Goldman Sachs Research",
+    "occupations": {
+      "office": "Văn phòng & hỗ trợ hành chính",
+      "legal": "Pháp lý",
+      "architecture": "Kiến trúc & kỹ thuật",
+      "science": "Khoa học sự sống, tự nhiên & xã hội",
+      "business": "Kinh doanh & tài chính",
+      "community": "Cộng đồng & công tác xã hội",
+      "management": "Quản lý",
+      "sales": "Bán hàng & nghề liên quan",
+      "computer": "Máy tính & toán học",
+      "farming": "Nông, ngư & lâm nghiệp",
+      "protective": "Dịch vụ bảo vệ",
+      "education": "Giáo dục & thư viện",
+      "healthcare": "Hỗ trợ y tế",
+      "arts": "Nghệ thuật, thiết kế, giải trí & thể thao",
+      "all": "Tất cả các nghề"
+    },
+    "wefTitle": "Đến năm 2030, cơ cấu việc làm toàn cầu sẽ khác",
+    "wef1": "Báo cáo Tương lai Việc làm 2025 của Diễn đàn Kinh tế Thế giới dự báo đến năm 2030, dưới sức đẩy của AI, chuyển đổi xanh và biến động kinh tế, <span class='hl'>22%</span> việc làm trên toàn thế giới sẽ trải qua thay đổi mang tính cơ cấu.",
+    "wef2": "Khi đó, khoảng <span class='hl'>92 triệu</span> vị trí được dự báo sẽ bị thay thế — nhưng chừng <span class='hlNew'>170 triệu</span> việc làm mới sẽ ra đời. Tính ròng, thế giới có thêm 78 triệu việc làm.",
+    "wefDisplaced": "Việc làm mất đi",
+    "wefCreated": "Việc làm mới tạo ra",
+    "wefNet": "Tăng ròng",
+    "wefUnit": "triệu",
+    "wefSource": "Nguồn: Diễn đàn Kinh tế Thế giới (World Economic Forum), Future of Jobs Report 2025; ILOSTAT"
+  },
+  "s3": {
+    "title": "Chuẩn bị thế nào cho thời hậu AI?",
+    "lead": "AI mang lại cơ hội nhiều hơn hẳn mối đe dọa. Thách thức thật sự — với cả cá nhân lẫn doanh nghiệp — là quản lý giai đoạn chuyển tiếp: chủ động lái mình về phía những công việc mới mà kỷ nguyên hậu AI tạo ra.",
+    "oxfordLead": "Nghiên cứu của Đại học Oxford cho thấy kỹ năng AI đã sinh lợi ngay từ bây giờ — về lương, phúc lợi và cơ hội phỏng vấn:",
+    "oxford": {
+      "pay": {
+        "value": "+23%",
+        "label": "Lương",
+        "text": "Các vị trí yêu cầu kỹ năng AI đăng mức lương trung bình cao hơn khoảng 23%."
+      },
+      "benefits": {
+        "value": "Nhiều đãi ngộ hơn",
+        "label": "Phúc lợi",
+        "text": "Các vị trí liên quan đến AI thường dễ có chế độ làm việc từ xa và nghỉ phép chăm con hơn."
+      },
+      "interviews": {
+        "value": "+8–15%",
+        "label": "Phỏng vấn",
+        "text": "Ứng viên có kỹ năng AI có khả năng được mời phỏng vấn cao hơn từ 8% đến 15%."
+      }
+    },
+    "evergreenTitle": "Trong kỷ nguyên AI biến đổi chóng mặt, kỹ năng nào thực sự bền lâu?",
+    "evergreen1": "Điều thật sự quan trọng không chỉ là học cách vận hành AI, mà là biết dùng nó để nâng giá trị công việc của mình — đồng thời rèn khả năng phán đoán, giao tiếp và giải quyết vấn đề, những thứ AI khó lòng thay thế.",
+    "wong1": "Giáo sư Steven Wong (黄开庄), Giám đốc Trung tâm Hỗ trợ Năng lực số tại Học viện Công nghệ Singapore, cảnh báo AI đang tiến quá nhanh, đến mức một số kỹ năng AI hôm nay sẽ sớm lỗi thời — nhất là các mẹo thao tác gắn với công cụ cụ thể.",
+    "wong2": "Dù vậy, lời khuyên của ông là hãy xây nền hiểu biết về AI từ sớm, bất kể công nghệ rẽ theo hướng nào: học cách dùng AI, giám sát AI, và kết hợp AI với phán đoán của con người.",
+    "everyone": "Khi AI phổ cập, ai cũng có thể dùng nó để làm việc nhanh hơn. Chỉ 'biết dùng AI' sẽ không còn là lợi thế được lâu.",
+    "poon1": "Ông Poon King Wang (潘竞宏), Giám đốc Chiến lược và Thiết kế-AI của Đại học Công nghệ và Thiết kế Singapore, kiêm Giám đốc Trung tâm Thành phố Sáng tạo Lý Quang Diệu, kêu gọi người lao động chuyển tư duy từ 'người dùng AI' sang 'người sáng tạo cùng AI' — dùng AI để không ngừng tạo ra giá trị mang dấu ấn riêng của mình. Theo ông, đó là cách để nổi bật ở nơi làm việc tương lai.",
+    "tipTitle": "Không ngừng bồi đắp kỹ năng chuyển đổi được",
+    "tipText": "<span class='hl'>Tư duy phân tích, giao tiếp, sáng tạo và kiến thức chuyên môn sâu</span> sẽ theo bạn từ công việc này sang công việc khác. Hãy chủ động dùng AI để tinh gọn quy trình làm việc: giao những việc lặp đi lặp lại cho máy, và dành thời gian của mình cho phán đoán, ra quyết định và giải quyết vấn đề.",
+    "li1": "Tại Đại học Quản lý Singapore, Giáo sư Li Jia (李嘉), Trưởng khoa Kinh tế, cùng nhóm nghiên cứu đang theo dõi tác động dài hạn của AI lên thị trường việc làm trong nước.",
+    "li2": "Ông nói không thể dự đoán chính xác bao nhiêu việc làm ở Singapore sẽ biến mất vì AI trong ba đến năm năm tới. Điều các nhà nghiên cứu làm được là theo dõi tin tuyển dụng, phát hiện những ngành đang thu hẹp tuyển dụng và cảnh báo sớm — cho các nhà hoạch định chính sách lẫn người tìm việc thời gian ứng phó.",
+    "li3": "Nhiều điều còn bất định, kể cả việc các mô hình ngôn ngữ lớn còn tiến xa được đến đâu — và chính sự bất định đó sẽ định hình tương lai của thị trường việc làm. Với mỗi cá nhân, lời khuyên của ông Li là hãy 'rèn sức' trước khi cơn bão ập đến.",
+    "li4": "Ông ví việc học kỹ năng AI như uống thuốc sau khi khám sức khỏe phát hiện vấn đề, hay tập luyện để tăng thể lực: kết quả không được bảo đảm và hiếm khi đến ngay, nhưng chắc chắn không làm bạn thiệt đi. Khi cú sốc AI lan đến ngành của bạn, chính những kỹ năng đó có thể giúp bạn giữ được việc — và trở nên vững vàng hơn."
+  },
+  "reading": {
+    "title": "Đọc thêm",
+    "note": "Loạt bài đầy đủ trên zaobao.com.sg — tất cả đều bằng tiếng Trung. Phần mô tả dưới đây là tóm tắt của chúng tôi.",
+    "groups": {
+      "g1": {
+        "title": "Xu hướng tuyển dụng mới",
+        "a1": "Nhu cầu nhân tài AI đã tăng gấp ba — và các nhà tuyển dụng ngoài ngành công nghệ cũng nhập cuộc săn tìm.",
+        "a2": "Vì sao lao động 'cổ cồn mới' — người kết hợp kỹ năng cứng và mềm — đang được săn đón nhất.",
+        "a3": "AI đang siết chặt 'công việc đầu đời': vị trí cho người mới dự kiến thu hẹp, và tìm chỗ thực tập đã khó hơn."
+      },
+      "g2": {
+        "title": "AI thay đổi công việc thường ngày ra sao",
+        "a1": "AI đang viết lại bản mô tả công việc của giáo viên — biến họ thành 'tổng biên tập' cho những bài giảng do AI soạn nháp.",
+        "a2": "Một phút 'ảo thuật AI' trên sân khấu, hai năm xây nền tảng sau cánh gà: chuyển đổi thành công không thể vội."
+      },
+      "g3": {
+        "title": "Nỗi đau bị thay thế",
+        "a1": "Bị một AI nhanh hơn và 'thông minh' hơn vượt mặt, một nhân viên phát triển nội dung 43 tuổi nỗ lực làm lại mình sau khi bị cắt giảm.",
+        "a2": "'AI có thay thế tôi không?' Ngày càng nhiều người tìm việc mang nỗi lo ấy đến gặp chuyên gia tư vấn nghề nghiệp."
+      },
+      "g4": {
+        "title": "Tay nghề và sức sáng tạo dưới sức ép",
+        "a1": "Giới nghệ sĩ và nhà văn cho rằng AI có thể tạo ra thứ 'nghe có vẻ hợp lý' — nhưng không tạo được linh hồn của tác phẩm.",
+        "a2": "Khi khoảng 90% sản phẩm quảng cáo giờ được làm cùng AI, người làm sáng tạo chuyển từ trực tiếp tạo ra tác phẩm sang tuyển chọn và định hướng."
+      },
+      "g5": {
+        "title": "Kỹ năng bền lâu",
+        "a1": "Chọn khóa học AI thế nào: học dùng AI thôi chưa đủ — hãy học sáng tạo cùng AI.",
+        "a2": "Không cần học thuộc nữa: nhân viên bán lẻ 65 tuổi quét nhãn rượu vang bằng AI và trả lời như chuyên gia."
+      }
+    },
+    "videosTitle": "Xem",
+    "videos": {
+      "v1": {
+        "title": "Tăng hiệu suất — hay thay thế con người?",
+        "text": "Bạn có sợ bị AI thay thế? Khi cả dân công nghệ lẫn luật sư đều thuộc nhóm rủi ro cao, họ nên ứng phó ra sao?"
+      },
+      "v2": {
+        "title": "Xây công ty trên nền AI để nhân năng suất lên 16 lần?",
+        "text": "Các công ty đang đổ tiền vào năng suất nhờ AI. Điều đó thực sự đòi hỏi những gì — và chúng ta nên nghĩ lại cách làm việc như thế nào?"
+      }
+    }
+  },
+  "about": {
+    "title": "Về trang này",
+    "p1": "Đây là tài liệu học tập nguyên bản, được xây dựng cho lớp học đa ngôn ngữ. Trang kể lại bằng 13 ngôn ngữ các dữ kiện và phát hiện trong chuyên trang tương tác của Lianhe Zaobao (联合早报), nhật báo tiếng Trung của Singapore — để học sinh không đọc được tiếng Trung vẫn theo dõi được cùng câu chuyện, cùng biểu đồ và cùng bố cục với bản gốc, và thảo luận song song với nhau.",
+    "p2": "Nội dung trên trang là bản tóm tắt nguyên bản viết cho mục đích giảng dạy, không phải bản dịch của bài báo. Phát biểu của các nhân vật được diễn đạt lại. Mọi dữ liệu thuộc về các nguồn được trích dẫn. Hãy ủng hộ bài báo gốc:",
+    "originalTitle": "Bài gốc",
+    "originalCredit": "'AI与职场变局' (AI và biến chuyển nơi làm việc), chuyên trang tương tác của Lianhe Zaobao, đăng ngày 16/8/2026. Bài viết: Lin Pingying. Phỏng vấn: Lin Pingying, Lu Huijing, Li Gengwei. Lên kế hoạch: Huang Xiaofang. Minh họa: Lu Fangkai. Thiết kế & phát triển: Wang Yuchen, Huang Junnan. © SPH Media Limited.",
+    "romanization": "Tên tiếng Trung được phiên âm theo bính âm Hán ngữ (hanyu pinyin) khi chưa có cách viết tiếng Anh chính thức được công bố.",
+    "dataTitle": "Nguồn dữ liệu",
+    "data1": "Phân tích của Lianhe Zaobao × Jobstreet by SEEK về từ khóa AI trong tin tuyển dụng ở Singapore, 2023–2026",
+    "data2": "Goldman Sachs Research / Haver Analytics — AI và thị trường lao động Mỹ",
+    "data3": "Diễn đàn Kinh tế Thế giới (World Economic Forum), Future of Jobs Report 2025; ILOSTAT",
+    "data4": "Nghiên cứu của Đại học Oxford về kỹ năng AI, tiền lương và tuyển dụng",
+    "disclaimer": "Xây dựng cho mục đích lớp học. Trang này không trực thuộc và không được SPH Media hay Lianhe Zaobao bảo trợ."
+  }
+}

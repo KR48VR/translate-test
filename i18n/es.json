@@ -1,0 +1,272 @@
+{
+  "_meta": {
+    "code": "es",
+    "htmlLang": "es",
+    "name": "Español",
+    "englishName": "Spanish",
+    "fontClass": "latin"
+  },
+  "ui": {
+    "brand": "El giro de la IA",
+    "brandPlace": "Singapur",
+    "languageLabel": "Idioma",
+    "compareLabel": "Comparar con",
+    "compareOff": "Desactivado",
+    "compareHint": "El modo comparación está activado: toca cualquier párrafo para leerlo en un segundo idioma.",
+    "readOriginal": "Lee el reportaje original en zaobao.com.sg",
+    "inChinese": "en chino",
+    "beforeAI": "Antes de la IA",
+    "afterAI": "Con IA",
+    "backToTop": "Volver arriba",
+    "sectionsLabel": "Secciones",
+    "yearNote": "Cada año indicado va de mayo del año anterior a abril de ese año.",
+    "rankLabel": "Puesto",
+    "sourceLabel": "Fuente",
+    "videoTag": "Video",
+    "articleTag": "Artículo",
+    "publishedLabel": "Publicado",
+    "skillsHint": "Selecciona una industria para ver las habilidades de IA que más mencionan sus anuncios de empleo.",
+    "tableView": "Ver los datos en una tabla",
+    "skillsFor": "Habilidades de IA más mencionadas en los anuncios de empleo de {industry}"
+  },
+  "nav": {
+    "trends": "Tendencias de hoy",
+    "future": "Lo que viene",
+    "prepare": "Cómo prepararse",
+    "reading": "Para seguir leyendo",
+    "videos": "Videos"
+  },
+  "hero": {
+    "kicker": "Un recurso para el aula en 13 idiomas",
+    "title": "El giro de la IA",
+    "subtitle": "Cómo la inteligencia artificial (IA) está reescribiendo el trabajo en Singapur: qué está cambiando, qué viene después y cómo prepararse.",
+    "basedOn": "Una narración original de los hechos y hallazgos reportados por primera vez en el especial interactivo de Lianhe Zaobao sobre la IA y el mercado laboral de Singapur, publicado el 16 de agosto de 2026.",
+    "scrollCue": "Desplázate para comenzar"
+  },
+  "caseStudy": {
+    "kicker": "Una escuela, un mes de enero",
+    "title": "Cuando la IA se unió a la banda",
+    "p1": "Zhu Ruixiong (朱锐雄) dirige desde hace más de diez años una escuela de música de percusión en Singapur. En enero de este año, la escuela incorporó herramientas de IA, y su trabajo diario cambió casi por completo.",
+    "cards": {
+      "lesson": {
+        "label": "Planificación de clases",
+        "beforeStat": "1 mes",
+        "beforeText": "Pulir un plan de clase de tres horas les tomaba a dos o tres profesores alrededor de un mes.",
+        "afterStat": "3 minutos",
+        "afterText": "Ahora un borrador completo aparece con solo pulsar un botón, listo para que los profesores lo perfeccionen."
+      },
+      "score": {
+        "label": "Partituras",
+        "beforeStat": "Trabajo manual",
+        "beforeText": "El audio se descargaba de internet y se reelaboraba en complicados programas de arreglos musicales.",
+        "afterStat": "Generadas",
+        "afterText": "La IA produce partituras y materiales de práctica directamente, e incluso ayuda con nuevos arreglos."
+      },
+      "invoice": {
+        "label": "Facturación",
+        "beforeStat": "Medio día",
+        "beforeText": "Los profesores iban y venían con la oficina administrativa solo para emitir una factura.",
+        "afterStat": "Segundos",
+        "afterText": "El personal dicta los datos por voz, revisa el documento y lo envía."
+      },
+      "progress": {
+        "label": "Progreso de los alumnos",
+        "beforeStat": "Uno por uno",
+        "beforeText": "Los profesores daban seguimiento a cada alumno de forma individual.",
+        "afterStat": "Automático",
+        "afterText": "Los alumnos practican en una plataforma de IA en línea que les da retroalimentación y registra su progreso."
+      }
+    },
+    "outro1": "La IA está transformando cómo trabajamos la mayoría y hacia dónde pueden ir nuestras carreras, y está cambiando cuáles son las habilidades por las que pagan los empleadores. La ola comenzó en la tecnología, pero hace tiempo que se extendió a todos los campos.",
+    "outro2": "La educación, la industria del señor Zhu, ya siente su fuerza, y está lejos de ser la única sacudida por el cambio.",
+    "outro3": "Entonces, ¿qué le está haciendo realmente la IA al mercado laboral de Singapur? ¿Qué significa eso para los trabajadores comunes? ¿Y cómo podemos prepararnos para lo que viene?"
+  },
+  "s1": {
+    "title": "¿Qué industrias de Singapur buscan más habilidades de IA?",
+    "lead": "Lianhe Zaobao trabajó con la plataforma de empleo Jobstreet by SEEK para medir con qué frecuencia han aparecido palabras clave relacionadas con la IA en los anuncios de empleo de Singapur durante los últimos tres años. Cuanto más aparece la IA en los anuncios de una industria, con más intensidad busca esa industria habilidades de IA.",
+    "method": "Jobstreet no reveló cifras exactas de anuncios, pero el buscador de su sitio web muestra cerca de 60,000 puestos de tiempo completo y de tiempo parcial publicados actualmente.",
+    "chart1Title": "Las cinco industrias que más demandan IA",
+    "chart1Sub": "Clasificación de industrias por frecuencia de palabras clave de IA en los anuncios de empleo",
+    "industries": {
+      "tech": "Informática y TI (software)",
+      "edu": "Educación",
+      "hr": "Recursos humanos y consultoría",
+      "fin": "Finanzas y banca",
+      "gov": "Gobierno y defensa"
+    },
+    "sixthPlace": "Construcción e ingeniería (6.º)",
+    "topFiveText": "Desde que la IA se volvió masiva en 2023, estas cinco industrias han encabezado la tabla todos los años. Las palabras clave de IA aparecen en sus anuncios mucho más que en cualquier otro sector: en promedio, alrededor de un <span class='hl'>60% más a menudo</span> que en construcción e ingeniería, la sexta clasificada.",
+    "insightTech": "<span class='hl'>Informática y TI (software)</span> está en la primera línea de la era de la IA y ha ocupado el primer puesto durante tres años seguidos. Los propios empleos están cambiando: además de la programación tradicional, los empleadores ahora piden orquestación de IA, seguridad y gobernanza, e integración de sistemas.",
+    "insightEdu": "<span class='hl'>Educación</span> depende del contacto humano, por lo que suele verse como una de las industrias más seguras en la era de la IA. Sin embargo, en los últimos tres años su demanda de habilidades de IA ha subido con fuerza: del cuarto puesto en 2023 al segundo el año pasado. Una razón probable es la escasez crónica de personal del sector: los nuevos puestos apoyados en IA pueden agilizar la planificación de clases, los materiales didácticos y la administración. La escuela de música del señor Zhu es exactamente esta historia.",
+    "insightHr": "<span class='hl'>Recursos humanos y consultoría</span> es un caso especial. Como esta industria valora las habilidades interpersonales, los empleadores que contratan allí para puestos de IA se fijan menos en la pericia técnica profunda. Eso refleja una tendencia más amplia: el auge del trabajador 'new-collar' o de 'nuevo cuello', alguien que combina la tecnología con experiencia práctica, se adapta rápido y resuelve problemas.",
+    "skillsTitle": "¿Qué habilidades de IA piden los empleadores?",
+    "skillsLead": "La palabra clave de IA más común en los anuncios de Jobstreet es la <span class='hl'>capacidad analítica</span> en sentido amplio: un análisis que va más allá de los datos. Otros requisitos frecuentes incluyen análisis de datos, programación en Python, ciencias de la computación y automatización.",
+    "skills": {
+      "analysis": "Análisis",
+      "dataAnalysis": "Análisis de datos",
+      "python": "Programación en Python",
+      "compSci": "Ciencias de la computación",
+      "automation": "Automatización",
+      "none": "Sin palabras clave de IA específicas"
+    },
+    "entryLabel": "El {pct} de los anuncios de empleo de IA en esta industria es de nivel inicial",
+    "quotes": {
+      "esther1": {
+        "name": "Esther Lee (李美欣)",
+        "role": "Directora general de Jobstreet Singapore",
+        "text": "Lee afirma que las industrias que adoptaron la IA más rápido están viendo empleados más eficientes y productivos, con más tiempo libre para dedicarse a los problemas que de verdad necesitan a las personas."
+      },
+      "zhang1": {
+        "name": "Zhang Xiaoyun (张晓云)",
+        "role": "Vicepresidenta sénior para Asia-Pacífico de ADP",
+        "text": "Zhang señala que Singapur depende en gran medida de los trabajadores del conocimiento y del talento internacional, mientras enfrenta una oferta laboral limitada y una estructura de población cambiante. Por eso, dice, las empresas del país se concentran en usar la IA para elevar la productividad, liberar el potencial de sus empleados y hacer crecer el negocio."
+      },
+      "zhang2": {
+        "name": "Zhang Xiaoyun (张晓云)",
+        "role": "Vicepresidenta sénior para Asia-Pacífico de ADP",
+        "text": "El punto de fondo de Zhang: la IA está llevando el mundo laboral de Singapur de una competencia de conocimientos a una competencia de criterio. Las personas más competitivas del futuro no serán las que acumulen más información, sino las que mejor combinen las capacidades de la IA con la sabiduría humana para crear valor en conjunto."
+      }
+    },
+    "trends": {
+      "title": "Anuncios de empleo de IA: auge, freno y rebote",
+      "adsLabel": "Anuncios de puestos de IA",
+      "appsLabel": "Postulaciones a puestos de IA",
+      "indexNote": "Índice: 2024 = 100",
+      "step1": "El gran modelo de lenguaje ChatGPT irrumpió a finales de 2022 y desató un auge de contrataciones en IA. Luego los empleadores de Singapur pusieron pausa: entre 2024 y 2025, los anuncios de empleo de IA se desplomaron un <span class='hl'>74%</span>. El caótico crecimiento inicial de la tecnología había creado verdadera incertidumbre, y las empresas entraron en un 'periodo de enfriamiento': reevaluaron sus inversiones en IA y contrataron con mucha más cautela.",
+      "step2": "En el último año el panorama se invirtió. A medida que los usos prácticos de la IA se hicieron más claros, los empleadores reactivaron sus estrategias de talento en IA, y el número de anuncios de empleo de IA aproximadamente se <span class='hl'>triplicó de un año a otro</span>. La explicación de Lee: dos años de maduración de la tecnología han enseñado a las empresas a integrar la IA en sus flujos de trabajo, y la demanda de contratación ha seguido ese camino.",
+      "step3": "Los buscadores de empleo no han seguido el ritmo. En el año que terminó en abril de 2026, las postulaciones a puestos de IA cayeron otro <span class='hl'>17%</span>. La caída es menor que el 39% del año anterior, pero indica que el talento local en IA sigue escaseando: muchos candidatos simplemente aún no tienen las habilidades que los empleadores necesitan con urgencia."
+    },
+    "linker": {
+      "title": "Fin del enfriamiento: todas las industrias vuelven tras la pista de la IA",
+      "text": "Las cinco primeras están en la primera línea del giro hacia la IA, y su demanda de talento en IA crece con fuerza. Las demás industrias, tras una breve vacilación durante la fase inicial y desordenada de la IA, ya están trazando sus propias estrategias de talento en IA."
+    }
+  },
+  "s2": {
+    "title": "¿Cómo podría verse el mercado laboral en el futuro?",
+    "lead1": "En la mayoría de las industrias, el impacto pleno de la IA todavía no ha llegado. Eso no significa que tu empleo vaya a librarse.",
+    "lead2": "La IA es vista ampliamente como el motor de la cuarta revolución industrial, y grandes estudios internacionales ya han esbozado hasta dónde podría llegar la ola.",
+    "decadeTitle": "El impacto pleno puede tardar 10 años en notarse",
+    "goldman1": "Una investigación del banco de inversión Goldman Sachs sobre el mercado laboral de Estados Unidos concluye que, por ahora, la IA pesa con fuerza solo en un puñado de industrias.",
+    "goldman2": "Estima que la mayoría de los campos necesitará alrededor de diez años para alcanzar una adopción de la IA a gran escala. Durante esa larga transición, entre el <span class='hl'>6% y el 7%</span> de los trabajadores estadounidenses podría perder su empleo.",
+    "goldman3": "En todo el mundo, se estima que <span class='hl'>300 millones</span> de puestos están expuestos a la automatización con IA.",
+    "chart2Title": "Proporción de empleos de EE. UU. expuestos a la automatización con IA",
+    "chart2Sub": "Por grupo ocupacional, %",
+    "chart2Source": "Fuente: Haver Analytics, Goldman Sachs Research",
+    "occupations": {
+      "office": "Apoyo administrativo y de oficina",
+      "legal": "Jurídico",
+      "architecture": "Arquitectura e ingeniería",
+      "science": "Ciencias de la vida, físicas y sociales",
+      "business": "Operaciones comerciales y financieras",
+      "community": "Servicios comunitarios y sociales",
+      "management": "Dirección y gestión",
+      "sales": "Ventas y afines",
+      "computer": "Computación y matemáticas",
+      "farming": "Agricultura, pesca y silvicultura",
+      "protective": "Servicios de protección",
+      "education": "Educación y bibliotecas",
+      "healthcare": "Apoyo en atención de la salud",
+      "arts": "Artes, diseño, entretenimiento y deportes",
+      "all": "Todas las ocupaciones"
+    },
+    "wefTitle": "Para 2030, el mapa mundial del empleo será otro",
+    "wef1": "El informe Future of Jobs Report 2025 del Foro Económico Mundial proyecta que para 2030, impulsado por la IA, la transición verde y la turbulencia económica, el <span class='hl'>22%</span> de los empleos del mundo pasará por cambios estructurales.",
+    "wef2": "Para entonces se espera que unos <span class='hl'>92 millones</span> de puestos sean desplazados, pero que se creen alrededor de <span class='hlNew'>170 millones</span> nuevos. Es una ganancia neta de 78 millones de empleos.",
+    "wefDisplaced": "Empleos desplazados",
+    "wefCreated": "Nuevos empleos creados",
+    "wefNet": "Ganancia neta",
+    "wefUnit": "millones",
+    "wefSource": "Fuente: Foro Económico Mundial, Future of Jobs Report 2025; ILOSTAT"
+  },
+  "s3": {
+    "title": "¿Cómo prepararse para la era pos-IA?",
+    "lead": "La IA trae muchas más oportunidades que amenazas. El verdadero desafío, tanto para las personas como para las empresas, es gestionar la transición: dirigirte hacia los nuevos empleos que la era pos-IA está creando.",
+    "oxfordLead": "Una investigación de la Universidad de Oxford sugiere que las habilidades de IA ya rinden frutos en salario, beneficios y oportunidades de entrevista:",
+    "oxford": {
+      "pay": {
+        "value": "+23%",
+        "label": "Salario",
+        "text": "Los puestos que piden habilidades de IA anuncian salarios en promedio un 23% más altos."
+      },
+      "benefits": {
+        "value": "Más ventajas",
+        "label": "Beneficios",
+        "text": "Los puestos relacionados con la IA tienden más a ofrecer trabajo remoto y licencia parental."
+      },
+      "interviews": {
+        "value": "+8–15%",
+        "label": "Entrevistas",
+        "text": "Los candidatos con habilidades de IA tienen entre un 8% y un 15% más de probabilidades de ser invitados a una entrevista."
+      }
+    },
+    "evergreenTitle": "En una era de IA que avanza tan rápido, ¿qué habilidades duran de verdad?",
+    "evergreen1": "Lo que de verdad importa no es solo aprender a operar la IA, sino saber usarla para elevar el valor de tu trabajo, mientras construyes el criterio, la comunicación y la capacidad de resolver problemas que la IA no puede reemplazar fácilmente.",
+    "wong1": "El profesor Steven Wong (黄开庄), director del Centro para la Habilitación Digital del Instituto de Tecnología de Singapur, advierte que la IA avanza tan rápido que algunas de las habilidades de IA de hoy quedarán obsoletas, sobre todo los trucos de manejo ligados a herramientas específicas.",
+    "wong2": "Aun así, su consejo es construir desde temprano una alfabetización en IA, tome la dirección que tome la tecnología: aprender a usar la IA, a supervisarla y a combinarla con el criterio humano.",
+    "everyone": "A medida que la IA se extiende, cualquiera puede usarla para trabajar más rápido. Simplemente 'saber usar la IA' no seguirá siendo una ventaja por mucho tiempo.",
+    "poon1": "Poon King Wang (潘竞宏), director de Estrategia y Diseño-IA de la Universidad de Tecnología y Diseño de Singapur y director del Centro Lee Kuan Yew para Ciudades Innovadoras, insta a los trabajadores a cambiar de mentalidad: pasar de 'usuario de IA' a 'creador con IA', usando la IA para seguir creando un valor que sea claramente propio. Así, sostiene, es como uno se destaca en el lugar de trabajo del futuro.",
+    "tipTitle": "Sigue construyendo habilidades transferibles",
+    "tipText": "<span class='hl'>El pensamiento analítico, la comunicación, la creatividad y el conocimiento profundo de tu campo</span> viajan contigo de un empleo a otro. Usa la IA de forma deliberada para agilizar tu flujo de trabajo: entrégale a la máquina las tareas repetitivas y dedica tu propio tiempo al criterio, las decisiones y la resolución de problemas.",
+    "li1": "En la Universidad de Gestión de Singapur, el profesor Li Jia (李嘉), decano de la Escuela de Economía, y su equipo siguen de cerca el efecto de largo plazo de la IA sobre el mercado laboral local.",
+    "li2": "Dice que es imposible predecir con precisión cuántos empleos de Singapur desaparecerán por la IA en los próximos tres a cinco años. Lo que los investigadores sí pueden hacer es observar los anuncios de contratación, detectar las industrias donde el reclutamiento se encoge y dar la alarma temprano, para que las autoridades y los buscadores de empleo tengan tiempo de responder.",
+    "li3": "Queda mucha incertidumbre, incluida la de cuánto pueden avanzar todavía los grandes modelos de lenguaje, y esa incertidumbre moldeará el futuro del mercado laboral. Para las personas, el consejo de Li es 'entrenar el cuerpo' antes de que llegue la tormenta.",
+    "li4": "Compara aprender habilidades de IA con tomar un medicamento cuando un chequeo médico detecta un problema, o con ejercitarse para ganar fuerza: los resultados no están garantizados y rara vez son inmediatos, pero nunca te dejan peor. Cuando el golpe de la IA llegue a tu industria, esas habilidades podrían ser lo que te mantenga empleado, y lo que te haga más resiliente."
+  },
+  "reading": {
+    "title": "Para seguir leyendo",
+    "note": "La serie completa en zaobao.com.sg; todos los artículos están en chino. Las descripciones que siguen son resúmenes propios.",
+    "groups": {
+      "g1": {
+        "title": "Nuevas tendencias de contratación",
+        "a1": "La demanda de talento en IA se ha triplicado, y los empleadores fuera del sector tecnológico se han sumado a la búsqueda.",
+        "a2": "Por qué los trabajadores 'new-collar', que combinan habilidades técnicas y blandas, son ahora los más buscados.",
+        "a3": "La IA está estrechando el 'primer empleo': las vacantes de nivel inicial van camino de reducirse, y las pasantías ya son más difíciles de encontrar."
+      },
+      "g2": {
+        "title": "Cómo la IA transforma el trabajo diario",
+        "a1": "La IA está reescribiendo la descripción del puesto de los docentes, convirtiéndolos en 'editores en jefe' de clases redactadas por IA.",
+        "a2": "Un minuto de magia de IA en el escenario, dos años construyendo la plataforma tras bambalinas: una transformación exitosa no se puede apurar."
+      },
+      "g3": {
+        "title": "El dolor del desplazamiento",
+        "a1": "Superado por una IA más rápida y 'más lista', un desarrollador de contenidos de 43 años trabaja para reinventarse tras su despido.",
+        "a2": "'¿Me reemplazará la IA?' Cada vez más buscadores de empleo llevan ese miedo a los orientadores profesionales."
+      },
+      "g4": {
+        "title": "Oficio y creatividad bajo presión",
+        "a1": "Artistas y escritores sostienen que la IA puede generar lo 'verosímil', pero no el alma de una obra.",
+        "a2": "Con cerca del 90% de la producción publicitaria hecha ya con IA, los creativos pasan de hacer la obra a curarla."
+      },
+      "g5": {
+        "title": "Habilidades que perduran",
+        "a1": "Cómo elegir un curso de IA: aprender a usarla no basta; aprende a crear con ella.",
+        "a2": "Se acabó memorizar: un empleado de tienda de 65 años escanea etiquetas de vino con IA y responde como un experto."
+      }
+    },
+    "videosTitle": "Videos",
+    "videos": {
+      "v1": {
+        "title": "¿Más eficiencia o reemplazo humano?",
+        "text": "¿Temes que la IA te reemplace? Cuando hasta los profesionales de la tecnología y los abogados están muy expuestos, ¿cómo deberían responder?"
+      },
+      "v2": {
+        "title": "¿Montar una empresa sobre la IA y multiplicar la productividad por 16?",
+        "text": "Las empresas están invirtiendo a raudales en productividad con IA. ¿Qué hace falta realmente, y cómo deberíamos repensar nuestra forma de trabajar?"
+      }
+    }
+  },
+  "about": {
+    "title": "Acerca de esta página",
+    "p1": "Este es un recurso educativo original creado para aulas multilingües. Vuelve a contar, en 13 idiomas, los hechos y hallazgos de un reportaje interactivo de Lianhe Zaobao (联合早报), el diario en chino de Singapur, para que los estudiantes que no leen chino puedan seguir la misma historia, los mismos gráficos y la misma estructura del original, y comentarlos lado a lado.",
+    "p2": "El texto de esta página es un resumen original escrito para la enseñanza, no una traducción del artículo. Las citas de las personas entrevistadas están parafraseadas. Todos los datos pertenecen a las fuentes citadas. Apoya el periodismo original:",
+    "originalTitle": "Reportaje original",
+    "originalCredit": "'AI与职场变局' (La IA y la transformación del mundo laboral), reportaje interactivo de Lianhe Zaobao, publicado el 16 de agosto de 2026. Texto: Lin Pingying. Entrevistas: Lin Pingying, Lu Huijing, Li Gengwei. Planificación: Huang Xiaofang. Ilustración: Lu Fangkai. Diseño y desarrollo: Wang Yuchen, Huang Junnan. © SPH Media Limited.",
+    "romanization": "Los nombres chinos se romanizan en hanyu pinyin cuando no se publicó una grafía oficial en inglés.",
+    "dataTitle": "Fuentes de datos",
+    "data1": "Análisis de Lianhe Zaobao × Jobstreet by SEEK sobre palabras clave de IA en anuncios de empleo de Singapur, 2023–2026",
+    "data2": "Goldman Sachs Research / Haver Analytics — La IA y el mercado laboral de EE. UU.",
+    "data3": "Foro Económico Mundial, Future of Jobs Report 2025; ILOSTAT",
+    "data4": "Investigación de la Universidad de Oxford sobre habilidades de IA, salarios y contratación",
+    "disclaimer": "Creado para uso en el aula. No está afiliado a SPH Media ni a Lianhe Zaobao, ni cuenta con su respaldo."
+  }
+}

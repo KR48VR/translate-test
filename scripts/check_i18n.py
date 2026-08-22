@@ -24,7 +24,9 @@ def leaves(d, prefix=""):
 
 
 def nums(s):
-    return sorted(re.findall(r"\d+(?:[.,]\d+)?", str(s)))
+    # normalize locale separators (60,000 / 60.000 / 60 000) to bare digit runs
+    toks = re.findall(r"\d+(?:[.,   ]\d+)*", str(s))
+    return sorted(re.sub(r"[.,   ]", "", t) for t in toks)
 
 
 def tags(s):

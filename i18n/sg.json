@@ -65,7 +65,7 @@
       "invoice": {
         "label": "Invoicing",
         "beforeStat": "Half a day",
-        "beforeText": "Teachers go back and forth with the admin office just to issue one invoice.",
+        "beforeText": "Last time, teachers go back and forth with the admin office just to issue one invoice.",
         "afterStat": "Seconds",
         "afterText": "Staff just say the details out loud, check the document, and send it off. Done."
       },
@@ -124,7 +124,7 @@
       "zhang2": {
         "name": "Zhang Xiaoyun (张晓云)",
         "role": "Senior Vice-President for Asia Pacific, ADP",
-        "text": "Zhang's bigger point: AI is pushing Singapore's workplace from a competition of knowledge towards a competition of judgment. Next time, the most competitive people won't be the ones holding the most information, but the ones who best combine AI's capabilities with human wisdom to create value together."
+        "text": "Zhang's bigger point: AI is pushing Singapore's workplace from a competition of knowledge towards a competition of judgment. In future, the most competitive people won't be the ones holding the most information, but the ones who best combine AI's capabilities with human wisdom to create value together."
       }
     },
     "trends": {
