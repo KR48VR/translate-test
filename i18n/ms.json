@@ -34,7 +34,8 @@
   "origNudgeCta": "Buka rencana asal",
   "listen": "Dengar",
   "stop": "Berhenti",
-  "noVoice": "Tiada suara untuk bahasa ini pada peranti ini — cuba telefon atau Chrome."
+  "noVoice": "Tiada suara untuk bahasa ini pada peranti ini — cuba telefon atau Chrome.",
+  "voice": "Suara"
  },
  "nav": {
   "trends": "Trend hari ini",

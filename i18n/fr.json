@@ -34,7 +34,8 @@
   "origNudgeCta": "Ouvrir l'original",
   "listen": "Écouter",
   "stop": "Arrêter",
-  "noVoice": "Pas de voix pour cette langue sur cet appareil — essayez un téléphone ou Chrome."
+  "noVoice": "Pas de voix pour cette langue sur cet appareil — essayez un téléphone ou Chrome.",
+  "voice": "Voix"
  },
  "nav": {
   "trends": "Tendances actuelles",

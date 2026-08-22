@@ -342,6 +342,11 @@ body.compare-on .cmp-hint{display:block}
 .listen-btn[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 12%,var(--surface)); border-color:var(--accent); color:var(--accent-ink)}
 .speaking{outline:2.5px solid color-mix(in srgb,var(--accent) 55%,transparent); outline-offset:4px; border-radius:6px}
 .voice-hint{font-size:12.5px; color:var(--accent-ink); margin-top:8px; max-width:420px}
+.voice-sel{
+  margin:14px 0 0 10px; font-family:var(--f-body); font-size:12px; color:var(--muted);
+  background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:5px 8px;
+  max-width:190px; vertical-align:bottom;
+}
 @media (prefers-reduced-motion: no-preference){
   .listen-btn[aria-pressed="true"] .art{animation:pulse 1.2s ease-in-out infinite}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
@@ -1088,15 +1093,60 @@ const VOICE_PREFS = { en:["en-sg","en-gb","en-us","en"], sg:["en-sg","en-gb","en
   hi:["hi"], ml:["ml"], si:["si"], fr:["fr"], es:["es"], de:["de"], nl:["nl"], ru:["ru"] };
 const speechOK = "speechSynthesis" in window;
 let sayBtnActive = null, sayQueue = [], sayEl = null;
-function getVoice(){
-  if(!speechOK) return null;
-  const voices = speechSynthesis.getVoices();
+function matchedVoices(){
+  // all voices for the current language, best-sounding first
+  if(!speechOK) return [];
   const prefs = VOICE_PREFS[lang] || [I18N[lang]._meta.htmlLang.toLowerCase()];
-  for(const p of prefs){
-    const v = voices.find(x=>x.lang && x.lang.toLowerCase().replace("_","-").startsWith(p));
-    if(v) return v;
-  }
-  return null;
+  const hits = [];
+  speechSynthesis.getVoices().forEach(v=>{
+    const vl = (v.lang||"").toLowerCase().replace("_","-");
+    const idx = prefs.findIndex(p=>vl.startsWith(p));
+    if(idx>=0) hits.push({v, idx});
+  });
+  const score = v=>{
+    const n = v.name.toLowerCase();
+    let s = 0;
+    if(n.includes("natural")) s+=50;      // Edge neural voices
+    if(n.includes("neural")) s+=40;
+    if(n.includes("premium")) s+=32;      // Apple downloads
+    if(n.includes("enhanced")) s+=28;
+    if(n.includes("google")) s+=22;       // Chrome cloud voices
+    if(n.includes("siri")) s+=16;
+    if(n.includes("microsoft")) s+=8;
+    if(n.includes("espeak")||n.includes("eloquence")||n.includes("compact")) s-=40;
+    return s;
+  };
+  hits.sort((a,b)=> (score(b.v)-score(a.v)) || (a.idx-b.idx) || a.v.name.localeCompare(b.v.name));
+  return hits.map(h=>h.v);
+}
+function getVoice(){
+  const list = matchedVoices();
+  if(!list.length) return null;
+  let saved=""; try{ saved=localStorage.getItem("aishift-voice-"+lang)||""; }catch(e){}
+  return list.find(v=>v.voiceURI===saved) || list[0];
+}
+function renderVoicePickers(){
+  document.querySelectorAll(".voice-sel").forEach(el=>el.remove());
+  const list = matchedVoices();
+  if(list.length<2) return;
+  const cur = getVoice();
+  document.querySelectorAll(".listen-btn").forEach(btn=>{
+    const sel = document.createElement("select");
+    sel.className = "voice-sel";
+    sel.setAttribute("aria-label", L("ui.voice"));
+    list.forEach(v=>{
+      const o = document.createElement("option");
+      o.value = v.voiceURI;
+      o.textContent = v.name.replace(/^(Microsoft|Google)\s+/,"");
+      if(cur && v.voiceURI===cur.voiceURI) o.selected = true;
+      sel.appendChild(o);
+    });
+    sel.onchange = ()=>{
+      try{ localStorage.setItem("aishift-voice-"+lang, sel.value); }catch(e){}
+      document.querySelectorAll(".voice-sel").forEach(s=>{ if(s!==sel) s.value = sel.value; });
+    };
+    btn.after(sel);
+  });
 }
 function chunkText(t){
   const parts = t.split(/(?<=[.!?。！？…；;])\s*/u).filter(x=>x.trim());
@@ -1172,12 +1222,15 @@ function initListen(){
     };
   });
 }
-if(speechOK) speechSynthesis.getVoices();   // warm the voice list; some browsers populate it async
+if(speechOK){
+  speechSynthesis.getVoices();              // warm the voice list; some browsers populate it async
+  speechSynthesis.onvoiceschanged = ()=>renderVoicePickers();
+}
 
 /* ---------------- boot ---------------- */
 function renderAll(){
   stopSay();
-  renderText(); buildLangUI(); renderCases(); renderBump(); renderTrends(); renderOcc(); renderWef(); renderReading(); renderArt(); setupCompare(); renderStubs(); initListen(); watchReveals();
+  renderText(); buildLangUI(); renderCases(); renderBump(); renderTrends(); renderOcc(); renderWef(); renderReading(); renderArt(); setupCompare(); renderStubs(); initListen(); renderVoicePickers(); watchReveals();
 }
 (function init(){
   let saved="", savedCmp="";

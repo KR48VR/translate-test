@@ -34,7 +34,8 @@
   "origNudgeCta": "Mở bài gốc",
   "listen": "Nghe",
   "stop": "Dừng",
-  "noVoice": "Thiết bị này không có giọng đọc cho ngôn ngữ này — hãy thử điện thoại hoặc Chrome."
+  "noVoice": "Thiết bị này không có giọng đọc cho ngôn ngữ này — hãy thử điện thoại hoặc Chrome.",
+  "voice": "Giọng đọc"
  },
  "nav": {
   "trends": "Xu hướng hiện nay",

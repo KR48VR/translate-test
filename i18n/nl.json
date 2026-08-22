@@ -34,7 +34,8 @@
   "origNudgeCta": "Open het origineel",
   "listen": "Luister",
   "stop": "Stop",
-  "noVoice": "Geen stem beschikbaar voor deze taal op dit apparaat — probeer een telefoon of Chrome."
+  "noVoice": "Geen stem beschikbaar voor deze taal op dit apparaat — probeer een telefoon of Chrome.",
+  "voice": "Stem"
  },
  "nav": {
   "trends": "Trends van vandaag",

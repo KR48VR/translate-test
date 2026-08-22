@@ -34,7 +34,8 @@
   "origNudgeCta": "去睇原版",
   "listen": "讀出嚟",
   "stop": "停止",
-  "noVoice": "部機冇呢種語言嘅朗讀聲——用手機或者Chrome試下。"
+  "noVoice": "部機冇呢種語言嘅朗讀聲——用手機或者Chrome試下。",
+  "voice": "聲音"
  },
  "nav": {
   "trends": "最新趨勢",

@@ -34,7 +34,8 @@
   "origNudgeCta": "원본 보기",
   "listen": "듣기",
   "stop": "정지",
-  "noVoice": "이 기기에는 이 언어의 음성이 없습니다. 휴대폰이나 Chrome을 사용해 보세요."
+  "noVoice": "이 기기에는 이 언어의 음성이 없습니다. 휴대폰이나 Chrome을 사용해 보세요.",
+  "voice": "음성"
  },
  "nav": {
   "trends": "오늘의 트렌드",

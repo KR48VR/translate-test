@@ -34,7 +34,8 @@
   "origNudgeCta": "Zum Original",
   "listen": "Vorlesen",
   "stop": "Stopp",
-  "noVoice": "Keine Stimme für diese Sprache auf diesem Gerät — probieren Sie ein Smartphone oder Chrome."
+  "noVoice": "Keine Stimme für diese Sprache auf diesem Gerät — probieren Sie ein Smartphone oder Chrome.",
+  "voice": "Stimme"
  },
  "nav": {
   "trends": "Aktuelle Trends",

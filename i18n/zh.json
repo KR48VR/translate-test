@@ -34,7 +34,8 @@
   "origNudgeCta": "查看原版",
   "listen": "朗读",
   "stop": "停止",
-  "noVoice": "此设备没有该语言的朗读语音——建议用手机或Chrome浏览器。"
+  "noVoice": "此设备没有该语言的朗读语音——建议用手机或Chrome浏览器。",
+  "voice": "声音"
  },
  "nav": {
   "trends": "当前趋势",

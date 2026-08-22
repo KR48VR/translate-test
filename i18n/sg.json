@@ -34,7 +34,8 @@
   "origNudgeCta": "Go see the original",
   "listen": "Listen",
   "stop": "Stop",
-  "noVoice": "This device got no voice for this language leh — try phone or Chrome."
+  "noVoice": "This device got no voice for this language leh — try phone or Chrome.",
+  "voice": "Voice"
  },
  "nav": {
   "trends": "What's hot now",
